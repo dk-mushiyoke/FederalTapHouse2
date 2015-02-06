@@ -7,7 +7,7 @@
 //
 
 /**
- * Implementation for web service connection module
+ * Implementation of web service connection module
  *
  */
 
