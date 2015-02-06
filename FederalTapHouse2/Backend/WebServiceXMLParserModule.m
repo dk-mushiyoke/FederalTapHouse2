@@ -7,7 +7,7 @@
 //
 
 /**
- * Implementation of web service XML parser module
+ * Implementation for web service XML parser module
  *
  */
 

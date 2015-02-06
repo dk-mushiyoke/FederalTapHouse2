@@ -7,7 +7,7 @@
 //
 
 /**
- * Implementation of the beer object
+ * Implementation for the beer object
  *
  */
 

@@ -7,7 +7,7 @@
 //
 
 /** 
- * This class models the beer object
+ * This class models the object for beer
  *
  */
 

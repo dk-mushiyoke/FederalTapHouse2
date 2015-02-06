@@ -7,18 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4272149A1A853FBD0085395D /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272148F1A853FBD0085395D /* BeerObject.m */; };
-		4272149B1A853FBD0085395D /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214911A853FBD0085395D /* EventObject.m */; };
-		4272149C1A853FBD0085395D /* FoodObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214931A853FBD0085395D /* FoodObject.m */; };
-		427214AA1A85405F0085395D /* LocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272149F1A85405F0085395D /* LocationModule.m */; };
-		427214AB1A85405F0085395D /* PushNotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A11A85405F0085395D /* PushNotificationModule.m */; };
-		427214AC1A85405F0085395D /* ThirdPartyWebViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A31A85405F0085395D /* ThirdPartyWebViewModule.m */; };
-		427214AD1A85405F0085395D /* UserLoginRegisterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A51A85405F0085395D /* UserLoginRegisterModule.m */; };
-		427214AE1A85405F0085395D /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A71A85405F0085395D /* WebServiceConnectionModule.m */; };
-		427214AF1A85405F0085395D /* WebServiceXMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A91A85405F0085395D /* WebServiceXMLParserModule.m */; };
-		427214B21A8540EF0085395D /* QRCodeScannerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B11A8540EF0085395D /* QRCodeScannerModule.m */; };
-		427214B51A8543980085395D /* BeerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B41A8543980085395D /* BeerList.m */; };
-		427214B81A85452C0085395D /* MenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B71A85452C0085395D /* MenuObject.m */; };
+		4272146A1A8530210085395D /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214651A8530210085395D /* BeerObject.m */; };
+		4272146B1A8530210085395D /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214671A8530210085395D /* WebServiceConnectionModule.m */; };
+		4272146C1A8530210085395D /* WebServiceXMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214691A8530210085395D /* WebServiceXMLParserModule.m */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
 		427FB4F51A85113700C8F54F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F41A85113700C8F54F /* ViewController.m */; };
@@ -39,30 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4272148E1A853FBD0085395D /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
-		4272148F1A853FBD0085395D /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
-		427214901A853FBD0085395D /* EventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventObject.h; sourceTree = "<group>"; };
-		427214911A853FBD0085395D /* EventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventObject.m; sourceTree = "<group>"; };
-		427214921A853FBD0085395D /* FoodObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodObject.h; sourceTree = "<group>"; };
-		427214931A853FBD0085395D /* FoodObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodObject.m; sourceTree = "<group>"; };
-		4272149E1A85405F0085395D /* LocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModule.h; sourceTree = "<group>"; };
-		4272149F1A85405F0085395D /* LocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModule.m; sourceTree = "<group>"; };
-		427214A01A85405F0085395D /* PushNotificationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationModule.h; sourceTree = "<group>"; };
-		427214A11A85405F0085395D /* PushNotificationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationModule.m; sourceTree = "<group>"; };
-		427214A21A85405F0085395D /* ThirdPartyWebViewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyWebViewModule.h; sourceTree = "<group>"; };
-		427214A31A85405F0085395D /* ThirdPartyWebViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyWebViewModule.m; sourceTree = "<group>"; };
-		427214A41A85405F0085395D /* UserLoginRegisterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginRegisterModule.h; sourceTree = "<group>"; };
-		427214A51A85405F0085395D /* UserLoginRegisterModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginRegisterModule.m; sourceTree = "<group>"; };
-		427214A61A85405F0085395D /* WebServiceConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceConnectionModule.h; sourceTree = "<group>"; };
-		427214A71A85405F0085395D /* WebServiceConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceConnectionModule.m; sourceTree = "<group>"; };
-		427214A81A85405F0085395D /* WebServiceXMLParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLParserModule.h; sourceTree = "<group>"; };
-		427214A91A85405F0085395D /* WebServiceXMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLParserModule.m; sourceTree = "<group>"; };
-		427214B01A8540EF0085395D /* QRCodeScannerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScannerModule.h; sourceTree = "<group>"; };
-		427214B11A8540EF0085395D /* QRCodeScannerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerModule.m; sourceTree = "<group>"; };
-		427214B31A8543980085395D /* BeerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerList.h; sourceTree = "<group>"; };
-		427214B41A8543980085395D /* BeerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerList.m; sourceTree = "<group>"; };
-		427214B61A85452C0085395D /* MenuObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuObject.h; sourceTree = "<group>"; };
-		427214B71A85452C0085395D /* MenuObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuObject.m; sourceTree = "<group>"; };
+		427214641A8530210085395D /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
+		427214651A8530210085395D /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
+		427214661A8530210085395D /* WebServiceConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceConnectionModule.h; sourceTree = "<group>"; };
+		427214671A8530210085395D /* WebServiceConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceConnectionModule.m; sourceTree = "<group>"; };
+		427214681A8530210085395D /* WebServiceXMLParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLParserModule.h; sourceTree = "<group>"; };
+		427214691A8530210085395D /* WebServiceXMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLParserModule.m; sourceTree = "<group>"; };
 		427FB4E91A85113700C8F54F /* FederalTapHouse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTapHouse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB4ED1A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427FB4EE1A85113700C8F54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,42 +69,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4272148D1A853FBD0085395D /* BackendModels */ = {
+		427214631A8530210085395D /* Backend */ = {
 			isa = PBXGroup;
 			children = (
-				4272148E1A853FBD0085395D /* BeerObject.h */,
-				4272148F1A853FBD0085395D /* BeerObject.m */,
-				427214B31A8543980085395D /* BeerList.h */,
-				427214B41A8543980085395D /* BeerList.m */,
-				427214901A853FBD0085395D /* EventObject.h */,
-				427214911A853FBD0085395D /* EventObject.m */,
-				427214921A853FBD0085395D /* FoodObject.h */,
-				427214931A853FBD0085395D /* FoodObject.m */,
-				427214B61A85452C0085395D /* MenuObject.h */,
-				427214B71A85452C0085395D /* MenuObject.m */,
+				427214641A8530210085395D /* BeerObject.h */,
+				427214651A8530210085395D /* BeerObject.m */,
+				427214661A8530210085395D /* WebServiceConnectionModule.h */,
+				427214671A8530210085395D /* WebServiceConnectionModule.m */,
+				427214681A8530210085395D /* WebServiceXMLParserModule.h */,
+				427214691A8530210085395D /* WebServiceXMLParserModule.m */,
 			);
-			path = BackendModels;
-			sourceTree = "<group>";
-		};
-		4272149D1A85405F0085395D /* BackendControlModules */ = {
-			isa = PBXGroup;
-			children = (
-				4272149E1A85405F0085395D /* LocationModule.h */,
-				4272149F1A85405F0085395D /* LocationModule.m */,
-				427214A01A85405F0085395D /* PushNotificationModule.h */,
-				427214A11A85405F0085395D /* PushNotificationModule.m */,
-				427214B01A8540EF0085395D /* QRCodeScannerModule.h */,
-				427214B11A8540EF0085395D /* QRCodeScannerModule.m */,
-				427214A21A85405F0085395D /* ThirdPartyWebViewModule.h */,
-				427214A31A85405F0085395D /* ThirdPartyWebViewModule.m */,
-				427214A41A85405F0085395D /* UserLoginRegisterModule.h */,
-				427214A51A85405F0085395D /* UserLoginRegisterModule.m */,
-				427214A61A85405F0085395D /* WebServiceConnectionModule.h */,
-				427214A71A85405F0085395D /* WebServiceConnectionModule.m */,
-				427214A81A85405F0085395D /* WebServiceXMLParserModule.h */,
-				427214A91A85405F0085395D /* WebServiceXMLParserModule.m */,
-			);
-			path = BackendControlModules;
+			path = Backend;
 			sourceTree = "<group>";
 		};
 		427FB4E01A85113700C8F54F = {
@@ -159,9 +107,8 @@
 				427FB4F11A85113700C8F54F /* AppDelegate.m */,
 				427FB4F31A85113700C8F54F /* ViewController.h */,
 				427FB4F41A85113700C8F54F /* ViewController.m */,
+				427214631A8530210085395D /* Backend */,
 				427FB4F61A85113700C8F54F /* Main.storyboard */,
-				4272149D1A85405F0085395D /* BackendControlModules */,
-				4272148D1A853FBD0085395D /* BackendModels */,
 				427FB4F91A85113700C8F54F /* Images.xcassets */,
 				427FB4FB1A85113700C8F54F /* LaunchScreen.xib */,
 				427FB4EC1A85113700C8F54F /* Supporting Files */,
@@ -295,21 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427214AB1A85405F0085395D /* PushNotificationModule.m in Sources */,
-				427214AF1A85405F0085395D /* WebServiceXMLParserModule.m in Sources */,
-				4272149A1A853FBD0085395D /* BeerObject.m in Sources */,
-				4272149C1A853FBD0085395D /* FoodObject.m in Sources */,
+				4272146A1A8530210085395D /* BeerObject.m in Sources */,
+				4272146C1A8530210085395D /* WebServiceXMLParserModule.m in Sources */,
 				427FB4F51A85113700C8F54F /* ViewController.m in Sources */,
-				427214AE1A85405F0085395D /* WebServiceConnectionModule.m in Sources */,
-				427214AA1A85405F0085395D /* LocationModule.m in Sources */,
-				4272149B1A853FBD0085395D /* EventObject.m in Sources */,
-				427214AC1A85405F0085395D /* ThirdPartyWebViewModule.m in Sources */,
-				427214B51A8543980085395D /* BeerList.m in Sources */,
+				4272146B1A8530210085395D /* WebServiceConnectionModule.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
-				427214B81A85452C0085395D /* MenuObject.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
-				427214AD1A85405F0085395D /* UserLoginRegisterModule.m in Sources */,
-				427214B21A8540EF0085395D /* QRCodeScannerModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
