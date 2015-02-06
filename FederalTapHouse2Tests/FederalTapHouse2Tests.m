@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+//#import "BeerDictionary.h"
+//#import "WebServiceConnectionModule.h"
+//#import "WebServiceXMLParserModule.h"
 
-@interface FederalTapHouse2Tests : XCTestCase
+@interface FederalTapHouse2Tests : XCTestCase// <WebServiceConnectionDidFinishSignal>
 
 @end
 
@@ -25,10 +28,33 @@
     [super tearDown];
 }
 
-- (void)testExample {
+/*- (void)testConnectionModule {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+    // XCTAssert(YES, @"Pass");
+    WebServiceConnectionModule *con = [[WebServiceConnectionModule alloc]
+                                       initWithUrl:@"http://www.softwaremerchant.com/onlinecourse.asmx"
+                                       method:@"getBeerList"];
+    [con establishConnection];
+    [con setSignalDelegate:self];
+}*/
+
+/*- (void)testBeerList {
+    
+    BeerDictionary *list = [[BeerDictionary alloc] init];
+    BeerObject *beer1 = [[BeerObject alloc] initWithName:@"Beer1" location:@"" abv:@"" size:@"" price:@""
+                                             description:@"test beer" category:@"Category 1" date:@""];
+    BeerObject *beer2 = [[BeerObject alloc] initWithName:@"Beer2" location:@"" abv:@"" size:@"" price:@""
+                                             description:@"test beer" category:@"Category 1" date:@""];
+    BeerObject *beer3 = [[BeerObject alloc] initWithName:@"Beer3" location:@"" abv:@"" size:@"" price:@""
+                                             description:@"test beer" category:@"Category 3" date:@""];
+    [list addBeer:beer1];
+    NSLog(@"%@", list);
+    [list addBeer:beer2];
+    NSLog(@"%@", list);
+    [list addBeer:beer3];
+    NSLog(@"%@", list);
+    NSLog(@"%@", [list beerListForCategory:@"Category 1"]);
+}*/
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
@@ -36,5 +62,16 @@
         // Put the code you want to measure the time of here.
     }];
 }
+
+/*#pragma mark - Connection Did Finish
+
+- (void)signalFrom:(id)sender {
+    WebServiceConnectionModule *con = sender;
+    WebServiceXMLParserModule *par = [[WebServiceXMLParserModule alloc] initWithData:con.responseData];
+    [par startParsing];
+    for (BeerObject *b in par.beerList) {
+        NSLog(@"%@", b);
+    }
+}*/
 
 @end
