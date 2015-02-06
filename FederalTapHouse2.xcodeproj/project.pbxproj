@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4272146A1A8530210085395D /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214651A8530210085395D /* BeerObject.m */; };
+		4272146B1A8530210085395D /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214671A8530210085395D /* WebServiceConnectionModule.m */; };
+		4272146C1A8530210085395D /* WebServiceXMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214691A8530210085395D /* WebServiceXMLParserModule.m */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
 		427FB4F51A85113700C8F54F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F41A85113700C8F54F /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		427214641A8530210085395D /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
+		427214651A8530210085395D /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
+		427214661A8530210085395D /* WebServiceConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceConnectionModule.h; sourceTree = "<group>"; };
+		427214671A8530210085395D /* WebServiceConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceConnectionModule.m; sourceTree = "<group>"; };
+		427214681A8530210085395D /* WebServiceXMLParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLParserModule.h; sourceTree = "<group>"; };
+		427214691A8530210085395D /* WebServiceXMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLParserModule.m; sourceTree = "<group>"; };
 		427FB4E91A85113700C8F54F /* FederalTapHouse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTapHouse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB4ED1A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427FB4EE1A85113700C8F54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427214631A8530210085395D /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				427214641A8530210085395D /* BeerObject.h */,
+				427214651A8530210085395D /* BeerObject.m */,
+				427214661A8530210085395D /* WebServiceConnectionModule.h */,
+				427214671A8530210085395D /* WebServiceConnectionModule.m */,
+				427214681A8530210085395D /* WebServiceXMLParserModule.h */,
+				427214691A8530210085395D /* WebServiceXMLParserModule.m */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
 		427FB4E01A85113700C8F54F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,7 @@
 				427FB4F11A85113700C8F54F /* AppDelegate.m */,
 				427FB4F31A85113700C8F54F /* ViewController.h */,
 				427FB4F41A85113700C8F54F /* ViewController.m */,
+				427214631A8530210085395D /* Backend */,
 				427FB4F61A85113700C8F54F /* Main.storyboard */,
 				427FB4F91A85113700C8F54F /* Images.xcassets */,
 				427FB4FB1A85113700C8F54F /* LaunchScreen.xib */,
@@ -219,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4272146A1A8530210085395D /* BeerObject.m in Sources */,
+				4272146C1A8530210085395D /* WebServiceXMLParserModule.m in Sources */,
 				427FB4F51A85113700C8F54F /* ViewController.m in Sources */,
+				4272146B1A8530210085395D /* WebServiceConnectionModule.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
 			);
@@ -414,6 +440,7 @@
 				427FB50E1A85113700C8F54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		427FB50F1A85113700C8F54F /* Build configuration list for PBXNativeTarget "FederalTapHouse2Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +449,7 @@
 				427FB5111A85113700C8F54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
