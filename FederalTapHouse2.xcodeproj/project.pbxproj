@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2228EE891A85ADDA003CC053 /* FTHHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE881A85ADDA003CC053 /* FTHHomePageViewController.m */; };
+		2228EE8C1A85ADFA003CC053 /* FTHMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE8B1A85ADFA003CC053 /* FTHMenuViewController.m */; };
+		2228EE8F1A85AE16003CC053 /* FTHInviteFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE8E1A85AE16003CC053 /* FTHInviteFriendsViewController.m */; };
+		2228EE921A85AE2F003CC053 /* FTHDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE911A85AE2F003CC053 /* FTHDealsViewController.m */; };
+		2228EE951A85AE46003CC053 /* FTHFindUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE941A85AE46003CC053 /* FTHFindUsViewController.m */; };
+		2228EE981A85AE59003CC053 /* FTHContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE971A85AE59003CC053 /* FTHContactViewController.m */; };
 		4272149A1A853FBD0085395D /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272148F1A853FBD0085395D /* BeerObject.m */; };
 		4272149B1A853FBD0085395D /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214911A853FBD0085395D /* EventObject.m */; };
 		4272149C1A853FBD0085395D /* FoodObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214931A853FBD0085395D /* FoodObject.m */; };
@@ -21,7 +27,6 @@
 		427214B81A85452C0085395D /* MenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B71A85452C0085395D /* MenuObject.m */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
-		427FB4F51A85113700C8F54F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F41A85113700C8F54F /* ViewController.m */; };
 		427FB4F81A85113700C8F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F61A85113700C8F54F /* Main.storyboard */; };
 		427FB4FA1A85113700C8F54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F91A85113700C8F54F /* Images.xcassets */; };
 		427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4FB1A85113700C8F54F /* LaunchScreen.xib */; };
@@ -39,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2228EE871A85ADDA003CC053 /* FTHHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHHomePageViewController.h; path = ../FTHHomePageViewController.h; sourceTree = "<group>"; };
+		2228EE881A85ADDA003CC053 /* FTHHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHHomePageViewController.m; path = ../FTHHomePageViewController.m; sourceTree = "<group>"; };
+		2228EE8A1A85ADFA003CC053 /* FTHMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHMenuViewController.h; path = ../FTHMenuViewController.h; sourceTree = "<group>"; };
+		2228EE8B1A85ADFA003CC053 /* FTHMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHMenuViewController.m; path = ../FTHMenuViewController.m; sourceTree = "<group>"; };
+		2228EE8D1A85AE16003CC053 /* FTHInviteFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHInviteFriendsViewController.h; path = ../FTHInviteFriendsViewController.h; sourceTree = "<group>"; };
+		2228EE8E1A85AE16003CC053 /* FTHInviteFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHInviteFriendsViewController.m; path = ../FTHInviteFriendsViewController.m; sourceTree = "<group>"; };
+		2228EE901A85AE2F003CC053 /* FTHDealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHDealsViewController.h; path = ../FTHDealsViewController.h; sourceTree = "<group>"; };
+		2228EE911A85AE2F003CC053 /* FTHDealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHDealsViewController.m; path = ../FTHDealsViewController.m; sourceTree = "<group>"; };
+		2228EE931A85AE46003CC053 /* FTHFindUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHFindUsViewController.h; path = ../FTHFindUsViewController.h; sourceTree = "<group>"; };
+		2228EE941A85AE46003CC053 /* FTHFindUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHFindUsViewController.m; path = ../FTHFindUsViewController.m; sourceTree = "<group>"; };
+		2228EE961A85AE59003CC053 /* FTHContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHContactViewController.h; path = ../FTHContactViewController.h; sourceTree = "<group>"; };
+		2228EE971A85AE59003CC053 /* FTHContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHContactViewController.m; path = ../FTHContactViewController.m; sourceTree = "<group>"; };
 		4272148E1A853FBD0085395D /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
 		4272148F1A853FBD0085395D /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
 		427214901A853FBD0085395D /* EventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventObject.h; sourceTree = "<group>"; };
@@ -68,8 +85,6 @@
 		427FB4EE1A85113700C8F54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		427FB4F01A85113700C8F54F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		427FB4F11A85113700C8F54F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		427FB4F31A85113700C8F54F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		427FB4F41A85113700C8F54F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		427FB4F71A85113700C8F54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		427FB4F91A85113700C8F54F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		427FB4FC1A85113700C8F54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -155,10 +170,20 @@
 		427FB4EB1A85113700C8F54F /* FederalTapHouse2 */ = {
 			isa = PBXGroup;
 			children = (
+				2228EE871A85ADDA003CC053 /* FTHHomePageViewController.h */,
+				2228EE881A85ADDA003CC053 /* FTHHomePageViewController.m */,
+				2228EE961A85AE59003CC053 /* FTHContactViewController.h */,
+				2228EE971A85AE59003CC053 /* FTHContactViewController.m */,
+				2228EE931A85AE46003CC053 /* FTHFindUsViewController.h */,
+				2228EE941A85AE46003CC053 /* FTHFindUsViewController.m */,
+				2228EE901A85AE2F003CC053 /* FTHDealsViewController.h */,
+				2228EE911A85AE2F003CC053 /* FTHDealsViewController.m */,
+				2228EE8D1A85AE16003CC053 /* FTHInviteFriendsViewController.h */,
+				2228EE8E1A85AE16003CC053 /* FTHInviteFriendsViewController.m */,
+				2228EE8A1A85ADFA003CC053 /* FTHMenuViewController.h */,
+				2228EE8B1A85ADFA003CC053 /* FTHMenuViewController.m */,
 				427FB4F01A85113700C8F54F /* AppDelegate.h */,
 				427FB4F11A85113700C8F54F /* AppDelegate.m */,
-				427FB4F31A85113700C8F54F /* ViewController.h */,
-				427FB4F41A85113700C8F54F /* ViewController.m */,
 				427FB4F61A85113700C8F54F /* Main.storyboard */,
 				4272149D1A85405F0085395D /* BackendControlModules */,
 				4272148D1A853FBD0085395D /* BackendModels */,
@@ -296,13 +321,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				427214AB1A85405F0085395D /* PushNotificationModule.m in Sources */,
+				2228EE8F1A85AE16003CC053 /* FTHInviteFriendsViewController.m in Sources */,
+				2228EE891A85ADDA003CC053 /* FTHHomePageViewController.m in Sources */,
 				427214AF1A85405F0085395D /* WebServiceXMLParserModule.m in Sources */,
 				4272149A1A853FBD0085395D /* BeerObject.m in Sources */,
+				2228EE951A85AE46003CC053 /* FTHFindUsViewController.m in Sources */,
+				2228EE981A85AE59003CC053 /* FTHContactViewController.m in Sources */,
+				2228EE921A85AE2F003CC053 /* FTHDealsViewController.m in Sources */,
 				4272149C1A853FBD0085395D /* FoodObject.m in Sources */,
-				427FB4F51A85113700C8F54F /* ViewController.m in Sources */,
 				427214AE1A85405F0085395D /* WebServiceConnectionModule.m in Sources */,
 				427214AA1A85405F0085395D /* LocationModule.m in Sources */,
 				4272149B1A853FBD0085395D /* EventObject.m in Sources */,
+				2228EE8C1A85ADFA003CC053 /* FTHMenuViewController.m in Sources */,
 				427214AC1A85405F0085395D /* ThirdPartyWebViewModule.m in Sources */,
 				427214B51A8543980085395D /* BeerList.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
