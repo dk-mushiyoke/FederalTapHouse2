@@ -23,7 +23,7 @@
 		427214AE1A85405F0085395D /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A71A85405F0085395D /* WebServiceConnectionModule.m */; };
 		427214AF1A85405F0085395D /* WebServiceXMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A91A85405F0085395D /* WebServiceXMLParserModule.m */; };
 		427214B21A8540EF0085395D /* QRCodeScannerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B11A8540EF0085395D /* QRCodeScannerModule.m */; };
-		427214B51A8543980085395D /* BeerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B41A8543980085395D /* BeerList.m */; };
+		427214B51A8543980085395D /* BeerDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B41A8543980085395D /* BeerDictionary.m */; };
 		427214B81A85452C0085395D /* MenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B71A85452C0085395D /* MenuObject.m */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
@@ -76,8 +76,8 @@
 		427214A91A85405F0085395D /* WebServiceXMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLParserModule.m; sourceTree = "<group>"; };
 		427214B01A8540EF0085395D /* QRCodeScannerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScannerModule.h; sourceTree = "<group>"; };
 		427214B11A8540EF0085395D /* QRCodeScannerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerModule.m; sourceTree = "<group>"; };
-		427214B31A8543980085395D /* BeerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerList.h; sourceTree = "<group>"; };
-		427214B41A8543980085395D /* BeerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerList.m; sourceTree = "<group>"; };
+		427214B31A8543980085395D /* BeerDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDictionary.h; sourceTree = "<group>"; };
+		427214B41A8543980085395D /* BeerDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDictionary.m; sourceTree = "<group>"; };
 		427214B61A85452C0085395D /* MenuObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuObject.h; sourceTree = "<group>"; };
 		427214B71A85452C0085395D /* MenuObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuObject.m; sourceTree = "<group>"; };
 		427FB4E91A85113700C8F54F /* FederalTapHouse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTapHouse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +116,8 @@
 			children = (
 				4272148E1A853FBD0085395D /* BeerObject.h */,
 				4272148F1A853FBD0085395D /* BeerObject.m */,
-				427214B31A8543980085395D /* BeerList.h */,
-				427214B41A8543980085395D /* BeerList.m */,
+				427214B31A8543980085395D /* BeerDictionary.h */,
+				427214B41A8543980085395D /* BeerDictionary.m */,
 				427214901A853FBD0085395D /* EventObject.h */,
 				427214911A853FBD0085395D /* EventObject.m */,
 				427214921A853FBD0085395D /* FoodObject.h */,
@@ -334,7 +334,7 @@
 				4272149B1A853FBD0085395D /* EventObject.m in Sources */,
 				2228EE8C1A85ADFA003CC053 /* FTHMenuViewController.m in Sources */,
 				427214AC1A85405F0085395D /* ThirdPartyWebViewModule.m in Sources */,
-				427214B51A8543980085395D /* BeerList.m in Sources */,
+				427214B51A8543980085395D /* BeerDictionary.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
 				427214B81A85452C0085395D /* MenuObject.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
