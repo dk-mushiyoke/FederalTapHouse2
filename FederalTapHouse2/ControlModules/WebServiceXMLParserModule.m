@@ -13,11 +13,12 @@
 
 #import "WebServiceXMLParserModule.h"
 #import "BeerObject.h"
+#import "BeerDictionary.h"
 
 
 @interface WebServiceXMLParserModule()
 
-@property (nonatomic, readwrite) NSArray *beerList;
+@property (nonatomic, readwrite) BeerDictionary *beerDictionary;
 
 @end
 
@@ -38,7 +39,7 @@
     
     if (self) {
         self.data = d;
-        beerListMutable = [NSMutableArray array];
+        self.beerDictionary = [[BeerDictionary alloc] init];
     }
     
     return self;
@@ -62,12 +63,11 @@
     // End tag with Beer = finished parsing for a beer
     if ([elementName isEqualToString:@"Beer"]) {
         /*NSLog(@"%@", currentBeer);*/
-        [beerListMutable addObject:currentBeer];
+        [self.beerDictionary addBeer:currentBeer];
     }
     // End tag with getBeerListResult = finished getBeerList
     else if ([elementName isEqualToString:@"getBeerListResult"]) {
-        self.beerList = [NSArray arrayWithArray:beerListMutable];
-         /*NSLog(@"Beer List Updated");*/
+         NSLog(@"Beer List Updated");
     }
     // End tag says these craps that is not a property in beer object, I just skip them
     else if ([elementName isEqualToString:@"getBeerListResponse"]);

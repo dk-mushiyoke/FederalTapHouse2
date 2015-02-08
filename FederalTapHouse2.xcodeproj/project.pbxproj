@@ -7,30 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2228EE891A85ADDA003CC053 /* FTHHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE881A85ADDA003CC053 /* FTHHomePageViewController.m */; };
-		2228EE8C1A85ADFA003CC053 /* FTHMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE8B1A85ADFA003CC053 /* FTHMenuViewController.m */; };
-		2228EE8F1A85AE16003CC053 /* FTHInviteFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE8E1A85AE16003CC053 /* FTHInviteFriendsViewController.m */; };
-		2228EE921A85AE2F003CC053 /* FTHDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE911A85AE2F003CC053 /* FTHDealsViewController.m */; };
-		2228EE951A85AE46003CC053 /* FTHFindUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE941A85AE46003CC053 /* FTHFindUsViewController.m */; };
-		2228EE981A85AE59003CC053 /* FTHContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228EE971A85AE59003CC053 /* FTHContactViewController.m */; };
-		4272149A1A853FBD0085395D /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272148F1A853FBD0085395D /* BeerObject.m */; };
-		4272149B1A853FBD0085395D /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214911A853FBD0085395D /* EventObject.m */; };
-		4272149C1A853FBD0085395D /* FoodObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214931A853FBD0085395D /* FoodObject.m */; };
-		427214AA1A85405F0085395D /* LocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272149F1A85405F0085395D /* LocationModule.m */; };
-		427214AB1A85405F0085395D /* PushNotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A11A85405F0085395D /* PushNotificationModule.m */; };
-		427214AC1A85405F0085395D /* ThirdPartyWebViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A31A85405F0085395D /* ThirdPartyWebViewModule.m */; };
-		427214AD1A85405F0085395D /* UserLoginRegisterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A51A85405F0085395D /* UserLoginRegisterModule.m */; };
-		427214AE1A85405F0085395D /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A71A85405F0085395D /* WebServiceConnectionModule.m */; };
-		427214AF1A85405F0085395D /* WebServiceXMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214A91A85405F0085395D /* WebServiceXMLParserModule.m */; };
-		427214B21A8540EF0085395D /* QRCodeScannerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B11A8540EF0085395D /* QRCodeScannerModule.m */; };
-		427214B51A8543980085395D /* BeerDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B41A8543980085395D /* BeerDictionary.m */; };
-		427214B81A85452C0085395D /* MenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 427214B71A85452C0085395D /* MenuObject.m */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
 		427FB4F81A85113700C8F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F61A85113700C8F54F /* Main.storyboard */; };
 		427FB4FA1A85113700C8F54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F91A85113700C8F54F /* Images.xcassets */; };
 		427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4FB1A85113700C8F54F /* LaunchScreen.xib */; };
 		427FB5091A85113700C8F54F /* FederalTapHouse2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */; };
+		42BC2E7E1A88273F00A22376 /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E691A88273F00A22376 /* DirectionsViewController.m */; };
+		42BC2E7F1A88273F00A22376 /* FTHBeerCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */; };
+		42BC2E801A88273F00A22376 /* FTHBeerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */; };
+		42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */; };
+		42BC2E821A88273F00A22376 /* FTHEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */; };
+		42BC2E831A88273F00A22376 /* FTHFindTransportationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E731A88273F00A22376 /* FTHFindTransportationViewController.m */; };
+		42BC2E841A88273F00A22376 /* FTHHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E751A88273F00A22376 /* FTHHomeTableViewController.m */; };
+		42BC2E851A88273F00A22376 /* FTHLiveMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */; };
+		42BC2E861A88273F00A22376 /* FTHOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */; };
+		42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */; };
+		42BC2E881A88273F00A22376 /* FTHRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7D1A88273F00A22376 /* FTHRewardViewController.m */; };
+		42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8B1A88277C00A22376 /* LocationModule.m */; };
+		42BC2EA41A88277C00A22376 /* PushNotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */; };
+		42BC2EA51A88277C00A22376 /* QRCodeScannerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */; };
+		42BC2EA61A88277C00A22376 /* ThirdPartyWebViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E911A88277C00A22376 /* ThirdPartyWebViewModule.m */; };
+		42BC2EA71A88277C00A22376 /* UserLoginRegisterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E931A88277C00A22376 /* UserLoginRegisterModule.m */; };
+		42BC2EA81A88277C00A22376 /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */; };
+		42BC2EA91A88277C00A22376 /* WebServiceXMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E971A88277C00A22376 /* WebServiceXMLParserModule.m */; };
+		42BC2EAA1A88277C00A22376 /* BeerDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E9A1A88277C00A22376 /* BeerDictionary.m */; };
+		42BC2EAB1A88277C00A22376 /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E9C1A88277C00A22376 /* BeerObject.m */; };
+		42BC2EAC1A88277C00A22376 /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E9E1A88277C00A22376 /* EventObject.m */; };
+		42BC2EAD1A88277C00A22376 /* FoodObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2EA01A88277C00A22376 /* FoodObject.m */; };
+		42BC2EAE1A88277C00A22376 /* MenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2EA21A88277C00A22376 /* MenuObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,42 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2228EE871A85ADDA003CC053 /* FTHHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHHomePageViewController.h; path = ../FTHHomePageViewController.h; sourceTree = "<group>"; };
-		2228EE881A85ADDA003CC053 /* FTHHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHHomePageViewController.m; path = ../FTHHomePageViewController.m; sourceTree = "<group>"; };
-		2228EE8A1A85ADFA003CC053 /* FTHMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHMenuViewController.h; path = ../FTHMenuViewController.h; sourceTree = "<group>"; };
-		2228EE8B1A85ADFA003CC053 /* FTHMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHMenuViewController.m; path = ../FTHMenuViewController.m; sourceTree = "<group>"; };
-		2228EE8D1A85AE16003CC053 /* FTHInviteFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHInviteFriendsViewController.h; path = ../FTHInviteFriendsViewController.h; sourceTree = "<group>"; };
-		2228EE8E1A85AE16003CC053 /* FTHInviteFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHInviteFriendsViewController.m; path = ../FTHInviteFriendsViewController.m; sourceTree = "<group>"; };
-		2228EE901A85AE2F003CC053 /* FTHDealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHDealsViewController.h; path = ../FTHDealsViewController.h; sourceTree = "<group>"; };
-		2228EE911A85AE2F003CC053 /* FTHDealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHDealsViewController.m; path = ../FTHDealsViewController.m; sourceTree = "<group>"; };
-		2228EE931A85AE46003CC053 /* FTHFindUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHFindUsViewController.h; path = ../FTHFindUsViewController.h; sourceTree = "<group>"; };
-		2228EE941A85AE46003CC053 /* FTHFindUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHFindUsViewController.m; path = ../FTHFindUsViewController.m; sourceTree = "<group>"; };
-		2228EE961A85AE59003CC053 /* FTHContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTHContactViewController.h; path = ../FTHContactViewController.h; sourceTree = "<group>"; };
-		2228EE971A85AE59003CC053 /* FTHContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTHContactViewController.m; path = ../FTHContactViewController.m; sourceTree = "<group>"; };
-		4272148E1A853FBD0085395D /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
-		4272148F1A853FBD0085395D /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
-		427214901A853FBD0085395D /* EventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventObject.h; sourceTree = "<group>"; };
-		427214911A853FBD0085395D /* EventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventObject.m; sourceTree = "<group>"; };
-		427214921A853FBD0085395D /* FoodObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodObject.h; sourceTree = "<group>"; };
-		427214931A853FBD0085395D /* FoodObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodObject.m; sourceTree = "<group>"; };
-		4272149E1A85405F0085395D /* LocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModule.h; sourceTree = "<group>"; };
-		4272149F1A85405F0085395D /* LocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModule.m; sourceTree = "<group>"; };
-		427214A01A85405F0085395D /* PushNotificationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationModule.h; sourceTree = "<group>"; };
-		427214A11A85405F0085395D /* PushNotificationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationModule.m; sourceTree = "<group>"; };
-		427214A21A85405F0085395D /* ThirdPartyWebViewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyWebViewModule.h; sourceTree = "<group>"; };
-		427214A31A85405F0085395D /* ThirdPartyWebViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyWebViewModule.m; sourceTree = "<group>"; };
-		427214A41A85405F0085395D /* UserLoginRegisterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginRegisterModule.h; sourceTree = "<group>"; };
-		427214A51A85405F0085395D /* UserLoginRegisterModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginRegisterModule.m; sourceTree = "<group>"; };
-		427214A61A85405F0085395D /* WebServiceConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceConnectionModule.h; sourceTree = "<group>"; };
-		427214A71A85405F0085395D /* WebServiceConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceConnectionModule.m; sourceTree = "<group>"; };
-		427214A81A85405F0085395D /* WebServiceXMLParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLParserModule.h; sourceTree = "<group>"; };
-		427214A91A85405F0085395D /* WebServiceXMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLParserModule.m; sourceTree = "<group>"; };
-		427214B01A8540EF0085395D /* QRCodeScannerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScannerModule.h; sourceTree = "<group>"; };
-		427214B11A8540EF0085395D /* QRCodeScannerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerModule.m; sourceTree = "<group>"; };
-		427214B31A8543980085395D /* BeerDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDictionary.h; sourceTree = "<group>"; };
-		427214B41A8543980085395D /* BeerDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDictionary.m; sourceTree = "<group>"; };
-		427214B61A85452C0085395D /* MenuObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuObject.h; sourceTree = "<group>"; };
-		427214B71A85452C0085395D /* MenuObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuObject.m; sourceTree = "<group>"; };
 		427FB4E91A85113700C8F54F /* FederalTapHouse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTapHouse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB4ED1A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427FB4EE1A85113700C8F54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +60,52 @@
 		427FB5021A85113700C8F54F /* FederalTapHouse2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FederalTapHouse2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB5071A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FederalTapHouse2Tests.m; sourceTree = "<group>"; };
+		42BC2E681A88273F00A22376 /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		42BC2E691A88273F00A22376 /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
+		42BC2E6A1A88273F00A22376 /* FTHBeerCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerCategoryTableViewController.h; sourceTree = "<group>"; };
+		42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHBeerCategoryTableViewController.m; sourceTree = "<group>"; };
+		42BC2E6C1A88273F00A22376 /* FTHBeerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerDetailViewController.h; sourceTree = "<group>"; };
+		42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHBeerDetailViewController.m; sourceTree = "<group>"; };
+		42BC2E6E1A88273F00A22376 /* FTHBeerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerTableViewController.h; sourceTree = "<group>"; };
+		42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHBeerTableViewController.m; sourceTree = "<group>"; };
+		42BC2E701A88273F00A22376 /* FTHEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHEventsTableViewController.h; sourceTree = "<group>"; };
+		42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHEventsTableViewController.m; sourceTree = "<group>"; };
+		42BC2E721A88273F00A22376 /* FTHFindTransportationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHFindTransportationViewController.h; sourceTree = "<group>"; };
+		42BC2E731A88273F00A22376 /* FTHFindTransportationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHFindTransportationViewController.m; sourceTree = "<group>"; };
+		42BC2E741A88273F00A22376 /* FTHHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHHomeTableViewController.h; sourceTree = "<group>"; };
+		42BC2E751A88273F00A22376 /* FTHHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHHomeTableViewController.m; sourceTree = "<group>"; };
+		42BC2E761A88273F00A22376 /* FTHLiveMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHLiveMusicViewController.h; sourceTree = "<group>"; };
+		42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHLiveMusicViewController.m; sourceTree = "<group>"; };
+		42BC2E781A88273F00A22376 /* FTHOnMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHOnMapViewController.h; sourceTree = "<group>"; };
+		42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHOnMapViewController.m; sourceTree = "<group>"; };
+		42BC2E7A1A88273F00A22376 /* FTHRedeemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHRedeemViewController.h; sourceTree = "<group>"; };
+		42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRedeemViewController.m; sourceTree = "<group>"; };
+		42BC2E7C1A88273F00A22376 /* FTHRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHRewardViewController.h; sourceTree = "<group>"; };
+		42BC2E7D1A88273F00A22376 /* FTHRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRewardViewController.m; sourceTree = "<group>"; };
+		42BC2E8A1A88277C00A22376 /* LocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModule.h; sourceTree = "<group>"; };
+		42BC2E8B1A88277C00A22376 /* LocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModule.m; sourceTree = "<group>"; };
+		42BC2E8C1A88277C00A22376 /* PushNotificationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationModule.h; sourceTree = "<group>"; };
+		42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationModule.m; sourceTree = "<group>"; };
+		42BC2E8E1A88277C00A22376 /* QRCodeScannerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScannerModule.h; sourceTree = "<group>"; };
+		42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerModule.m; sourceTree = "<group>"; };
+		42BC2E901A88277C00A22376 /* ThirdPartyWebViewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyWebViewModule.h; sourceTree = "<group>"; };
+		42BC2E911A88277C00A22376 /* ThirdPartyWebViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyWebViewModule.m; sourceTree = "<group>"; };
+		42BC2E921A88277C00A22376 /* UserLoginRegisterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginRegisterModule.h; sourceTree = "<group>"; };
+		42BC2E931A88277C00A22376 /* UserLoginRegisterModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginRegisterModule.m; sourceTree = "<group>"; };
+		42BC2E941A88277C00A22376 /* WebServiceConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceConnectionModule.h; sourceTree = "<group>"; };
+		42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceConnectionModule.m; sourceTree = "<group>"; };
+		42BC2E961A88277C00A22376 /* WebServiceXMLParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLParserModule.h; sourceTree = "<group>"; };
+		42BC2E971A88277C00A22376 /* WebServiceXMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLParserModule.m; sourceTree = "<group>"; };
+		42BC2E991A88277C00A22376 /* BeerDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDictionary.h; sourceTree = "<group>"; };
+		42BC2E9A1A88277C00A22376 /* BeerDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDictionary.m; sourceTree = "<group>"; };
+		42BC2E9B1A88277C00A22376 /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
+		42BC2E9C1A88277C00A22376 /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
+		42BC2E9D1A88277C00A22376 /* EventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventObject.h; sourceTree = "<group>"; };
+		42BC2E9E1A88277C00A22376 /* EventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventObject.m; sourceTree = "<group>"; };
+		42BC2E9F1A88277C00A22376 /* FoodObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodObject.h; sourceTree = "<group>"; };
+		42BC2EA01A88277C00A22376 /* FoodObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodObject.m; sourceTree = "<group>"; };
+		42BC2EA11A88277C00A22376 /* MenuObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuObject.h; sourceTree = "<group>"; };
+		42BC2EA21A88277C00A22376 /* MenuObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,44 +126,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4272148D1A853FBD0085395D /* BackendModels */ = {
-			isa = PBXGroup;
-			children = (
-				4272148E1A853FBD0085395D /* BeerObject.h */,
-				4272148F1A853FBD0085395D /* BeerObject.m */,
-				427214B31A8543980085395D /* BeerDictionary.h */,
-				427214B41A8543980085395D /* BeerDictionary.m */,
-				427214901A853FBD0085395D /* EventObject.h */,
-				427214911A853FBD0085395D /* EventObject.m */,
-				427214921A853FBD0085395D /* FoodObject.h */,
-				427214931A853FBD0085395D /* FoodObject.m */,
-				427214B61A85452C0085395D /* MenuObject.h */,
-				427214B71A85452C0085395D /* MenuObject.m */,
-			);
-			path = BackendModels;
-			sourceTree = "<group>";
-		};
-		4272149D1A85405F0085395D /* BackendControlModules */ = {
-			isa = PBXGroup;
-			children = (
-				4272149E1A85405F0085395D /* LocationModule.h */,
-				4272149F1A85405F0085395D /* LocationModule.m */,
-				427214A01A85405F0085395D /* PushNotificationModule.h */,
-				427214A11A85405F0085395D /* PushNotificationModule.m */,
-				427214B01A8540EF0085395D /* QRCodeScannerModule.h */,
-				427214B11A8540EF0085395D /* QRCodeScannerModule.m */,
-				427214A21A85405F0085395D /* ThirdPartyWebViewModule.h */,
-				427214A31A85405F0085395D /* ThirdPartyWebViewModule.m */,
-				427214A41A85405F0085395D /* UserLoginRegisterModule.h */,
-				427214A51A85405F0085395D /* UserLoginRegisterModule.m */,
-				427214A61A85405F0085395D /* WebServiceConnectionModule.h */,
-				427214A71A85405F0085395D /* WebServiceConnectionModule.m */,
-				427214A81A85405F0085395D /* WebServiceXMLParserModule.h */,
-				427214A91A85405F0085395D /* WebServiceXMLParserModule.m */,
-			);
-			path = BackendControlModules;
-			sourceTree = "<group>";
-		};
 		427FB4E01A85113700C8F54F = {
 			isa = PBXGroup;
 			children = (
@@ -170,23 +147,12 @@
 		427FB4EB1A85113700C8F54F /* FederalTapHouse2 */ = {
 			isa = PBXGroup;
 			children = (
-				2228EE871A85ADDA003CC053 /* FTHHomePageViewController.h */,
-				2228EE881A85ADDA003CC053 /* FTHHomePageViewController.m */,
-				2228EE961A85AE59003CC053 /* FTHContactViewController.h */,
-				2228EE971A85AE59003CC053 /* FTHContactViewController.m */,
-				2228EE931A85AE46003CC053 /* FTHFindUsViewController.h */,
-				2228EE941A85AE46003CC053 /* FTHFindUsViewController.m */,
-				2228EE901A85AE2F003CC053 /* FTHDealsViewController.h */,
-				2228EE911A85AE2F003CC053 /* FTHDealsViewController.m */,
-				2228EE8D1A85AE16003CC053 /* FTHInviteFriendsViewController.h */,
-				2228EE8E1A85AE16003CC053 /* FTHInviteFriendsViewController.m */,
-				2228EE8A1A85ADFA003CC053 /* FTHMenuViewController.h */,
-				2228EE8B1A85ADFA003CC053 /* FTHMenuViewController.m */,
 				427FB4F01A85113700C8F54F /* AppDelegate.h */,
 				427FB4F11A85113700C8F54F /* AppDelegate.m */,
 				427FB4F61A85113700C8F54F /* Main.storyboard */,
-				4272149D1A85405F0085395D /* BackendControlModules */,
-				4272148D1A853FBD0085395D /* BackendModels */,
+				42BC2E671A88273F00A22376 /* ViewControllers */,
+				42BC2E891A88277C00A22376 /* ControlModules */,
+				42BC2E981A88277C00A22376 /* ObjectModels */,
 				427FB4F91A85113700C8F54F /* Images.xcassets */,
 				427FB4FB1A85113700C8F54F /* LaunchScreen.xib */,
 				427FB4EC1A85113700C8F54F /* Supporting Files */,
@@ -218,6 +184,73 @@
 				427FB5071A85113700C8F54F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42BC2E671A88273F00A22376 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				42BC2E681A88273F00A22376 /* DirectionsViewController.h */,
+				42BC2E691A88273F00A22376 /* DirectionsViewController.m */,
+				42BC2E6A1A88273F00A22376 /* FTHBeerCategoryTableViewController.h */,
+				42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */,
+				42BC2E6C1A88273F00A22376 /* FTHBeerDetailViewController.h */,
+				42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */,
+				42BC2E6E1A88273F00A22376 /* FTHBeerTableViewController.h */,
+				42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */,
+				42BC2E701A88273F00A22376 /* FTHEventsTableViewController.h */,
+				42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */,
+				42BC2E721A88273F00A22376 /* FTHFindTransportationViewController.h */,
+				42BC2E731A88273F00A22376 /* FTHFindTransportationViewController.m */,
+				42BC2E741A88273F00A22376 /* FTHHomeTableViewController.h */,
+				42BC2E751A88273F00A22376 /* FTHHomeTableViewController.m */,
+				42BC2E761A88273F00A22376 /* FTHLiveMusicViewController.h */,
+				42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */,
+				42BC2E781A88273F00A22376 /* FTHOnMapViewController.h */,
+				42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */,
+				42BC2E7A1A88273F00A22376 /* FTHRedeemViewController.h */,
+				42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */,
+				42BC2E7C1A88273F00A22376 /* FTHRewardViewController.h */,
+				42BC2E7D1A88273F00A22376 /* FTHRewardViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		42BC2E891A88277C00A22376 /* ControlModules */ = {
+			isa = PBXGroup;
+			children = (
+				42BC2E8A1A88277C00A22376 /* LocationModule.h */,
+				42BC2E8B1A88277C00A22376 /* LocationModule.m */,
+				42BC2E8C1A88277C00A22376 /* PushNotificationModule.h */,
+				42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */,
+				42BC2E8E1A88277C00A22376 /* QRCodeScannerModule.h */,
+				42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */,
+				42BC2E901A88277C00A22376 /* ThirdPartyWebViewModule.h */,
+				42BC2E911A88277C00A22376 /* ThirdPartyWebViewModule.m */,
+				42BC2E921A88277C00A22376 /* UserLoginRegisterModule.h */,
+				42BC2E931A88277C00A22376 /* UserLoginRegisterModule.m */,
+				42BC2E941A88277C00A22376 /* WebServiceConnectionModule.h */,
+				42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */,
+				42BC2E961A88277C00A22376 /* WebServiceXMLParserModule.h */,
+				42BC2E971A88277C00A22376 /* WebServiceXMLParserModule.m */,
+			);
+			path = ControlModules;
+			sourceTree = "<group>";
+		};
+		42BC2E981A88277C00A22376 /* ObjectModels */ = {
+			isa = PBXGroup;
+			children = (
+				42BC2E991A88277C00A22376 /* BeerDictionary.h */,
+				42BC2E9A1A88277C00A22376 /* BeerDictionary.m */,
+				42BC2E9B1A88277C00A22376 /* BeerObject.h */,
+				42BC2E9C1A88277C00A22376 /* BeerObject.m */,
+				42BC2E9D1A88277C00A22376 /* EventObject.h */,
+				42BC2E9E1A88277C00A22376 /* EventObject.m */,
+				42BC2E9F1A88277C00A22376 /* FoodObject.h */,
+				42BC2EA01A88277C00A22376 /* FoodObject.m */,
+				42BC2EA11A88277C00A22376 /* MenuObject.h */,
+				42BC2EA21A88277C00A22376 /* MenuObject.m */,
+			);
+			path = ObjectModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,26 +353,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427214AB1A85405F0085395D /* PushNotificationModule.m in Sources */,
-				2228EE8F1A85AE16003CC053 /* FTHInviteFriendsViewController.m in Sources */,
-				2228EE891A85ADDA003CC053 /* FTHHomePageViewController.m in Sources */,
-				427214AF1A85405F0085395D /* WebServiceXMLParserModule.m in Sources */,
-				4272149A1A853FBD0085395D /* BeerObject.m in Sources */,
-				2228EE951A85AE46003CC053 /* FTHFindUsViewController.m in Sources */,
-				2228EE981A85AE59003CC053 /* FTHContactViewController.m in Sources */,
-				2228EE921A85AE2F003CC053 /* FTHDealsViewController.m in Sources */,
-				4272149C1A853FBD0085395D /* FoodObject.m in Sources */,
-				427214AE1A85405F0085395D /* WebServiceConnectionModule.m in Sources */,
-				427214AA1A85405F0085395D /* LocationModule.m in Sources */,
-				4272149B1A853FBD0085395D /* EventObject.m in Sources */,
-				2228EE8C1A85ADFA003CC053 /* FTHMenuViewController.m in Sources */,
-				427214AC1A85405F0085395D /* ThirdPartyWebViewModule.m in Sources */,
-				427214B51A8543980085395D /* BeerDictionary.m in Sources */,
+				42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */,
+				42BC2EAE1A88277C00A22376 /* MenuObject.m in Sources */,
+				42BC2E881A88273F00A22376 /* FTHRewardViewController.m in Sources */,
+				42BC2E7F1A88273F00A22376 /* FTHBeerCategoryTableViewController.m in Sources */,
+				42BC2EA71A88277C00A22376 /* UserLoginRegisterModule.m in Sources */,
+				42BC2EAC1A88277C00A22376 /* EventObject.m in Sources */,
+				42BC2E861A88273F00A22376 /* FTHOnMapViewController.m in Sources */,
+				42BC2EA91A88277C00A22376 /* WebServiceXMLParserModule.m in Sources */,
+				42BC2EAA1A88277C00A22376 /* BeerDictionary.m in Sources */,
+				42BC2EA81A88277C00A22376 /* WebServiceConnectionModule.m in Sources */,
+				42BC2E801A88273F00A22376 /* FTHBeerDetailViewController.m in Sources */,
+				42BC2EA41A88277C00A22376 /* PushNotificationModule.m in Sources */,
+				42BC2E821A88273F00A22376 /* FTHEventsTableViewController.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
-				427214B81A85452C0085395D /* MenuObject.m in Sources */,
+				42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */,
+				42BC2EAD1A88277C00A22376 /* FoodObject.m in Sources */,
+				42BC2E831A88273F00A22376 /* FTHFindTransportationViewController.m in Sources */,
+				42BC2E841A88273F00A22376 /* FTHHomeTableViewController.m in Sources */,
+				42BC2EA61A88277C00A22376 /* ThirdPartyWebViewModule.m in Sources */,
+				42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */,
+				42BC2E7E1A88273F00A22376 /* DirectionsViewController.m in Sources */,
+				42BC2EAB1A88277C00A22376 /* BeerObject.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
-				427214AD1A85405F0085395D /* UserLoginRegisterModule.m in Sources */,
-				427214B21A8540EF0085395D /* QRCodeScannerModule.m in Sources */,
+				42BC2EA51A88277C00A22376 /* QRCodeScannerModule.m in Sources */,
+				42BC2E851A88273F00A22376 /* FTHLiveMusicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

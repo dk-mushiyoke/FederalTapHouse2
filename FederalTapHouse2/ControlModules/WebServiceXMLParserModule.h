@@ -20,17 +20,17 @@
 
 
 @class BeerObject;
+@class BeerDictionary;
 
 /* Module interface */
 @interface WebServiceXMLParserModule : NSObject <NSXMLParserDelegate> {
     
     NSMutableString *currentElement;
-    NSMutableArray *beerListMutable;
     BeerObject *currentBeer;
 }
 
 @property (nonatomic, strong)   NSData *data;
-@property (nonatomic, readonly) NSArray *beerList;
+@property (nonatomic, readonly) BeerDictionary *beerDictionary;
 
 - (instancetype)init;
 - (instancetype)initWithData:(NSData *)d;
