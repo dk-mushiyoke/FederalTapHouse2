@@ -1,18 +1,18 @@
 //
-//  FTHMenuViewController.m
+//  FTHRewardViewController.m
 //  FederalTapHouse2
 //
-//  Created by Merritt Tidwell on 2/6/15.
+//  Created by Merritt Tidwell on 2/8/15.
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import "FTHMenuViewController.h"
+#import "FTHRewardViewController.h"
 
-@interface FTHMenuViewController ()
+@interface FTHRewardViewController ()
 
 @end
 
-@implementation FTHMenuViewController
+@implementation FTHRewardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

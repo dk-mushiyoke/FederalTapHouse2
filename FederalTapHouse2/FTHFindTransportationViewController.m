@@ -1,18 +1,18 @@
 //
-//  FTHInviteFriendsViewController.m
+//  FTHFindTransportationViewController.m
 //  FederalTapHouse2
 //
-//  Created by Merritt Tidwell on 2/6/15.
+//  Created by Merritt Tidwell on 2/8/15.
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import "FTHInviteFriendsViewController.h"
+#import "FTHFindTransportationViewController.h"
 
-@interface FTHInviteFriendsViewController ()
+@interface FTHFindTransportationViewController ()
 
 @end
 
-@implementation FTHInviteFriendsViewController
+@implementation FTHFindTransportationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,18 +1,18 @@
 //
-//  FTHContactViewController.m
+//  FTHOnMapViewController.m
 //  FederalTapHouse2
 //
-//  Created by Merritt Tidwell on 2/6/15.
+//  Created by Merritt Tidwell on 2/8/15.
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import "FTHContactViewController.h"
+#import "FTHOnMapViewController.h"
 
-@interface FTHContactViewController ()
+@interface FTHOnMapViewController ()
 
 @end
 
-@implementation FTHContactViewController
+@implementation FTHOnMapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

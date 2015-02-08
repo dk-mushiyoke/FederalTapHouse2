@@ -1,18 +1,18 @@
 //
-//  FTHHomePageViewController.m
+//  FTHLiveMusicViewController.m
 //  FederalTapHouse2
 //
-//  Created by Merritt Tidwell on 2/6/15.
+//  Created by Merritt Tidwell on 2/8/15.
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import "FTHHomePageViewController.h"
+#import "FTHLiveMusicViewController.h"
 
-@interface FTHHomePageViewController ()
+@interface FTHLiveMusicViewController ()
 
 @end
 
-@implementation FTHHomePageViewController
+@implementation FTHLiveMusicViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
