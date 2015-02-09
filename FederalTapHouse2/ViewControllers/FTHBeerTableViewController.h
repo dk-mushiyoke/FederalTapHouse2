@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebServiceConnectionModule.h"
 
-@interface FTHBeerTableViewController : UITableViewController
+@interface FTHBeerTableViewController : UITableViewController <WebServiceConnectionDidFinishSignal> {
+    UIActivityIndicatorView *spinner;
+    UIBarButtonItem *reloadButton;
+}
+
+@property (nonatomic, strong) NSArray *beerList;
+@property (nonatomic, copy) NSString *beerCategory;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FTHBeerDetailViewController.h"
+#import "BeerObject.h"
 
 @interface FTHBeerDetailViewController ()
 
@@ -15,8 +16,18 @@
 @implementation FTHBeerDetailViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.beerName.text = self.beer.beer_name;
+    self.beerLocation.text = self.beer.beer_location;
+    self.beerABV.text = self.beer.beer_ABV;
+    self.beerSize.text = self.beer.beer_size;
+    self.beerPrice.text = self.beer.beer_price;
 }
 
 - (void)didReceiveMemoryWarning {
