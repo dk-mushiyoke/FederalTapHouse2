@@ -29,7 +29,7 @@
     self = [super init];
     
     if (self) {
-        self.beerDictionary = [NSMutableDictionary dictionary];
+        _beerDictionary = [NSMutableDictionary dictionary];
         if (beerArray != nil)
             for (BeerObject *b in beerArray)
                 [self addBeer:b];
@@ -38,36 +38,35 @@
     return self;
 }
 
-/* Returns the dictionary */
-- (NSDictionary *)beerDictionary {
-    
-    return [NSDictionary dictionaryWithDictionary:self.beerDictionary];
+/* Return count of categories */
+- (NSUInteger)count {
+    return _beerDictionary.count;
 }
 
 /* Returns the array of all keys */
-- (NSArray *)allKeys {
+- (NSArray *)allCategories {
     
-    return [self.beerDictionary allKeys];
+    return [_beerDictionary allKeys];
 }
 
 /* Add beer to the dictionary with category name as key */
 - (void)addBeer:(BeerObject *)beer {
     
     NSString *category = beer.beer_category_name;
-    NSArray *categoryBeerList = [self.beerDictionary objectForKey:category];
+    NSArray *categoryBeerList = [_beerDictionary objectForKey:category];
     if (categoryBeerList == nil) {
-        [self.beerDictionary setObject:[NSArray arrayWithObject:beer] forKey:category];
+        [_beerDictionary setObject:[NSArray arrayWithObject:beer] forKey:category];
     }
     else {
         categoryBeerList = [categoryBeerList arrayByAddingObject:beer];
-        [self.beerDictionary setObject:categoryBeerList forKey:category];
+        [_beerDictionary setObject:categoryBeerList forKey:category];
     }
 }
 
 /* Returns the array of beer for given category name */
 - (NSArray *)beerListForCategory:(NSString *)category {
     
-    return [self.beerDictionary objectForKey:category];
+    return [_beerDictionary objectForKey:category];
 }
 
 @end

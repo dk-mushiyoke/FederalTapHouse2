@@ -21,7 +21,8 @@
 
 - (instancetype)init;
 - (instancetype)initWithBeers:(NSArray *)beerArray;
-- (NSArray *)allKeys;
+- (NSArray *)allCategories;
+- (NSUInteger)count;
 - (void)addBeer:(BeerObject *)beer;
 - (NSArray *)beerListForCategory:(NSString *)category;
 

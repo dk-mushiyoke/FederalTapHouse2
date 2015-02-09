@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-//#import "BeerDictionary.h"
-//#import "WebServiceConnectionModule.h"
-//#import "WebServiceXMLParserModule.h"
+#import "BeerDictionary.h"
+#import "WebServiceConnectionModule.h"
+#import "WebServiceXMLParserModule.h"
 
-@interface FederalTapHouse2Tests : XCTestCase// <WebServiceConnectionDidFinishSignal>
+@interface FederalTapHouse2Tests : XCTestCase <WebServiceConnectionDidFinishSignal>
 
 @end
 
@@ -28,7 +28,7 @@
     [super tearDown];
 }
 
-/*- (void)testConnectionModule {
+- (void)testConnectionModule {
     // This is an example of a functional test case.
     // XCTAssert(YES, @"Pass");
     WebServiceConnectionModule *con = [[WebServiceConnectionModule alloc]
@@ -36,7 +36,7 @@
                                        method:@"getBeerList"];
     [con establishConnection];
     [con setSignalDelegate:self];
-}*/
+}
 
 /*- (void)testBeerList {
     
@@ -63,15 +63,15 @@
     }];
 }
 
-/*#pragma mark - Connection Did Finish
+#pragma mark - Connection Did Finish
 
 - (void)signalFrom:(id)sender {
     WebServiceConnectionModule *con = sender;
     WebServiceXMLParserModule *par = [[WebServiceXMLParserModule alloc] initWithData:con.responseData];
     [par startParsing];
-    for (BeerObject *b in par.beerList) {
-        NSLog(@"%@", b);
+    for (NSString *cat in [par.beerDictionary allCategories]) {
+        NSLog(@"Category - %@: %@", cat, [par.beerDictionary beerListForCategory:cat]);
     }
-}*/
+}
 
 @end
