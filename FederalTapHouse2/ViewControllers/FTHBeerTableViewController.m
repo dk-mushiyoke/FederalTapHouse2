@@ -68,9 +68,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    /*UILabel *categoryLabel = (UILabel *)[cell viewWithTag:1];*/
+    UILabel *categoryLabel = (UILabel *)[cell viewWithTag:1];
     BeerObject *beer = self.beerList[indexPath.row];
-    cell.textLabel.text = beer.beer_name;
+    categoryLabel.text = beer.beer_name;
     
     return cell;
 }

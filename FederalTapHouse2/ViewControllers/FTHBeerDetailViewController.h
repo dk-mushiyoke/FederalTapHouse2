@@ -14,9 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 @property (weak, nonatomic) IBOutlet UILabel *beerName;
-@property (weak, nonatomic) IBOutlet UILabel *beerLocation;
-@property (weak, nonatomic) IBOutlet UILabel *beerABV;
-@property (weak, nonatomic) IBOutlet UILabel *beerSize;
+@property (weak, nonatomic) IBOutlet UILabel *beerSizeAndABV;
 @property (weak, nonatomic) IBOutlet UILabel *beerPrice;
 @property (weak, nonatomic) IBOutlet UITextView *beerDescription;
 @property (nonatomic, strong) BeerObject *beer;

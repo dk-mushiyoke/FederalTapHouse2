@@ -23,11 +23,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    NSString *beerSnA = [NSString stringWithFormat:@"Size: %@\n%@", self.beer.beer_size, self.beer.beer_ABV];
+    NSString *beerP = [NSString stringWithFormat:@"Price: $%@", self.beer.beer_price];
     self.beerName.text = self.beer.beer_name;
-    self.beerLocation.text = self.beer.beer_location;
-    self.beerABV.text = self.beer.beer_ABV;
-    self.beerSize.text = self.beer.beer_size;
-    self.beerPrice.text = self.beer.beer_price;
+    self.beerSizeAndABV.text = beerSnA;
+    self.beerPrice.text = beerP;
+    self.beerDescription.text = self.beer.beer_description;
 }
 
 - (void)didReceiveMemoryWarning {

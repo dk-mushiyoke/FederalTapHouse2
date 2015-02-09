@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421335011A8957110042B8F9 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 421334F71A8957110042B8F9 /* Contents.json */; };
+		421335021A8957110042B8F9 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 421334F91A8957110042B8F9 /* Contents.json */; };
+		421335031A8957110042B8F9 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 421334FA1A8957110042B8F9 /* images.jpg */; };
+		421335041A8957110042B8F9 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 421334FC1A8957110042B8F9 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png */; };
+		421335051A8957110042B8F9 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 421334FD1A8957110042B8F9 /* Contents.json */; };
+		421335061A8957110042B8F9 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 421334FF1A8957110042B8F9 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png */; };
+		421335071A8957110042B8F9 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 421335001A8957110042B8F9 /* Contents.json */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
 		427FB4F81A85113700C8F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F61A85113700C8F54F /* Main.storyboard */; };
@@ -50,6 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421334F71A8957110042B8F9 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		421334F91A8957110042B8F9 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		421334FA1A8957110042B8F9 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+		421334FC1A8957110042B8F9 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png; sourceTree = "<group>"; };
+		421334FD1A8957110042B8F9 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		421334FF1A8957110042B8F9 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png; sourceTree = "<group>"; };
+		421335001A8957110042B8F9 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		427FB4E91A85113700C8F54F /* FederalTapHouse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTapHouse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB4ED1A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427FB4EE1A85113700C8F54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +143,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421334F61A8957110042B8F9 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				421334F71A8957110042B8F9 /* Contents.json */,
+			);
+			name = AppIcon.appiconset;
+			path = Images.xcassets/AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		421334F81A8957110042B8F9 /* background.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				421334F91A8957110042B8F9 /* Contents.json */,
+				421334FA1A8957110042B8F9 /* images.jpg */,
+			);
+			name = background.imageset;
+			path = Images.xcassets/background.imageset;
+			sourceTree = "<group>";
+		};
+		421334FB1A8957110042B8F9 /* flame.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				421334FC1A8957110042B8F9 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png */,
+				421334FD1A8957110042B8F9 /* Contents.json */,
+			);
+			name = flame.imageset;
+			path = Images.xcassets/flame.imageset;
+			sourceTree = "<group>";
+		};
+		421334FE1A8957110042B8F9 /* logo.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				421334FF1A8957110042B8F9 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png */,
+				421335001A8957110042B8F9 /* Contents.json */,
+			);
+			name = logo.imageset;
+			path = Images.xcassets/logo.imageset;
+			sourceTree = "<group>";
+		};
 		427FB4E01A85113700C8F54F = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +219,10 @@
 		427FB4EC1A85113700C8F54F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				421334F61A8957110042B8F9 /* AppIcon.appiconset */,
+				421334F81A8957110042B8F9 /* background.imageset */,
+				421334FB1A8957110042B8F9 /* flame.imageset */,
+				421334FE1A8957110042B8F9 /* logo.imageset */,
 				427FB4ED1A85113700C8F54F /* Info.plist */,
 				427FB4EE1A85113700C8F54F /* main.m */,
 			);
@@ -338,9 +395,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421335021A8957110042B8F9 /* Contents.json in Resources */,
 				427FB4F81A85113700C8F54F /* Main.storyboard in Resources */,
 				427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */,
+				421335051A8957110042B8F9 /* Contents.json in Resources */,
+				421335061A8957110042B8F9 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png in Resources */,
+				421335071A8957110042B8F9 /* Contents.json in Resources */,
 				427FB4FA1A85113700C8F54F /* Images.xcassets in Resources */,
+				421335011A8957110042B8F9 /* Contents.json in Resources */,
+				421335031A8957110042B8F9 /* images.jpg in Resources */,
+				421335041A8957110042B8F9 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
