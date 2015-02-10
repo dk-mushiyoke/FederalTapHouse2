@@ -19,19 +19,19 @@
 /* Default constructor */
 - (instancetype)init {
 
-    self = [self initWithBeers:nil];
+    self = [self initWithBeerList:nil];
     return self;
 }
 
 /* Designated constructor with an array of beerObjects */
-- (instancetype)initWithBeers:(NSArray *)beerArray {
+- (instancetype)initWithBeerList:(NSArray *)beerList {
     
     self = [super init];
     
     if (self) {
-        _beerDictionary = [NSMutableDictionary dictionary];
-        if (beerArray != nil)
-            for (BeerObject *b in beerArray)
+        beerDictionary = [NSMutableDictionary dictionary];
+        if (beerList)
+            for (BeerObject *b in beerList)
                 [self addBeer:b];
     }
     
@@ -40,33 +40,33 @@
 
 /* Return count of categories */
 - (NSUInteger)count {
-    return _beerDictionary.count;
+    return beerDictionary.count;
 }
 
-/* Returns the array of all keys */
+/* Returns the sorted array of all categories (allKeys) */
 - (NSArray *)allCategories {
     
-    return [_beerDictionary allKeys];
+    return [[beerDictionary allKeys] sortedArrayUsingSelector:@selector(compare:)];
 }
 
 /* Add beer to the dictionary with category name as key */
 - (void)addBeer:(BeerObject *)beer {
     
     NSString *category = beer.beer_category_name;
-    NSArray *categoryBeerList = [_beerDictionary objectForKey:category];
+    NSArray *categoryBeerList = [beerDictionary objectForKey:category];
     if (categoryBeerList == nil) {
-        [_beerDictionary setObject:[NSArray arrayWithObject:beer] forKey:category];
+        [beerDictionary setObject:[NSArray arrayWithObject:beer] forKey:category];
     }
     else {
         categoryBeerList = [categoryBeerList arrayByAddingObject:beer];
-        [_beerDictionary setObject:categoryBeerList forKey:category];
+        [beerDictionary setObject:categoryBeerList forKey:category];
     }
 }
 
-/* Returns the array of beer for given category name */
+/* Returns the sorted array of beer for given category name (objectForKey) */
 - (NSArray *)beerListForCategory:(NSString *)category {
     
-    return [_beerDictionary objectForKey:category];
+    return [[beerDictionary objectForKey:category] sortedArrayUsingSelector:@selector(compare:)];
 }
 
 @end

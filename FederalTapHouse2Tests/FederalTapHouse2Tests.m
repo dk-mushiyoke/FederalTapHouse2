@@ -10,7 +10,8 @@
 #import <XCTest/XCTest.h>
 #import "BeerDictionary.h"
 #import "WebServiceConnectionModule.h"
-#import "WebServiceXMLParserModule.h"
+#import "WebServiceXMLBeerParserModule.h"
+#import "WebServiceXMLLoginParserModule.h"
 
 @interface FederalTapHouse2Tests : XCTestCase <WebServiceConnectionDidFinishSignal>
 
@@ -28,33 +29,42 @@
     [super tearDown];
 }
 
+//- (void)testConnectionModule {
+//    // This is an example of a functional test case.
+//    // XCTAssert(YES, @"Pass");
+//    WebServiceConnectionModule *con = [[WebServiceConnectionModule alloc]
+//                                       initWithUrl:@"http://www.softwaremerchant.com/onlinecourse.asmx"
+//                                       method:@"getBeerList"];
+//    [con establishConnection];
+//    [con setSignalDelegate:self];
+//}
+
 - (void)testConnectionModule {
     // This is an example of a functional test case.
     // XCTAssert(YES, @"Pass");
     WebServiceConnectionModule *con = [[WebServiceConnectionModule alloc]
-                                       initWithUrl:@"http://www.softwaremerchant.com/onlinecourse.asmx"
-                                       method:@"getBeerList"];
+                                       initWithUrl:@"http://www.softwaremerchant.com/onlinecourse.asmx" Username:@"Masih" Password:@"masih" method:@"IsUserValid"];
     [con establishConnection];
     [con setSignalDelegate:self];
 }
 
 /*- (void)testBeerList {
-    
-    BeerDictionary *list = [[BeerDictionary alloc] init];
-    BeerObject *beer1 = [[BeerObject alloc] initWithName:@"Beer1" location:@"" abv:@"" size:@"" price:@""
-                                             description:@"test beer" category:@"Category 1" date:@""];
-    BeerObject *beer2 = [[BeerObject alloc] initWithName:@"Beer2" location:@"" abv:@"" size:@"" price:@""
-                                             description:@"test beer" category:@"Category 1" date:@""];
-    BeerObject *beer3 = [[BeerObject alloc] initWithName:@"Beer3" location:@"" abv:@"" size:@"" price:@""
-                                             description:@"test beer" category:@"Category 3" date:@""];
-    [list addBeer:beer1];
-    NSLog(@"%@", list);
-    [list addBeer:beer2];
-    NSLog(@"%@", list);
-    [list addBeer:beer3];
-    NSLog(@"%@", list);
-    NSLog(@"%@", [list beerListForCategory:@"Category 1"]);
-}*/
+ 
+ BeerDictionary *list = [[BeerDictionary alloc] init];
+ BeerObject *beer1 = [[BeerObject alloc] initWithName:@"Beer1" location:@"" abv:@"" size:@"" price:@""
+ description:@"test beer" category:@"Category 1" date:@""];
+ BeerObject *beer2 = [[BeerObject alloc] initWithName:@"Beer2" location:@"" abv:@"" size:@"" price:@""
+ description:@"test beer" category:@"Category 1" date:@""];
+ BeerObject *beer3 = [[BeerObject alloc] initWithName:@"Beer3" location:@"" abv:@"" size:@"" price:@""
+ description:@"test beer" category:@"Category 3" date:@""];
+ [list addBeer:beer1];
+ NSLog(@"%@", list);
+ [list addBeer:beer2];
+ NSLog(@"%@", list);
+ [list addBeer:beer3];
+ NSLog(@"%@", list);
+ NSLog(@"%@", [list beerListForCategory:@"Category 1"]);
+ }*/
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
@@ -63,15 +73,25 @@
     }];
 }
 
+//#pragma mark - Connection Did Finish
+//
+//- (void)signalFrom:(id)sender {
+//    WebServiceConnectionModule *con = sender;
+//    WebServiceXMLBeerParserModule *par = [[WebServiceXMLBeerParserModule alloc] initWithData:con.responseData];
+//    [par startParsing];
+//    for (NSString *cat in [par.beerDictionary allCategories]) {
+//        NSLog(@"Category - %@: %@", cat, [par.beerDictionary beerListForCategory:cat]);
+//    }
+//}
+
 #pragma mark - Connection Did Finish
 
 - (void)signalFrom:(id)sender {
     WebServiceConnectionModule *con = sender;
-    WebServiceXMLParserModule *par = [[WebServiceXMLParserModule alloc] initWithData:con.responseData];
+    WebServiceXMLLoginParserModule *par = [[WebServiceXMLLoginParserModule alloc] initWithData:con.responseData];
     [par startParsing];
-    for (NSString *cat in [par.beerDictionary allCategories]) {
-        NSLog(@"Category - %@: %@", cat, [par.beerDictionary beerListForCategory:cat]);
-    }
+    
+    
 }
 
 @end

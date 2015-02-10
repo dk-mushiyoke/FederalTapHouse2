@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nh3-il-X0O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nh3-il-X0O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,21 +20,32 @@
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caS-Tg-7xu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZZs-Ga-a04" id="o7g-Fp-XpS"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="caS-Tg-7xu" firstAttribute="top" secondItem="vld-UO-IBJ" secondAttribute="top" id="HNK-Ug-mZO"/>
                             <constraint firstItem="caS-Tg-7xu" firstAttribute="leading" secondItem="vld-UO-IBJ" secondAttribute="leading" id="RWf-l0-hSa"/>
+                            <constraint firstItem="caS-Tg-7xu" firstAttribute="top" secondItem="djZ-Qn-wUh" secondAttribute="bottom" id="Yi6-9l-G68"/>
                             <constraint firstAttribute="trailing" secondItem="caS-Tg-7xu" secondAttribute="trailing" id="arp-eR-z4m"/>
                             <constraint firstItem="J8D-LH-rh7" firstAttribute="top" secondItem="caS-Tg-7xu" secondAttribute="bottom" id="e6P-Vb-tX6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HNK-Ug-mZO"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryq-jz-iol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997.5" y="645"/>
+            <point key="canvasLocation" x="997" y="645"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="y6C-Bq-nO6">
@@ -644,9 +656,11 @@
             <point key="canvasLocation" x="1815" y="-921"/>
         </scene>
         <!--Log In View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="a0J-Kc-b4P">
             <objects>
                 <viewController id="VL9-qI-kxl" customClass="FTHLogInViewController" sceneMemberID="viewController">
+                <viewController id="VL9-qI-kxl" customClass="FTHLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rBb-Ii-GrI"/>
                         <viewControllerLayoutGuide type="bottom" id="27c-Ez-4TD"/>
@@ -669,9 +683,19 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="loginPressed:" destination="VL9-qI-kxl" eventType="touchUpInside" id="z6e-TC-Tyg"/>
                                             <segue destination="X9S-I0-Hdn" kind="show" identifier="showHome" id="jCr-D6-8iT"/>
                                         </connections>
                                     </button>
+<<<<<<< HEAD
+=======
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kz9-36-Ig0">
+                                        <rect key="frame" x="66" y="192" width="230" height="32"/>
+                                        <color key="backgroundColor" red="0.88627457620000005" green="0.88627457620000005" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+>>>>>>> e3c1322258bf37a6104469206abaa9a48667905b
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USA-nu-Lqx">
                                         <rect key="frame" x="4" y="177" width="56" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
@@ -718,6 +742,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="UOp-WG-0hi"/>
+                    <connections>
+                        <outlet property="passwordField" destination="kz9-36-Ig0" id="Kds-Bm-WnC"/>
+                        <outlet property="usernameField" destination="IPu-7d-ig1" id="mZ6-Yh-nAU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsE-Pq-01B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
