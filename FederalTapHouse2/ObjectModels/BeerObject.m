@@ -14,18 +14,30 @@
 #import "BeerObject.h"
 
 
+@interface BeerObject()
+
+/* Again if the float values are needed
+ 
+ @property (nonatomic, readwrite) float beer_ABV_value;
+ @property (nonatomic, readwrite) float beer_size_value;
+ @property (nonatomic, readwrite) float beer_price_value;
+ */
+ 
+@end
+
+
 @implementation BeerObject
 
 /* Default constructor */
 - (instancetype)init {
-    self = [self initWithName:@"Test Beer"
-                     location:@"Nowheresville"
-                          abv:@"ABV 0.0"
-                         size:@"1OZ"
-                        price:@"1.00000"
-                  description:@"This is a test beer"
-                     category:@"Test"
-                         date:@"Just now"];
+    self = [self initWithName:@"Sample Beer"
+                     location:@""
+                          abv:@""
+                         size:@""
+                        price:@""
+                  description:@""
+                     category:@"Default"
+                         date:@""];
     return self;
 }
 
@@ -50,6 +62,11 @@
         self.beer_description = ds;
         self.beer_category_name = c;
         self.beer_date_added = dt;
+        /* Can be added back if these properties are needed
+         [self parseABV:a];
+         [self parseSize:s];
+         [self parsePrice:p];
+         */
     }
     
     return self;
@@ -63,23 +80,44 @@
             "Beer Loacation: %@\n\n"
             "Beer ABV: %@\n\n"
             "Beer Size: %@\n\n"
-            "Beer Price: %.2f\n\n"
+            "Beer Price: %@\n\n"
             "Beer Description: %@\n\n"
             "Beer Category Name: %@\n\n"
             "Beer Date Added: %@\n\n",
             self.beer_name, self.beer_location, self.beer_ABV, self.beer_size,
-            self.beer_price_value, self.beer_description, self.beer_category_name, self.beer_date_added];
+            self.beer_price, self.beer_description, self.beer_category_name, self.beer_date_added];
 }
 
-/* Returns the float value of price */
-- (float)beer_price_value {
-    return [self.beer_price floatValue];
+/* Override KVC if parsing to number is needed
+ 
+- (void)setValue:(id)value forKey:(NSString *)key {
+    
+    if ([key isEqualToString:@"beer_ABV"])
+        [self parseABV:value];
+    else if ([key isEqualToString:@"beer_size"])
+        [self parseSize:value];
+    else if ([key isEqualToString:@"beer_price"])
+        [self parsePrice:value];
+    [super setValue:value forKey:key];
 }
 
-/* Returns a comparison result between beer names */
-- (NSComparisonResult)compare:(BeerObject *)beer {
-
-    return [self.beer_name compare:beer.beer_name];
+- (void)parseABV:(NSString *)abvStr {
+    
+    NSArray *abvArray = [abvStr componentsSeparatedByString:@" "];
+    if ([abvArray count] > 1)
+        self.beer_ABV_value = [abvArray[1] floatValue];
 }
+
+- (void)parseSize:(NSString *)sizeStr {
+    
+    self.beer_size_value = [sizeStr floatValue];
+}
+
+- (void)parsePrice:(NSString *)priceStr {
+    
+    self.beer_price_value = [priceStr floatValue];
+}
+ */
+
 
 @end

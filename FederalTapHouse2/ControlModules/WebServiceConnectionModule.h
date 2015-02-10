@@ -40,12 +40,8 @@
 @property (nonatomic, copy)     NSString *method;
 @property (nonatomic, readonly) NSData *responseData;
 
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSString *password;
-
 - (instancetype)init;
 - (instancetype)initWithUrl:(NSString *)u method:(NSString *)m;
--(instancetype)initWithUrl:(NSString *)u Username:(NSString *)username Password:(NSString *)password method:(NSString *)m;
 - (void)establishConnection;
 
 @end

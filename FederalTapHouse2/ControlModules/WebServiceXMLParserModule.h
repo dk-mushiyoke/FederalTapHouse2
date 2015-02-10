@@ -23,7 +23,7 @@
 @class BeerDictionary;
 
 /* Module interface */
-@interface WebServiceXMLBeerParserModule : NSObject <NSXMLParserDelegate> {
+@interface WebServiceXMLParserModule : NSObject <NSXMLParserDelegate> {
     
     NSMutableString *currentElement;
     BeerObject *currentBeer;

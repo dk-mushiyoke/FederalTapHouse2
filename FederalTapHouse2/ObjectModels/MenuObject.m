@@ -1,5 +1,5 @@
 //
-//  EventObject.h
+//  MenuObject.m
 //  FederalTapHouse2
 //
 //  Created by Di Kong on 2/6/15.
@@ -7,12 +7,12 @@
 //
 
 /**
- * This class models the event object
+ * Implementation of menu object
  *
  */
 
-#import <Foundation/Foundation.h>
+#import "MenuObject.h"
 
-@interface EventObject : NSObject
+@implementation MenuObject
 
 @end

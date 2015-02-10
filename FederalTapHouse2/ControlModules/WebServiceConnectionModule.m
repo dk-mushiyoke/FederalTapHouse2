@@ -12,8 +12,7 @@
  */
 
 #import "WebServiceConnectionModule.h"
-#import "WebServiceXMLLoginParserModule.h"
-#import "WebServiceXMLBeerParserModule.h"
+#import "WebServiceXMLParserModule.h"
 
 
 @interface WebServiceConnectionModule()
@@ -32,24 +31,17 @@
     return self;
 }
 
-/* Designated constructor with username and password, url, and method */
--(instancetype)initWithUrl:(NSString *)u Username:(NSString *)username Password:(NSString *)password method:(NSString *)m  {
+/* Designated constructor with url and method */
+- (instancetype)initWithUrl:(NSString *)u method:(NSString *)m {
+    
     self = [super init];
     
     if (self) {
-        self.username = username;
-        self.password = password;
         self.url = u;
         self.method = m;
         responseDataMutable = [NSMutableData data];
     }
-    return self;
-}
-
-/* Constructor with url and method */
-- (instancetype)initWithUrl:(NSString *)u method:(NSString *)m {
     
-    self = [self initWithUrl:u Username:nil Password:nil method:m];
     return self;
 }
 
@@ -78,36 +70,16 @@
 /* Returns the envelope XML string with method embedded */
 - (NSString *)generateEnvelope {
     
-    // cases for different methods
-    // Available methods would be:
-    // - getBeerList
-    // - IsUserValid
-    // - ...
-    if ([_method isEqualToString:@"getBeerList"]) {
-        
-        return @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
-        "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
-        "                 xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\""
-        "                 xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n"
-        "  <soap12:Body>\n"
-        "    <getBeerList xmlns=\"http://tempuri.org/\" />\n"
-        "  </soap12:Body>\n"
-        "</soap12:Envelope>\n";
-        
-    } else if ([_method isEqualToString:@"IsUserValid"]) {
-        
-        return [NSString stringWithFormat:
-                @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
-                "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n"
-                "<soap12:Body>\n"
-                "<IsUserValid xmlns=\"http://tempuri.org/\">\n"
-                "<UserID>%@</UserID>\n"
-                "<Password>%@</Password>\n"
-                "</IsUserValid>\n"
-                "</soap12:Body>\n"
-                "</soap12:Envelope>\n",_username, _password];
-    }
-    return nil;
+    return [NSString stringWithFormat:
+            @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+            "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
+            "                 xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\""
+            "                 xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n"
+            "  <soap12:Body>\n"
+            "    <%@ xmlns=\"http://tempuri.org/\" />\n"
+            "  </soap12:Body>\n"
+            "</soap12:Envelope>\n",
+            self.method];
 }
 
 
@@ -142,9 +114,9 @@
     self.responseData = [NSData dataWithData:responseDataMutable];
     
     /* NSLog output if needed */
-    
-//    NSString *dataString = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
-//    NSLog(@"WebServiceConnection returned data successfully.\n\n%@", dataString);
+    /*
+     NSString *dataString = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
+     NSLog(@"WebServiceConnection returned data successfully.\n\n%@", dataString);*/
     
     [self.signalDelegate signalFrom:self];
 }

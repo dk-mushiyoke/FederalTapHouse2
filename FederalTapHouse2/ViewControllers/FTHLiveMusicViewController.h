@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FTHLiveMusicViewController : UIViewController <UIWebViewDelegate>
-
-@property (nonatomic, weak) IBOutlet UIWebView *webView;
+@interface FTHLiveMusicViewController : UIViewController
 
 @end
