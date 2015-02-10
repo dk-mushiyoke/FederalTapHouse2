@@ -43,5 +43,6 @@
                  description:(NSString *)ds
                     category:(NSString *)c
                         date:(NSString *)dt;
+- (NSComparisonResult)compare:(BeerObject *)beer;
 
 @end

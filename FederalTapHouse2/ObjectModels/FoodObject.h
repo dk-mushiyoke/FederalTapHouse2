@@ -15,4 +15,13 @@
 
 @interface FoodObject : NSObject
 
+@property (nonatomic, copy) NSString *foodName;
+@property (nonatomic, copy) NSString *foodDescription;
+@property (nonatomic, copy) NSString *foodPrice;
+@property (nonatomic, copy) NSString *foodFirstCategory;
+@property (nonatomic, copy) NSString *foodSecondCategory;
+
+- (instancetype)init;
+- (instancetype)initWithName:(NSString *)name description:(NSString *) price: firstCategory: secondCategory:
+
 @end

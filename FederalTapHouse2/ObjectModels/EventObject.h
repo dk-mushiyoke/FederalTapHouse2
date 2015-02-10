@@ -13,6 +13,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface EventObject : NSObject
+@interface EventObject : NSObject {
+    NSMutableArray *rsvpList;
+}
+
+@property (nonatomic, copy)     NSString *eventTime;
+@property (nonatomic, copy)     NSString *eventPlace;
+@property (nonatomic, copy)     NSString *eventDescription;
+@property (nonatomic, readonly) NSArray *eventRSVPList;
+
+- (instancetype)init;
+- (instancetype)initWithTime:(NSString *)time place:(NSString *)place description:(NSString *)description;
+- (void)addRSVP:(NSString *)name;
+- (BOOL)findRSVP:(NSString *)name;
 
 @end

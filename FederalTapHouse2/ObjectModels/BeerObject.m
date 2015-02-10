@@ -88,6 +88,12 @@
             self.beer_price, self.beer_description, self.beer_category_name, self.beer_date_added];
 }
 
+/* Returns a comparison result between beer names */
+- (NSComparisonResult)compare:(BeerObject *)beer {
+
+    return [self.beer_name compare:beer.beer_name];
+}
+
 /* Override KVC if parsing to number is needed
  
 - (void)setValue:(id)value forKey:(NSString *)key {

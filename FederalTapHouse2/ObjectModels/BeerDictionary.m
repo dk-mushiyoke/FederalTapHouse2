@@ -43,10 +43,10 @@
     return _beerDictionary.count;
 }
 
-/* Returns the array of all keys */
+/* Returns the sorted array of all categories (allKeys) */
 - (NSArray *)allCategories {
     
-    return [_beerDictionary allKeys];
+    return [[_beerDictionary allKeys] sortedArrayUsingSelector:@selector(compare:)];
 }
 
 /* Add beer to the dictionary with category name as key */
@@ -63,10 +63,10 @@
     }
 }
 
-/* Returns the array of beer for given category name */
+/* Returns the sorted array of beer for given category name (objectForKey) */
 - (NSArray *)beerListForCategory:(NSString *)category {
     
-    return [_beerDictionary objectForKey:category];
+    return [[_beerDictionary objectForKey:category] sortedArrayUsingSelector:@selector(compare:)];
 }
 
 @end
