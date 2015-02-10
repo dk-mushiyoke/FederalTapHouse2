@@ -11,19 +11,19 @@
  *
  */
 
-#import "WebServiceXMLParserModule.h"
+#import "WebServiceXMLBeerParserModule.h"
 #import "BeerObject.h"
 #import "BeerDictionary.h"
 
 
-@interface WebServiceXMLParserModule()
+@interface WebServiceXMLBeerParserModule()
 
 @property (nonatomic, readwrite) BeerDictionary *beerDictionary;
 
 @end
 
 
-@implementation WebServiceXMLParserModule
+@implementation WebServiceXMLBeerParserModule
 
 /* Default constructor */
 - (instancetype)init {
