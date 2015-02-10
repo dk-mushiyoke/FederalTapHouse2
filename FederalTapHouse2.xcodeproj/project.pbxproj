@@ -37,7 +37,7 @@
 		42BC2EAB1A88277C00A22376 /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E9C1A88277C00A22376 /* BeerObject.m */; };
 		42BC2EAC1A88277C00A22376 /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E9E1A88277C00A22376 /* EventObject.m */; };
 		42BC2EAD1A88277C00A22376 /* FoodObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2EA01A88277C00A22376 /* FoodObject.m */; };
-		42BC2EAE1A88277C00A22376 /* MenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2EA21A88277C00A22376 /* MenuObject.m */; };
+		42BC2EAE1A88277C00A22376 /* MenuDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2EA21A88277C00A22376 /* MenuDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,8 +110,8 @@
 		42BC2E9E1A88277C00A22376 /* EventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventObject.m; sourceTree = "<group>"; };
 		42BC2E9F1A88277C00A22376 /* FoodObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodObject.h; sourceTree = "<group>"; };
 		42BC2EA01A88277C00A22376 /* FoodObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodObject.m; sourceTree = "<group>"; };
-		42BC2EA11A88277C00A22376 /* MenuObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuObject.h; sourceTree = "<group>"; };
-		42BC2EA21A88277C00A22376 /* MenuObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuObject.m; sourceTree = "<group>"; };
+		42BC2EA11A88277C00A22376 /* MenuDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDictionary.h; sourceTree = "<group>"; };
+		42BC2EA21A88277C00A22376 /* MenuDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,8 +257,8 @@
 				42BC2E9E1A88277C00A22376 /* EventObject.m */,
 				42BC2E9F1A88277C00A22376 /* FoodObject.h */,
 				42BC2EA01A88277C00A22376 /* FoodObject.m */,
-				42BC2EA11A88277C00A22376 /* MenuObject.h */,
-				42BC2EA21A88277C00A22376 /* MenuObject.m */,
+				42BC2EA11A88277C00A22376 /* MenuDictionary.h */,
+				42BC2EA21A88277C00A22376 /* MenuDictionary.m */,
 			);
 			path = ObjectModels;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */,
-				42BC2EAE1A88277C00A22376 /* MenuObject.m in Sources */,
+				42BC2EAE1A88277C00A22376 /* MenuDictionary.m in Sources */,
 				42BC2E881A88273F00A22376 /* FTHRewardViewController.m in Sources */,
 				42BC2E7F1A88273F00A22376 /* FTHBeerCategoryTableViewController.m in Sources */,
 				42BC2EA71A88277C00A22376 /* UserLoginRegisterModule.m in Sources */,

@@ -15,12 +15,12 @@
 #import "BeerObject.h"
 
 
-@interface BeerDictionary : NSObject
-
-@property (nonatomic, strong) NSMutableDictionary *beerDictionary;
+@interface BeerDictionary : NSObject {
+    NSMutableDictionary *beerDictionary;
+}
 
 - (instancetype)init;
-- (instancetype)initWithBeers:(NSArray *)beerArray;
+- (instancetype)initWithBeerList:(NSArray *)beerList;
 - (NSArray *)allCategories;
 - (NSUInteger)count;
 - (void)addBeer:(BeerObject *)beer;

@@ -17,13 +17,14 @@
     NSMutableArray *rsvpList;
 }
 
+@property (nonatomic, copy)     NSString *eventName;
 @property (nonatomic, copy)     NSString *eventTime;
 @property (nonatomic, copy)     NSString *eventPlace;
 @property (nonatomic, copy)     NSString *eventDescription;
 @property (nonatomic, readonly) NSArray *eventRSVPList;
 
 - (instancetype)init;
-- (instancetype)initWithTime:(NSString *)time place:(NSString *)place description:(NSString *)description;
+- (instancetype)initWithName:(NSString *)name time:(NSString *)time place:(NSString *)place description:(NSString *)dscrptn;
 - (void)addRSVP:(NSString *)name;
 - (BOOL)findRSVP:(NSString *)name;
 

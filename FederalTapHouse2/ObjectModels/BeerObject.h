@@ -20,6 +20,7 @@
 @property (nonatomic, copy)  NSString *beer_ABV;
 @property (nonatomic, copy)  NSString *beer_size;
 @property (nonatomic, copy)  NSString *beer_price;
+@property (nonatomic, readonly) float beer_price_value;
 @property (nonatomic, copy)  NSString *beer_description;
 @property (nonatomic, copy)  NSString *beer_category_name;
 @property (nonatomic, copy)  NSString *beer_date_added;
@@ -29,7 +30,6 @@
  
  @property (nonatomic, readonly) float beer_ABV_value;
  @property (nonatomic, readonly) float beer_size_value;
- @property (nonatomic, readonly) float beer_price_value;
  
  */
 

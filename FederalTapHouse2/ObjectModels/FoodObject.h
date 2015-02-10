@@ -18,10 +18,9 @@
 @property (nonatomic, copy) NSString *foodName;
 @property (nonatomic, copy) NSString *foodDescription;
 @property (nonatomic, copy) NSString *foodPrice;
-@property (nonatomic, copy) NSString *foodFirstCategory;
-@property (nonatomic, copy) NSString *foodSecondCategory;
+@property (nonatomic, copy) NSString *foodCategory;     // category: appetizer, entree, dessert etc
 
 - (instancetype)init;
-- (instancetype)initWithName:(NSString *)name description:(NSString *) price: firstCategory: secondCategory:
+- (instancetype)initWithName:(NSString *)name description:(NSString *)dscrptn price:(NSString *)price category:(NSString *)cat;
 
 @end

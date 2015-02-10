@@ -14,24 +14,20 @@
 #import "EventObject.h"
 
 
-@interface EventObject ()
-
-@end
-
-
 @implementation EventObject
 
 - (instancetype)init {
     
-    self = [self initWithTime:nil place:nil description:nil];
+    self = [self initWithName:nil time:nil place:nil description:nil];
     return self;
 }
 
-- (instancetype)initWithTime:(NSString *)time place:(NSString *)place description:(NSString *)dscptn {
+- (instancetype)initWithName:(NSString *)name time:(NSString *)time place:(NSString *)place description:(NSString *)dscptn {
     
     self = [super init];
     
     if (self) {
+        self.eventName = name;
         self.eventTime = time;
         self.eventPlace = place;
         self.eventDescription = dscptn;
@@ -42,15 +38,24 @@
 }
 
 - (NSArray *)eventRSVPList {
+    
     return [NSArray arrayWithArray:rsvpList];
 }
 
 - (void)addRSVP:(NSString *)name {
+    
     [rsvpList addObject:name];
 }
 
 - (BOOL)findRSVP:(NSString *)name {
+    
     return [rsvpList containsObject:name];
+}
+
+- (NSString *)description {
+
+    return [NSString stringWithFormat:@"Event name: %@\nEvent time: %@\nEvent place: %@\nEvent description: %@\nRSVP list: %@",
+            self.eventName, self.eventTime, self.eventPlace, self.eventDescription, self.eventRSVPList];
 }
 
 @end
