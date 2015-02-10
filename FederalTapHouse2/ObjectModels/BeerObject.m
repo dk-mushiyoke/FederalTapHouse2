@@ -14,19 +14,6 @@
 #import "BeerObject.h"
 
 
-@interface BeerObject()
-
-@property (nonatomic, readwrite) float beer_price_value;
-
-/* Again if the float values are needed
- 
- @property (nonatomic, readwrite) float beer_ABV_value;
- @property (nonatomic, readwrite) float beer_size_value;
- */
- 
-@end
-
-
 @implementation BeerObject
 
 /* Default constructor */
@@ -63,11 +50,6 @@
         self.beer_description = ds;
         self.beer_category_name = c;
         self.beer_date_added = dt;
-        [self parsePrice];
-        /* Can be added back if these properties are needed
-         [self parseABV:a];
-         [self parseSize:s];
-         */
     }
     
     return self;
@@ -89,6 +71,7 @@
             self.beer_price_value, self.beer_description, self.beer_category_name, self.beer_date_added];
 }
 
+/* Returns the float value of price */
 - (float)beer_price_value {
     return [self.beer_price floatValue];
 }

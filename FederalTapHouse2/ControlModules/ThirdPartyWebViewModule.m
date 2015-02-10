@@ -16,7 +16,24 @@
 
 @implementation ThirdPartyWebViewModule
 
+- (instancetype)init {
+    
+    self = [self initWithUrl:@"http://www.softwaremerchant.com"];
+    return self;
+}
 
+- (instancetype)initWithUrl:(NSString *)u {
+    
+    self = [super init];
+    if (self) {
+        self.url = u;
+    }
+    return self;
+}
 
+- (NSURLRequest *)request {
+    
+    return [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+}
 
 @end

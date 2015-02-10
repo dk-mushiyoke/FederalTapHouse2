@@ -7,6 +7,7 @@
 //
 
 #import "FTHLiveMusicViewController.h"
+#import "ThirdPartyWebViewModule.h"
 
 static NSString *yelpLiveMusicUrl = @"http://www.yelp.com/search?find_desc=live+music+venues";
 
@@ -27,7 +28,8 @@ static NSString *yelpLiveMusicUrl = @"http://www.yelp.com/search?find_desc=live+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    self.webView loadHTMLString:<#(NSString *)#> baseURL:<#(NSURL *)#>
+    ThirdPartyWebViewModule *requestModule = [[ThirdPartyWebViewModule alloc] initWithUrl:yelpLiveMusicUrl];
+    [self.webView loadRequest:requestModule.request];
 }
 
 /*
