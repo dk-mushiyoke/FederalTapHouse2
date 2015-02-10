@@ -15,6 +15,7 @@
 }
 
 @property (nonatomic, strong)   NSData *data;
+@property (nonatomic, strong) NSString *loginResult;
 
 - (instancetype)init;
 - (instancetype)initWithData:(NSData *)d;

@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,8 +47,9 @@
 -(void)signalFrom:(id)sender {
     
     WebServiceConnectionModule *con = sender;
-    NSString *loginResult = [[NSString alloc] initWithData:con.responseData encoding:NSUTF8StringEncoding];
-    [self displayMessage:loginResult];
+    WebServiceXMLLoginParserModule *par = [[WebServiceXMLLoginParserModule alloc] initWithData:con.responseData];
+    [par startParsing];
+    [self displayMessage:par.loginResult];
     
     
     
@@ -60,9 +62,9 @@
     
     if ([loginResult isEqualToString:@"1"]) {
         title = @"Login Successful";
-        message = @"Welcome to FEDERAL TAP HOUSE";
+        message = @"Welcome to Federal Tap House";
     } else {
-        title = @"Login Failed";
+        title =[NSString stringWithFormat:@"Login Failed , %@", loginResult];
         message = @"Incorrect Username or Password";
     }
     

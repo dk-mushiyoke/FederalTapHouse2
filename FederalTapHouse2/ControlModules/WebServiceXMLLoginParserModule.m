@@ -40,6 +40,7 @@
     [parser setDelegate:self];
     [parser parse];
     parser = nil;
+
 }
 
 
@@ -60,8 +61,8 @@
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     
-    if([elementName isEqualToString:@"IsUSerValidResult"]){
-        loginValue=[[NSMutableString alloc]initWithString:currentElement];            
+    if([elementName isEqualToString:@"IsUserValidResult"]){
+        _loginResult=[[NSMutableString alloc]initWithString:currentElement];
         
     }
     currentElement = nil;
