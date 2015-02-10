@@ -16,6 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    UIImage *navBackgroundImage = [UIImage imageNamed:@"logo"];
+    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+
+        
     // Override point for customization after application launch.
     return YES;
 }

@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "back arrow.png"
     }
   ],
   "info" : {

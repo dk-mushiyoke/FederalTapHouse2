@@ -2,8 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
@@ -11,7 +10,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png"
     }
   ],
   "info" : {

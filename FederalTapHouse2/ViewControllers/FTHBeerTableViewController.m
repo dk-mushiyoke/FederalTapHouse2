@@ -24,6 +24,9 @@
     
     reloadButton = [[UIBarButtonItem alloc] initWithTitle:@"Reload" style:UIBarButtonItemStylePlain target:self action:@selector(loadDataFromWebServer)];
     self.navigationItem.rightBarButtonItem = reloadButton;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+
+
 }
 
 - (void)didReceiveMemoryWarning {

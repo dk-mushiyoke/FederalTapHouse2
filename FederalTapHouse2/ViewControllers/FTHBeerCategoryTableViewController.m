@@ -66,7 +66,7 @@
     
     // Configure the cell...
     cell.textLabel.text = beerCategories[indexPath.row];
-    
+    cell.textLabel.textColor = [UIColor colorWithRed:0.886f green:0.306f blue:0.129f alpha:1.0f];
     return cell;
 }
 
