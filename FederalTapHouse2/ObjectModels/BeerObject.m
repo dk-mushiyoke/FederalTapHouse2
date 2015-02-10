@@ -89,40 +89,14 @@
             self.beer_price_value, self.beer_description, self.beer_category_name, self.beer_date_added];
 }
 
+- (float)beer_price_value {
+    return [self.beer_price floatValue];
+}
+
 /* Returns a comparison result between beer names */
 - (NSComparisonResult)compare:(BeerObject *)beer {
 
     return [self.beer_name compare:beer.beer_name];
 }
- 
-- (void)setValue:(id)value forKey:(NSString *)key {
-    
-    [super setValue:value forKey:key];
-    /*if ([key isEqualToString:@"beer_ABV"])
-        [self parseABV:value];
-    else if ([key isEqualToString:@"beer_size"])
-        [self parseSize:value];
-    else*/
-    if ([key isEqualToString:@"beer_price"])
-        [self parsePrice];
-}
-
-/*- (void)parseABV:(NSString *)abvStr {
-    
-    NSArray *abvArray = [abvStr componentsSeparatedByString:@" "];
-    if ([abvArray count] > 1)
-        self.beer_ABV_value = [abvArray[1] floatValue];
-}
-
-- (void)parseSize:(NSString *)sizeStr {
-    
-    self.beer_size_value = [sizeStr floatValue];
-}*/
-
-- (void)parsePrice {
-    
-    self.beer_price_value = [self.beer_price floatValue];
-}
-
 
 @end

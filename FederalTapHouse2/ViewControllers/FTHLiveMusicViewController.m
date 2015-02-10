@@ -8,6 +8,8 @@
 
 #import "FTHLiveMusicViewController.h"
 
+static NSString *yelpLiveMusicUrl = @"http://www.yelp.com/search?find_desc=live+music+venues";
+
 @interface FTHLiveMusicViewController ()
 
 @end
@@ -22,6 +24,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.webView loadHTMLString:<#(NSString *)#> baseURL:<#(NSURL *)#>
 }
 
 /*
