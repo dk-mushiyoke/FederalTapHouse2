@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WebServiceConnectionModule.h"
 
-@interface LoginViewController : UIViewController <WebServiceConnectionDidFinishSignal>
+@interface FTHLoginViewController : UIViewController <WebServiceConnectionDidFinishSignal>
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;

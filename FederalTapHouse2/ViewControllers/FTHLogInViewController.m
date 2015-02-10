@@ -10,11 +10,11 @@
 #import "WebServiceConnectionModule.h"
 #import "WebServiceXMLLoginParserModule.h"
 
-@interface LoginViewController ()
+@interface FTHLoginViewController ()
 
 @end
 
-@implementation LoginViewController {
+@implementation FTHLoginViewController {
     NSString *user;
     NSString *pass;
     
