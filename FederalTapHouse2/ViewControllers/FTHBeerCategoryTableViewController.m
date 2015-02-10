@@ -9,7 +9,7 @@
 #import "FTHBeerCategoryTableViewController.h"
 #import "FTHBeerTableViewController.h"
 #import "BeerDictionary.h"
-#import "WebServiceXMLParserModule.h"
+#import "WebServiceXMLBeerParserModule.h"
 
 @interface FTHBeerCategoryTableViewController ()
 
@@ -77,7 +77,7 @@
     
     // Create parser instance and parse
     WebServiceConnectionModule *connection = sender;
-    WebServiceXMLParserModule *parser = [[WebServiceXMLParserModule alloc] initWithData:connection.responseData];
+    WebServiceXMLBeerParserModule *parser = [[WebServiceXMLBeerParserModule alloc] initWithData:connection.responseData];
     [parser startParsing];
     
     // Assign parsed result to local variables
