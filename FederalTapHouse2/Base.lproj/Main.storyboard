@@ -17,22 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caS-Tg-7xu">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZZs-Ga-a04" id="o7g-Fp-XpS"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="caS-Tg-7xu" firstAttribute="top" secondItem="vld-UO-IBJ" secondAttribute="top" id="HNK-Ug-mZO"/>
                             <constraint firstItem="caS-Tg-7xu" firstAttribute="leading" secondItem="vld-UO-IBJ" secondAttribute="leading" id="RWf-l0-hSa"/>
+                            <constraint firstItem="caS-Tg-7xu" firstAttribute="top" secondItem="djZ-Qn-wUh" secondAttribute="bottom" id="Yi6-9l-G68"/>
                             <constraint firstAttribute="trailing" secondItem="caS-Tg-7xu" secondAttribute="trailing" id="arp-eR-z4m"/>
                             <constraint firstItem="J8D-LH-rh7" firstAttribute="top" secondItem="caS-Tg-7xu" secondAttribute="bottom" id="e6P-Vb-tX6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HNK-Ug-mZO"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryq-jz-iol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.5" y="645"/>
+            <point key="canvasLocation" x="997" y="645"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="y6C-Bq-nO6">

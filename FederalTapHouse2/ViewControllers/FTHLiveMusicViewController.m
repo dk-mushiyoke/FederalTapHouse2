@@ -7,6 +7,9 @@
 //
 
 #import "FTHLiveMusicViewController.h"
+#import "ThirdPartyWebViewModule.h"
+
+static NSString *yelpLiveMusicUrl = @"http://www.yelp.com/search?find_desc=live+music+venues";
 
 @interface FTHLiveMusicViewController ()
 
@@ -22,6 +25,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    ThirdPartyWebViewModule *requestModule = [[ThirdPartyWebViewModule alloc] initWithUrl:yelpLiveMusicUrl];
+    [self.webView loadRequest:requestModule.request];
 }
 
 /*

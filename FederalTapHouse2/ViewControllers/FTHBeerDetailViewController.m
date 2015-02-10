@@ -24,7 +24,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     NSString *beerSnA = [NSString stringWithFormat:@"Size: %@\n%@", self.beer.beer_size, self.beer.beer_ABV];
-    NSString *beerP = [NSString stringWithFormat:@"Price: $%@", self.beer.beer_price];
+    NSString *beerP = [NSString stringWithFormat:@"Price: $%.2f", self.beer.beer_price_value];
     self.beerName.text = self.beer.beer_name;
     self.beerSizeAndABV.text = beerSnA;
     self.beerPrice.text = beerP;

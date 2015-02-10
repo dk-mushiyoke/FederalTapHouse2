@@ -16,4 +16,9 @@
 
 @interface ThirdPartyWebViewModule : NSObject
 
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, readonly) NSURLRequest *request;
+
+- (instancetype)initWithUrl:(NSString *)u;
+
 @end

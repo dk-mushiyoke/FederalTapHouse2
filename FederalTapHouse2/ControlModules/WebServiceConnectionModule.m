@@ -90,7 +90,7 @@
         "                 xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\""
         "                 xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n"
         "  <soap12:Body>\n"
-        "    <%@ xmlns=\"http://tempuri.org/\" />\n"
+        "    <getBeerList xmlns=\"http://tempuri.org/\" />\n"
         "  </soap12:Body>\n"
         "</soap12:Envelope>\n";
         
