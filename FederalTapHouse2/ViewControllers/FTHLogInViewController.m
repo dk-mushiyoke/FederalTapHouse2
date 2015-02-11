@@ -65,7 +65,7 @@
         title = @"Login Successful";
         message = @"Welcome to Federal Tap House";
     } else {
-        title =[NSString stringWithFormat:@"Login Failed , %@", loginResult];
+        title =[NSString stringWithFormat:@"Login Failed"];
         message = @"Incorrect Username or Password";
     }
     

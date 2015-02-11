@@ -675,6 +675,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="loginPressed:" destination="VL9-qI-kxl" eventType="touchUpInside" id="JWW-wA-6kW"/>
                                             <segue destination="X9S-I0-Hdn" kind="show" identifier="showHome" id="jCr-D6-8iT"/>
                                         </connections>
                                     </button>
@@ -700,7 +701,7 @@
                                         <rect key="frame" x="86" y="213" width="230" height="32"/>
                                         <color key="backgroundColor" red="0.88627457620000005" green="0.88627457620000005" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -724,6 +725,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="UOp-WG-0hi"/>
+                    <connections>
+                        <outlet property="passwordField" destination="kz9-36-Ig0" id="WMI-fs-EeB"/>
+                        <outlet property="usernameField" destination="IPu-7d-ig1" id="2aV-Lp-PUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsE-Pq-01B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
