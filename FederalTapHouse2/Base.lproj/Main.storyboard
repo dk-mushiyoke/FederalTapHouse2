@@ -226,11 +226,7 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="o5v-NI-Xch">
-                        <barButtonItem key="leftBarButtonItem" image="back arrow" id="7Jk-Ib-dKO">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="o5v-NI-Xch"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRw-fO-ha0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="0.0" id="q2P-Bx-wux">
@@ -676,7 +672,6 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="VL9-qI-kxl" eventType="touchUpInside" id="JWW-wA-6kW"/>
-                                            <segue destination="X9S-I0-Hdn" kind="show" identifier="showHome" id="jCr-D6-8iT"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USA-nu-Lqx">
@@ -728,11 +723,12 @@
                     <connections>
                         <outlet property="passwordField" destination="kz9-36-Ig0" id="WMI-fs-EeB"/>
                         <outlet property="usernameField" destination="IPu-7d-ig1" id="2aV-Lp-PUK"/>
+                        <segue destination="X9S-I0-Hdn" kind="show" identifier="showMenu" id="cCh-Po-pe1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsE-Pq-01B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159" y="-154"/>
+            <point key="canvasLocation" x="-427" y="-157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jv9-PR-DxH">
@@ -751,11 +747,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PoF-5Q-IxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-835" y="-154"/>
+            <point key="canvasLocation" x="-1131" y="-157"/>
         </scene>
     </scenes>
     <resources>
-        <image name="back arrow" width="30" height="30"/>
         <image name="flame" width="42" height="91"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
