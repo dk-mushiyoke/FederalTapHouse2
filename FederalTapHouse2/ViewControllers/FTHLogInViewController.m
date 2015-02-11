@@ -64,6 +64,7 @@
     if ([loginResult isEqualToString:@"1"]) {
         title = @"Login Successful";
         message = @"Welcome to Federal Tap House";
+        [self performSegueWithIdentifier:@"showMenu" sender:self];
     } else {
         title =[NSString stringWithFormat:@"Login Failed"];
         message = @"Incorrect Username or Password";

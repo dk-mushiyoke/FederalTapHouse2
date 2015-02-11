@@ -862,14 +862,11 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< Updated upstream
-=======
         <image name="1.jpeg" width="204" height="204"/>
         <image name="2.jpeg" width="204" height="204"/>
         <image name="3.jpeg" width="204" height="204"/>
         <image name="4.jpeg" width="207" height="243"/>
         <image name="back arrow" width="30" height="30"/>
->>>>>>> Stashed changes
         <image name="flame" width="42" height="91"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
