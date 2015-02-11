@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303533141A8BAF680085E64A /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 303533111A8BAF680085E64A /* 1.jpeg */; };
+		303533151A8BAF680085E64A /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 303533121A8BAF680085E64A /* 2.jpeg */; };
+		303533161A8BAF680085E64A /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 303533131A8BAF680085E64A /* 3.jpeg */; };
+		303533181A8BB0A50085E64A /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 303533171A8BB0A50085E64A /* 4.jpeg */; };
 		305CAFE81A8A6AB200378306 /* WebServiceXMLLoginParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */; };
 		420DDADA1A8AC175008A33D5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 420DDACB1A8AC175008A33D5 /* Contents.json */; };
 		420DDADB1A8AC175008A33D5 /* Icon-60@2x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 420DDACC1A8AC175008A33D5 /* Icon-60@2x-1.png */; };
@@ -36,7 +40,7 @@
 		42BC2E851A88273F00A22376 /* FTHLiveMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */; };
 		42BC2E861A88273F00A22376 /* FTHOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */; };
 		42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */; };
-		42BC2E881A88273F00A22376 /* FTHRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7D1A88273F00A22376 /* FTHRewardViewController.m */; };
+		42BC2E881A88273F00A22376 /* FTHRewardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */; };
 		42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8B1A88277C00A22376 /* LocationModule.m */; };
 		42BC2EA41A88277C00A22376 /* PushNotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */; };
 		42BC2EA51A88277C00A22376 /* QRCodeScannerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */; };
@@ -62,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		303533111A8BAF680085E64A /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		303533121A8BAF680085E64A /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		303533131A8BAF680085E64A /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		303533171A8BB0A50085E64A /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
 		305CAFE61A8A6AB200378306 /* WebServiceXMLLoginParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLLoginParserModule.h; sourceTree = "<group>"; };
 		305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLLoginParserModule.m; sourceTree = "<group>"; };
 		420DDACB1A8AC175008A33D5 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -108,8 +116,8 @@
 		42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHOnMapViewController.m; sourceTree = "<group>"; };
 		42BC2E7A1A88273F00A22376 /* FTHRedeemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHRedeemViewController.h; sourceTree = "<group>"; };
 		42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRedeemViewController.m; sourceTree = "<group>"; };
-		42BC2E7C1A88273F00A22376 /* FTHRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHRewardViewController.h; sourceTree = "<group>"; };
-		42BC2E7D1A88273F00A22376 /* FTHRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRewardViewController.m; sourceTree = "<group>"; };
+		42BC2E7C1A88273F00A22376 /* FTHRewardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHRewardTableViewController.h; sourceTree = "<group>"; };
+		42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRewardTableViewController.m; sourceTree = "<group>"; };
 		42BC2E8A1A88277C00A22376 /* LocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModule.h; sourceTree = "<group>"; };
 		42BC2E8B1A88277C00A22376 /* LocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModule.m; sourceTree = "<group>"; };
 		42BC2E8C1A88277C00A22376 /* PushNotificationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationModule.h; sourceTree = "<group>"; };
@@ -154,6 +162,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303533101A8BAF420085E64A /* Rewards Images */ = {
+			isa = PBXGroup;
+			children = (
+				303533171A8BB0A50085E64A /* 4.jpeg */,
+				303533111A8BAF680085E64A /* 1.jpeg */,
+				303533121A8BAF680085E64A /* 2.jpeg */,
+				303533131A8BAF680085E64A /* 3.jpeg */,
+			);
+			name = "Rewards Images";
+			sourceTree = "<group>";
+		};
 		420DDACA1A8AC175008A33D5 /* AppIcon.appiconset */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,8 +256,9 @@
 		427FB4EC1A85113700C8F54F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				427FB4ED1A85113700C8F54F /* Info.plist */,
 				427FB4EE1A85113700C8F54F /* main.m */,
+				427FB4ED1A85113700C8F54F /* Info.plist */,
+				303533101A8BAF420085E64A /* Rewards Images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -290,8 +310,8 @@
 				42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */,
 				42BC2E7A1A88273F00A22376 /* FTHRedeemViewController.h */,
 				42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */,
-				42BC2E7C1A88273F00A22376 /* FTHRewardViewController.h */,
-				42BC2E7D1A88273F00A22376 /* FTHRewardViewController.m */,
+				42BC2E7C1A88273F00A22376 /* FTHRewardTableViewController.h */,
+				42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -417,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				420DDAE31A8AC175008A33D5 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png in Resources */,
+				303533161A8BAF680085E64A /* 3.jpeg in Resources */,
 				427FB4F81A85113700C8F54F /* Main.storyboard in Resources */,
 				420DDAE01A8AC175008A33D5 /* images.jpg in Resources */,
 				427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */,
@@ -426,9 +447,12 @@
 				420DDADD1A8AC175008A33D5 /* back arrow.png in Resources */,
 				420DDADA1A8AC175008A33D5 /* Contents.json in Resources */,
 				420DDADB1A8AC175008A33D5 /* Icon-60@2x-1.png in Resources */,
+				303533141A8BAF680085E64A /* 1.jpeg in Resources */,
 				420DDADC1A8AC175008A33D5 /* Icon-60@2x.png in Resources */,
+				303533151A8BAF680085E64A /* 2.jpeg in Resources */,
 				420DDAE11A8AC175008A33D5 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png in Resources */,
 				420DDAE21A8AC175008A33D5 /* Contents.json in Resources */,
+				303533181A8BB0A50085E64A /* 4.jpeg in Resources */,
 				420DDAE41A8AC175008A33D5 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +473,7 @@
 			files = (
 				42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */,
 				42BC2EAE1A88277C00A22376 /* MenuDictionary.m in Sources */,
-				42BC2E881A88273F00A22376 /* FTHRewardViewController.m in Sources */,
+				42BC2E881A88273F00A22376 /* FTHRewardTableViewController.m in Sources */,
 				42BC2E7F1A88273F00A22376 /* FTHBeerCategoryTableViewController.m in Sources */,
 				42BC2EA71A88277C00A22376 /* UserLoginRegisterModule.m in Sources */,
 				42BC2EAC1A88277C00A22376 /* EventObject.m in Sources */,

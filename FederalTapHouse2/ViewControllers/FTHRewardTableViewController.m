@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import "FTHRewardViewController.h"
+#import "FTHRewardTableViewController.h"
 
-@interface FTHRewardViewController ()
+@interface FTHRewardTableViewController ()
 
 @end
 
-@implementation FTHRewardViewController
+@implementation FTHRewardTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

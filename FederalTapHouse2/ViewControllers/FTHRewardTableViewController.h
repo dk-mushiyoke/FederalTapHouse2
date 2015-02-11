@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FTHRewardViewController : UIViewController
+@interface FTHRewardTableViewController : UITableViewController
 
 @end
