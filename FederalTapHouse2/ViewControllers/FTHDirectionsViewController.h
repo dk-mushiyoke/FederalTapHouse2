@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DirectionsViewController : UIViewController
+@interface FTHDirectionsViewController : UIViewController
 
 @end

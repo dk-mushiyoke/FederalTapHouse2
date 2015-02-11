@@ -1,28 +1,35 @@
 //
-//  DirectionsViewController.m
+//  FTHFoodItemTableViewController.m
 //  FederalTapHouse2
 //
-//  Created by Merritt Tidwell on 2/8/15.
+//  Created by Di Kong on 2/11/15.
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import "DirectionsViewController.h"
+#import "FTHFoodDetailViewController.h"
 
-@interface DirectionsViewController ()
+@interface FTHFoodDetailViewController ()
 
 @end
 
-@implementation DirectionsViewController
+@implementation FTHFoodDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.foodImage.image = self.food.foodImage;
+    self.foodName.text = self.food.foodName;
+    self.foodPrice.text = [NSString stringWithFormat:@"Price: %.2f", self.food.foodPriceValue];
+    self.foodDescription.text = self.food.foodDescription;
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

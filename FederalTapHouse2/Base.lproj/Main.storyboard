@@ -267,22 +267,23 @@
             </objects>
             <point key="canvasLocation" x="1792.5" y="577.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Food Menu Table View Controller-->
         <scene sceneID="RrM-i5-HOF">
             <objects>
-                <tableViewController id="FKt-eL-WYQ" sceneMemberID="viewController">
+                <tableViewController id="FKt-eL-WYQ" customClass="FTHFoodMenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YIb-oO-foS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uPT-iQ-Hsa">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="65" id="uPT-iQ-Hsa">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uPT-iQ-Hsa" id="a8s-0n-sSh">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="wDn-lx-sXl" kind="show" identifier="showMenuDetail" id="qpY-ze-tpt"/>
+                                    <segue destination="Ab3-BI-dUV" kind="show" id="LIa-pC-LL4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -296,31 +297,73 @@
             </objects>
             <point key="canvasLocation" x="-986" y="-950"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="Fef-js-KBB">
+        <!--Food Detail View Controller-->
+        <scene sceneID="6sU-Tp-Ttm">
             <objects>
-                <tableViewController id="wDn-lx-sXl" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6Cn-BG-hX7">
+                <viewController id="Ab3-BI-dUV" customClass="FTHFoodDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0O8-ps-7Lp"/>
+                        <viewControllerLayoutGuide type="bottom" id="M6A-Lr-yMw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f7W-di-mHh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCD-Gh-2AU">
+                                <rect key="frame" x="184" y="93" width="232" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="XI9-Ma-XDf"/>
+                                    <constraint firstAttribute="width" constant="232" id="pqi-Te-zqA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaW-rX-34P">
+                                <rect key="frame" x="40" y="310" width="520" height="21"/>
+                                <color key="backgroundColor" red="0.98823535439999999" green="0.64705884459999996" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQt-8q-0nU">
+                                <rect key="frame" x="40" y="402" width="520" height="151"/>
+                                <color key="backgroundColor" red="0.98823535439999999" green="0.64705884459999996" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLJ-Jn-YCJ">
+                                <rect key="frame" x="40" y="354" width="520" height="21"/>
+                                <color key="backgroundColor" red="0.98823535439999999" green="0.64705884459999996" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JJc-3S-POg">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JJc-3S-POg" id="JBm-gB-PMT">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="wDn-lx-sXl" id="gte-JQ-His"/>
-                            <outlet property="delegate" destination="wDn-lx-sXl" id="n4N-kH-yRn"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ucV-Cl-enJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="zLJ-Jn-YCJ" firstAttribute="leading" secondItem="aaW-rX-34P" secondAttribute="leading" id="Cc0-ej-ZbD"/>
+                            <constraint firstItem="M6A-Lr-yMw" firstAttribute="top" secondItem="lQt-8q-0nU" secondAttribute="bottom" constant="47" id="OGU-tP-SMW"/>
+                            <constraint firstItem="aaW-rX-34P" firstAttribute="top" secondItem="SCD-Gh-2AU" secondAttribute="bottom" constant="27" id="P1c-hO-hdA"/>
+                            <constraint firstItem="zLJ-Jn-YCJ" firstAttribute="top" secondItem="aaW-rX-34P" secondAttribute="bottom" constant="23" id="Pwx-bF-oCS"/>
+                            <constraint firstItem="lQt-8q-0nU" firstAttribute="top" secondItem="zLJ-Jn-YCJ" secondAttribute="bottom" constant="27" id="VFQ-pn-6lL"/>
+                            <constraint firstItem="lQt-8q-0nU" firstAttribute="trailing" secondItem="zLJ-Jn-YCJ" secondAttribute="trailing" id="VVC-uZ-Lnv"/>
+                            <constraint firstItem="aaW-rX-34P" firstAttribute="centerX" secondItem="SCD-Gh-2AU" secondAttribute="centerX" id="YzM-Ld-In8"/>
+                            <constraint firstItem="zLJ-Jn-YCJ" firstAttribute="trailing" secondItem="aaW-rX-34P" secondAttribute="trailing" id="g5j-gj-iV6"/>
+                            <constraint firstItem="lQt-8q-0nU" firstAttribute="centerX" secondItem="f7W-di-mHh" secondAttribute="centerX" id="mSY-d9-XTw"/>
+                            <constraint firstItem="lQt-8q-0nU" firstAttribute="leading" secondItem="zLJ-Jn-YCJ" secondAttribute="leading" id="mk7-Me-Lp0"/>
+                            <constraint firstItem="aaW-rX-34P" firstAttribute="leading" secondItem="f7W-di-mHh" secondAttribute="leading" constant="40" id="vdt-yU-F5K"/>
+                            <constraint firstItem="SCD-Gh-2AU" firstAttribute="top" secondItem="0O8-ps-7Lp" secondAttribute="bottom" constant="29" id="xMF-Lw-6HR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodDescription" destination="lQt-8q-0nU" id="Nyq-yk-Wc4"/>
+                        <outlet property="foodImage" destination="SCD-Gh-2AU" id="wfj-JK-HeA"/>
+                        <outlet property="foodName" destination="aaW-rX-34P" id="tIG-K9-Clh"/>
+                        <outlet property="foodPrice" destination="zLJ-Jn-YCJ" id="gqR-fX-x0N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yA-md-asV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="-951"/>
+            <point key="canvasLocation" x="-296" y="-950"/>
         </scene>
         <!--Beer Categories-->
         <scene sceneID="4dq-zg-D2b">
@@ -483,7 +526,7 @@
         <!--Directions View Controller-->
         <scene sceneID="HMd-IM-Hgv">
             <objects>
-                <viewController id="vIR-B1-KPg" customClass="DirectionsViewController" sceneMemberID="viewController">
+                <viewController id="vIR-B1-KPg" customClass="FTHDirectionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Em-fd-sDn"/>
                         <viewControllerLayoutGuide type="bottom" id="WxD-Su-eHS"/>
@@ -561,7 +604,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ML-2o-HfY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ML-2o-HfY">
                                 <rect key="frame" x="184" y="86" width="232" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="232" id="4ko-Ta-7Ux"/>
@@ -618,6 +661,7 @@
                     </view>
                     <connections>
                         <outlet property="beerDescription" destination="q0v-zj-vSY" id="rid-qp-3GH"/>
+                        <outlet property="beerImage" destination="3ML-2o-HfY" id="juS-Mq-pz8"/>
                         <outlet property="beerName" destination="8sC-rN-3MX" id="Kdd-Is-Hrb"/>
                         <outlet property="beerPrice" destination="N23-oU-0DM" id="h81-pL-fNb"/>
                         <outlet property="beerSizeAndABV" destination="z5i-0g-yWE" id="c86-e6-d42"/>
@@ -650,7 +694,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="1.jpeg" id="ADz-D5-cL2">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="beer1" id="ADz-D5-cL2">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="80 Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dsR-93-Ody">
@@ -676,7 +720,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2.jpeg" id="inR-WW-brb">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="beer2" id="inR-WW-brb">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="100 Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gLo-q2-2Im">
@@ -702,7 +746,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="3.jpeg" id="W0D-tW-lNy">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="beer3" id="W0D-tW-lNy">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="120 Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zi7-KP-zQK">
@@ -728,7 +772,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="4.jpeg" id="Udr-NS-uwZ">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="beer4" id="Udr-NS-uwZ">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="    150 Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="beh-cg-seX">
@@ -862,11 +906,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.jpeg" width="204" height="204"/>
-        <image name="2.jpeg" width="204" height="204"/>
-        <image name="3.jpeg" width="204" height="204"/>
-        <image name="4.jpeg" width="207" height="243"/>
-        <image name="back arrow" width="30" height="30"/>
+        <image name="beer1" width="204" height="204"/>
+        <image name="beer2" width="204" height="204"/>
+        <image name="beer3" width="204" height="204"/>
+        <image name="beer4" width="207" height="243"/>
         <image name="flame" width="42" height="91"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

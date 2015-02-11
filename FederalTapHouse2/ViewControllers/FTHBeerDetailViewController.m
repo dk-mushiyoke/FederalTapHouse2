@@ -26,10 +26,12 @@
     
     NSString *beerSnA = [NSString stringWithFormat:@"Size: %@\n%@", self.beer.beer_size, self.beer.beer_ABV];
     NSString *beerP = [NSString stringWithFormat:@"Price: $%.2f", self.beer.beer_price_value];
+    self.beerImage.image = self.beer.beer_image;
     self.beerName.text = self.beer.beer_name;
     self.beerSizeAndABV.text = beerSnA;
     self.beerPrice.text = beerP;
     self.beerDescription.text = self.beer.beer_description;
+    NSLog(@"%@", self.beer);
 }
 
 - (void)didReceiveMemoryWarning {

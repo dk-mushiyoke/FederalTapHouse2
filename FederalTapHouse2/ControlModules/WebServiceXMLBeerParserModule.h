@@ -25,6 +25,7 @@
 /* Module interface */
 @interface WebServiceXMLBeerParserModule : NSObject <NSXMLParserDelegate> {
     
+    NSArray *imgList;
     NSMutableString *currentElement;
     BeerObject *currentBeer;
 }

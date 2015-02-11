@@ -18,30 +18,33 @@
 
 /* Default constructor */
 - (instancetype)init {
-    self = [self initWithName:@"Test Beer"
-                     location:@"Nowheresville"
-                          abv:@"ABV 0.0"
-                         size:@"1OZ"
-                        price:@"1.00000"
-                  description:@"This is a test beer"
-                     category:@"Test"
-                         date:@"Just now"];
+    self = [self initWithImage:nil
+                          name:@"Test Beer"
+                      location:@"Nowheresville"
+                           abv:@"ABV 0.0"
+                          size:@"1OZ"
+                         price:@"1.00000"
+                   description:@"This is a test beer"
+                      category:@"Test"
+                          date:@"Just now"];
     return self;
 }
 
 /* Designated constructor with all properties */
-- (instancetype)initWithName:(NSString *)n
-                    location:(NSString *)l
-                         abv:(NSString *)a
-                        size:(NSString *)s
-                       price:(NSString *)p
-                 description:(NSString *)ds
-                    category:(NSString *)c
-                        date:(NSString *)dt
+- (instancetype)initWithImage:(UIImage *)i
+                         name:(NSString *)n
+                     location:(NSString *)l
+                          abv:(NSString *)a
+                         size:(NSString *)s
+                        price:(NSString *)p
+                  description:(NSString *)ds
+                     category:(NSString *)c
+                         date:(NSString *)dt
 {
     self = [super init];
     
     if (self) {
+        self.beer_image = i;
         self.beer_name = n;
         self.beer_location = l;
         self.beer_ABV = a;

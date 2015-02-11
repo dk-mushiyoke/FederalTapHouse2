@@ -40,6 +40,11 @@
     if (self) {
         self.data = d;
         self.beerDictionary = [[BeerDictionary alloc] init];
+        imgList = @[[UIImage imageNamed:@"beer1"],
+                    [UIImage imageNamed:@"beer2"],
+                    [UIImage imageNamed:@"beer3"],
+                    [UIImage imageNamed:@"beer4"]];
+        srand((unsigned int) time(NULL));
     }
     
     return self;
@@ -62,8 +67,12 @@
     
     // End tag with Beer = finished parsing for a beer
     if ([elementName isEqualToString:@"Beer"]) {
+        /* Assign a random image to currentBeer */
+        int randImg = random() % (int)imgList.count;
+        currentBeer.beer_image = imgList[randImg];
         /*NSLog(@"%@", currentBeer);*/
         [self.beerDictionary addBeer:currentBeer];
+        
     }
     // End tag with getBeerListResult = finished getBeerList
     else if ([elementName isEqualToString:@"getBeerListResult"]) {

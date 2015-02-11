@@ -12,9 +12,11 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface BeerObject : NSObject
 
+@property (nonatomic, strong) UIImage *beer_image;
 @property (nonatomic, copy)  NSString *beer_name;
 @property (nonatomic, copy)  NSString *beer_location;
 @property (nonatomic, copy)  NSString *beer_ABV;
@@ -27,7 +29,8 @@
 
 
 - (instancetype)init;
-- (instancetype)initWithName:(NSString *)n
+- (instancetype)initWithImage:(UIImage *)i
+                         name:(NSString *)n
                     location:(NSString *)l
                          abv:(NSString *)a
                         size:(NSString *)s

@@ -12,15 +12,18 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FoodObject : NSObject
 
+@property (nonatomic, strong) UIImage *foodImage;
 @property (nonatomic, copy) NSString *foodName;
 @property (nonatomic, copy) NSString *foodDescription;
 @property (nonatomic, copy) NSString *foodPrice;
+@property (nonatomic, readonly) float foodPriceValue;
 @property (nonatomic, copy) NSString *foodCategory;     // category: appetizer, entree, dessert etc
 
 - (instancetype)init;
-- (instancetype)initWithName:(NSString *)name description:(NSString *)dscrptn price:(NSString *)price category:(NSString *)cat;
+- (instancetype)initWithImage:(UIImage *)image name:(NSString *)name description:(NSString *)dscrptn price:(NSString *)price category:(NSString *)cat;
 
 @end
