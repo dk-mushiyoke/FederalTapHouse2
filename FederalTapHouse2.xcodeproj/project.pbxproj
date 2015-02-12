@@ -271,14 +271,14 @@
 		42BC2E671A88273F00A22376 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				42BC2E681A88273F00A22376 /* FTHDirectionsViewController.h */,
-				42BC2E691A88273F00A22376 /* FTHDirectionsViewController.m */,
 				42BC2E6A1A88273F00A22376 /* FTHBeerCategoryTableViewController.h */,
 				42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */,
 				42BC2E6C1A88273F00A22376 /* FTHBeerDetailViewController.h */,
 				42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */,
 				42BC2E6E1A88273F00A22376 /* FTHBeerTableViewController.h */,
 				42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */,
+				42BC2E681A88273F00A22376 /* FTHDirectionsViewController.h */,
+				42BC2E691A88273F00A22376 /* FTHDirectionsViewController.m */,
 				42BC2E701A88273F00A22376 /* FTHEventsTableViewController.h */,
 				42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */,
 				42BC2E721A88273F00A22376 /* FTHFindTransportationViewController.h */,

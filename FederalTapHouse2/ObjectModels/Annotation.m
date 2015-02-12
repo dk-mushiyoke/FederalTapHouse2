@@ -6,13 +6,19 @@
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
+/**
+ * Implementation of annotation class
+ *
+ */
+
 #import "Annotation.h"
+
 
 @implementation Annotation
 
 - (instancetype)init {
     
-    self = [self initWithTitle:@"Default location" coordinate:CLLocationCoordinate2DMake(40.0397, 76.3044)];
+    self = [self initWithTitle:@"Default location" coordinate:CLLocationCoordinate2DMake(40.759211, 73.984638)];
     return self;
 }
 
@@ -26,19 +32,9 @@
     return self;
 }
 
-- (double)latitude {
-    
-    return self.coordinate.latitude;
-}
-
-- (double)longitude {
-    
-    return self.coordinate.longitude;
-}
-
 - (NSString *)description {
     
-    return [NSString stringWithFormat:@"%@\nLatitude: %.4f\nLongtitude: %.4f", self.title, self.latitude, self.longitude];
+    return [NSString stringWithFormat:@"%@\nLatitude: %.4f\nLongtitude: %.4f", self.title, self.coordinate.latitude, self.coordinate.longitude];
 }
 
 @end

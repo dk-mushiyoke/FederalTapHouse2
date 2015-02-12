@@ -45,7 +45,7 @@
     
 }
 
--(void)signalFrom:(id)sender {
+-(void)connectionDidFinishSignalFrom:(id)sender {
     
     WebServiceConnectionModule *con = sender;
     WebServiceXMLLoginParserModule *par = [[WebServiceXMLLoginParserModule alloc] initWithData:con.responseData];

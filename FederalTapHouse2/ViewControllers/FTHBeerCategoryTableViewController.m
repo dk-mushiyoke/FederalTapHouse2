@@ -73,7 +73,7 @@
 
 #pragma mark - Web Service Connection Delegate
 
-- (void)signalFrom:(id)sender {
+- (void)connectionDidFinishSignalFrom:(id)sender {
     
     // Create parser instance and parse
     WebServiceConnectionModule *connection = sender;

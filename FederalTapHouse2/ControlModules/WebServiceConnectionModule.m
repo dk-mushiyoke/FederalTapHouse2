@@ -146,7 +146,7 @@
 //    NSString *dataString = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
 //    NSLog(@"WebServiceConnection returned data successfully.\n\n%@", dataString);
     
-    [self.signalDelegate signalFrom:self];
+    [self.signalDelegate connectionDidFinishSignalFrom:self];
 }
 
 

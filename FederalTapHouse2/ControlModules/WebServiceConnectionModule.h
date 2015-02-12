@@ -24,7 +24,7 @@
 /* Protocol to signal caller that connectionDidFinishLoading */
 @protocol WebServiceConnectionDidFinishSignal <NSObject>
 
-- (void)signalFrom:(id)sender;
+- (void)connectionDidFinishSignalFrom:(id)sender;
 
 @end
 

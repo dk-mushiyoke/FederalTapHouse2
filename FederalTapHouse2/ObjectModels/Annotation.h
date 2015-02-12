@@ -6,16 +6,20 @@
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <MapKit/MapKit.h>
-#import <CoreLocation/CoreLocation.h>
+/**
+ * This class serves as a prototype for annotation pins displayed on map
+ *
+ */
 
-@interface Annotation : NSObject
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+
+
+@interface Annotation : NSObject <MKAnnotation>
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy)   NSString *title;
-@property (nonatomic, readonly) double latitude;
-@property (nonatomic, readonly) double longitude;
 
 - (instancetype)init;
 - (instancetype)initWithTitle:(NSString *)t coordinate:(CLLocationCoordinate2D)c;

@@ -98,7 +98,6 @@
     FoodObject *food = foodList[indexPath.row];
     cell.textLabel.text = food.foodName;
     cell.textLabel.textColor = [UIColor colorWithRed:0.886f green:0.306f blue:0.129f alpha:1.0f];
-    cell.contentView.backgroundColor = [UIColor cyanColor];
     
     return cell;
 }
