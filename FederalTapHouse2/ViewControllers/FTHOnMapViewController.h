@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface FTHOnMapViewController : UIViewController
+@interface FTHOnMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+
+@property (strong, nonatomic) IBOutlet MKMapView *myMapView;
+
+- (IBAction)directionsButtonPressed:(id)sender;
 
 
 

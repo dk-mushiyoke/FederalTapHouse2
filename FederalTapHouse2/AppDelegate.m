@@ -17,8 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    UIImage *navBackgroundImage = [UIImage imageNamed:@"logo"];
-    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    UIImage *navBackgroundImage = [[UIImage imageNamed:@"logo"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
+    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
     // Set up push notification
     if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {

@@ -68,7 +68,7 @@
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:envelopeData];
     [request setValue:@"application/soap+xml" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:[NSString stringWithFormat:@"%li", [envelopeData length]] forHTTPHeaderField:@"Content-Length"];
+    [request setValue:[NSString stringWithFormat:@"%li", (unsigned long)[envelopeData length]] forHTTPHeaderField:@"Content-Length"];
     
     NSURLConnection __unused *con = [[NSURLConnection alloc] initWithRequest:request
                                                                     delegate:self

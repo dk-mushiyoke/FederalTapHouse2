@@ -11,17 +11,6 @@
 		42021DD71A8BBFBF004CBE5C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD61A8BBFBF004CBE5C /* Annotation.m */; };
 		42021DDA1A8BD509004CBE5C /* FTHFoodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD91A8BD509004CBE5C /* FTHFoodMenuTableViewController.m */; };
 		42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DDC1A8BD524004CBE5C /* FTHFoodDetailViewController.m */; };
-		420DDADA1A8AC175008A33D5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 420DDACB1A8AC175008A33D5 /* Contents.json */; };
-		420DDADB1A8AC175008A33D5 /* Icon-60@2x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 420DDACC1A8AC175008A33D5 /* Icon-60@2x-1.png */; };
-		420DDADC1A8AC175008A33D5 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420DDACD1A8AC175008A33D5 /* Icon-60@2x.png */; };
-		420DDADD1A8AC175008A33D5 /* back arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 420DDACF1A8AC175008A33D5 /* back arrow.png */; };
-		420DDADE1A8AC175008A33D5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD01A8AC175008A33D5 /* Contents.json */; };
-		420DDADF1A8AC175008A33D5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD21A8AC175008A33D5 /* Contents.json */; };
-		420DDAE01A8AC175008A33D5 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD31A8AC175008A33D5 /* images.jpg */; };
-		420DDAE11A8AC175008A33D5 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD51A8AC175008A33D5 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png */; };
-		420DDAE21A8AC175008A33D5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD61A8AC175008A33D5 /* Contents.json */; };
-		420DDAE31A8AC175008A33D5 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD81A8AC175008A33D5 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png */; };
-		420DDAE41A8AC175008A33D5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 420DDAD91A8AC175008A33D5 /* Contents.json */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
 		427FB4F81A85113700C8F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F61A85113700C8F54F /* Main.storyboard */; };
@@ -421,20 +410,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420DDAE31A8AC175008A33D5 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png in Resources */,
 				427FB4F81A85113700C8F54F /* Main.storyboard in Resources */,
-				420DDAE01A8AC175008A33D5 /* images.jpg in Resources */,
 				427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */,
-				420DDADF1A8AC175008A33D5 /* Contents.json in Resources */,
 				427FB4FA1A85113700C8F54F /* Images.xcassets in Resources */,
-				420DDADE1A8AC175008A33D5 /* Contents.json in Resources */,
-				420DDADD1A8AC175008A33D5 /* back arrow.png in Resources */,
-				420DDADA1A8AC175008A33D5 /* Contents.json in Resources */,
-				420DDADB1A8AC175008A33D5 /* Icon-60@2x-1.png in Resources */,
-				420DDADC1A8AC175008A33D5 /* Icon-60@2x.png in Resources */,
-				420DDAE11A8AC175008A33D5 /* b9191d_26a29a19eb3809aac36b65fd84cc6545.png_srz_p_126_275_75_22_0.50_1.20_0.png in Resources */,
-				420DDAE21A8AC175008A33D5 /* Contents.json in Resources */,
-				420DDAE41A8AC175008A33D5 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +584,7 @@
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -616,6 +595,7 @@
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

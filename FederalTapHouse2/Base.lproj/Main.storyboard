@@ -431,7 +431,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-c6-73s">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-c6-73s">
                                 <rect key="frame" x="0.0" y="11" width="600" height="546"/>
                                 <connections>
                                     <outlet property="delegate" destination="7S3-uT-fBo" id="6c7-nO-y8p"/>

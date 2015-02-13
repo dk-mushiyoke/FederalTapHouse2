@@ -7,17 +7,14 @@
 //
 
 #import "FTHOnMapViewController.h"
-#import <MapKit/MapKit.h>
-@interface FTHOnMapViewController ()<MKMapViewDelegate, CLLocationManagerDelegate>
-@property (strong, nonatomic) IBOutlet MKMapView *myMapView;
+#import "Annotation.h"
 
-- (IBAction)directionsButtonPressed:(id)sender;
+@interface FTHOnMapViewController ()
 @end
 
 @implementation FTHOnMapViewController{
     CLLocationManager * locationManager;
-    MKPointAnnotation * myAnnotation;
-
+    Annotation *myAnnotation;
 }
 
 - (void)viewDidLoad {
@@ -30,12 +27,11 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     [locationManager requestWhenInUseAuthorization];
+    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     [locationManager startUpdatingLocation];
     
-    myAnnotation = [[MKPointAnnotation alloc]init];
-    myAnnotation.coordinate = CLLocationCoordinate2DMake(40.759211, 73.984638);
+    myAnnotation = [[Annotation alloc] initWithTitle:@"Federal Taphouse" coordinate:CLLocationCoordinate2DMake(44, -70)];
     [self.myMapView addAnnotation:myAnnotation];
-    
     
 }
 
@@ -50,6 +46,7 @@
     [locationManager stopUpdatingLocation];
     
     NSLog(@"Actually found more than one (aka) %d locations", (int)[locations count]);
+    /*[self showUserLocation:locations[0]];*/
     
 }
 
@@ -57,28 +54,27 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
-
-    {
+    Annotation *a = annotation;
+    NSLog(@"lat=%f, log=%f", a.coordinate.latitude, a.coordinate.longitude);
+    CLLocationCoordinate2D currentLocation = mapView.userLocation.location.coordinate;
         // If it's the user location, just return nil.
-        if (self.myMapView.userLocation.location.coordinate.latitude == annotation.coordinate.latitude
-            && self.myMapView.userLocation.location.coordinate.longitude == annotation.coordinate.longitude)
-            return nil;
-    }{
-        // Handle any custom annotations.
-        if ([annotation isKindOfClass:[MKPointAnnotation class]])
-        {
-            // Try to dequeue an existing pin view first.
-            MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
-            if (!pinView)
-            {
-                pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
-            } else {
-                pinView.annotation = annotation;
-            }
-            return pinView;
-        }
+    if (currentLocation.latitude == a.coordinate.latitude
+        && currentLocation.longitude == a.coordinate.longitude)
         return nil;
+    // Handle any custom annotations.
+    /*if ([annotation isKindOfClass:[MKPointAnnotation class]])
+     {*/
+    // Try to dequeue an existing pin view first.
+    MKPinAnnotationView *pinView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+    if (!pinView)
+    {
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:a reuseIdentifier:@"CustomPinAnnotationView"];
+    } else {
+        pinView.annotation = a;
     }
+    return pinView;
+    /*}*/
+    /*return nil;*/
 }
 
 
