@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FTHRedeemViewController : UIViewController
+    <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
