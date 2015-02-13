@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nh3-il-X0O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nh3-il-X0O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -431,7 +431,7 @@
             </objects>
             <point key="canvasLocation" x="-715" y="683"/>
         </scene>
-        <!--On Map View Controller-->
+        <!--View On Map-->
         <scene sceneID="wUS-fx-BZr">
             <objects>
                 <viewController id="7S3-uT-fBo" customClass="FTHOnMapViewController" sceneMemberID="viewController">
@@ -442,17 +442,45 @@
                     <view key="view" contentMode="scaleToFill" id="d5a-Hk-kTL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-c6-73s">
+                                <rect key="frame" x="0.0" y="11" width="600" height="546"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7S3-uT-fBo" id="6c7-nO-y8p"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-Ha-bJI">
+                                <rect key="frame" x="473" y="495" width="104" height="53"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="oiH-EG-iXx"/>
+                                    <constraint firstAttribute="width" constant="104" id="si1-sX-62r"/>
+                                </constraints>
+                                <state key="normal" title="Directions">
+                                    <color key="titleColor" red="0.94901967050000002" green="0.54509806630000002" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionsButtonPressed:" destination="7S3-uT-fBo" eventType="touchUpInside" id="SJ8-CJ-D0J"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KtS-Ha-bJI" secondAttribute="trailing" constant="7" id="AsZ-Xc-hmg"/>
+                            <constraint firstAttribute="trailing" secondItem="3Fk-c6-73s" secondAttribute="trailing" id="CLt-9A-bbf"/>
+                            <constraint firstItem="3Fk-c6-73s" firstAttribute="leading" secondItem="d5a-Hk-kTL" secondAttribute="leading" id="HD2-jH-dmV"/>
+                            <constraint firstItem="ID4-4a-BTQ" firstAttribute="top" secondItem="KtS-Ha-bJI" secondAttribute="bottom" constant="8" id="VpY-jn-ERE"/>
+                            <constraint firstItem="3Fk-c6-73s" firstAttribute="top" secondItem="d5a-Hk-kTL" secondAttribute="top" constant="11" id="qES-nk-g1a"/>
+                            <constraint firstAttribute="bottom" secondItem="3Fk-c6-73s" secondAttribute="bottom" constant="43" id="qWu-XO-0cN"/>
+                        </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem id="ldG-m4-Q6F"/>
-                        <barButtonItem title="Get Directions" id="CeS-xx-Icf">
-                            <connections>
-                                <segue destination="vIR-B1-KPg" kind="show" identifier="showDirections" id="7u7-GF-gAw"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="View On Map" id="yXD-R0-EWM"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myMapView" destination="3Fk-c6-73s" id="EDR-9H-2JA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaA-q8-6eH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

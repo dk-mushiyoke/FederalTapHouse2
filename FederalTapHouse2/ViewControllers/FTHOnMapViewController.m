@@ -8,46 +8,116 @@
 
 #import "FTHOnMapViewController.h"
 #import <MapKit/MapKit.h>
-@interface FTHOnMapViewController ()<MKMapViewDelegate>
+@interface FTHOnMapViewController ()<MKMapViewDelegate, CLLocationManagerDelegate>
+@property (strong, nonatomic) IBOutlet MKMapView *myMapView;
 
+- (IBAction)directionsButtonPressed:(id)sender;
 @end
 
 @implementation FTHOnMapViewController{
-
-    MKMapView * myMapView;
+    CLLocationManager * locationManager;
+    MKPointAnnotation * myAnnotation;
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    float w = self.view.bounds.size.width;
-    float h = self.view.bounds.size.height;
+    self.myMapView.delegate = self;
+    self.myMapView.zoomEnabled = YES;
+    self.myMapView.showsUserLocation = YES;
     
-    myMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
-    myMapView.delegate = self;
-    myMapView.zoomEnabled = YES;
-    [self.view addSubview:myMapView];
-// to do
-    //  in directions view query current location.....then compare.
-    // set up annotation for actual restaurtant coordinates.
-     //Coordinates : (40039530 , -76305993).
-    // Do any additional setup after loading the view.
+
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager startUpdatingLocation];
+    
+    myAnnotation = [[MKPointAnnotation alloc]init];
+    myAnnotation.coordinate = CLLocationCoordinate2DMake(40.759211, 73.984638);
+    [self.myMapView addAnnotation:myAnnotation];
+    
+    
 }
+
+-(void)showUserLocation:(CLLocation*)location
+{
+    MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(1.0, 1.0));
+    [self.myMapView setRegion:region animated:YES];
+}
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    
+    [locationManager stopUpdatingLocation];
+    
+    NSLog(@"Actually found more than one (aka) %d locations", (int)[locations count]);
+    
+}
+
+
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+
+    {
+        // If it's the user location, just return nil.
+        if (self.myMapView.userLocation.location.coordinate.latitude == annotation.coordinate.latitude
+            && self.myMapView.userLocation.location.coordinate.longitude == annotation.coordinate.longitude)
+            return nil;
+    }{
+        // Handle any custom annotations.
+        if ([annotation isKindOfClass:[MKPointAnnotation class]])
+        {
+            // Try to dequeue an existing pin view first.
+            MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+            if (!pinView)
+            {
+                pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+            } else {
+                pinView.annotation = annotation;
+            }
+            return pinView;
+        }
+        return nil;
+    }
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+
+- (IBAction)directionsButtonPressed:(id)sender {
+
+    NSLog(@"directions button was Pressed");
+
+    Class mapItemClass = [MKMapItem class];
+    if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
+    {
+        
+        
+        CLLocationCoordinate2D coordinate =
+        myAnnotation.coordinate = CLLocationCoordinate2DMake(40.759211, 73.984638);
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil];
+        MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+        
+        // Set the directions mode to "Walking"
+        // Can use MKLaunchOptionsDirectionsModeDriving instead
+        NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+        // Get the "Current User Location" MKMapItem
+        MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+        // Pass the current location and destination map items to the Maps app
+        // Set the direction mode in the launchOptions dictionary
+        [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]
+                       launchOptions:launchOptions];
+    }
+    
 }
-*/
+
+
 
 @end
