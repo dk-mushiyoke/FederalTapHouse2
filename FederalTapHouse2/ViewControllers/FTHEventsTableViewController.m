@@ -7,6 +7,8 @@
 //
 
 #import "FTHEventsTableViewController.h"
+#import "EventObject.h"
+
 
 @interface FTHEventsTableViewController ()
 
@@ -16,6 +18,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    EventObject *e1 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"happy_hour"]
+                                                    name:@"Happy Hour"
+                                                    time:@"Everyday 3pm to 5pm"
+                                                   place:@"Federa Taphouse"
+                                             description:@"Happy hour every day! Beer 50% off!"];
+    EventObject *e2 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"neeraj"]
+                                                    name:@"Neeraj Mathawan Talk Show"
+                                                    time:@"02/13/2015 1pm"
+                                                   place:@"Software Merchant Office"
+                                             description:@"Enjoy the show!"];
+    EventObject *e3 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"dj"]
+                                                    name:@"DJ Somedude Live"
+                                                    time:@"02/30/2015 9pm"
+                                                   place:@"Federa Taphouse"
+                                             description:@"DJ Somedude is coming to town!"];
+    EventObject *e4 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"girls_night"]
+                                                    name:@"Valentine Girl's Night"
+                                                    time:@"02/12/2015 All day"
+                                                   place:@"Federal Taphouse"
+                                             description:@"Guys pay, gals drink!"];
+    eventList = @[e1, e2, e3, e4];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,57 +56,52 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 0;
+    return eventList.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:2];
+    UILabel *timeLabel = (UILabel *)[cell viewWithTag:3];
+    UILabel *locationLabel = (UILabel *)[cell viewWithTag:4];
+    EventObject *event = eventList[indexPath.row];
+    
+    imageView.image = event.eventImage;
+    nameLabel.text = event.eventName;
+    timeLabel.text = event.eventTime;
+    locationLabel.text = event.eventPlace;
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+#pragma mark - Table View Delegate
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    EventObject *event = eventList[indexPath.row];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"\t%@", event.eventName]
+                                                                   message:[NSString stringWithFormat:@"\n%@", event.eventDescription]
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIImageView *imgView = [[UIImageView alloc] initWithImage:event.eventImage];
+    imgView.frame = CGRectMake(10, 10, 36, 36);
+    imgView.contentMode = UIViewContentModeScaleAspectFit;
+    [alert.view addSubview:imgView];
+    UIAlertAction *dismissAlert = [UIAlertAction actionWithTitle:@"OK"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction *action) {}];
+    [alert addAction:dismissAlert];
+    [self presentViewController:alert animated:YES completion:nil];
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation

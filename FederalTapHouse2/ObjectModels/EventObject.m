@@ -18,15 +18,16 @@
 
 - (instancetype)init {
     
-    self = [self initWithName:nil time:nil place:nil description:nil];
+    self = [self initWithImage:nil name:nil time:nil place:nil description:nil];
     return self;
 }
 
-- (instancetype)initWithName:(NSString *)name time:(NSString *)time place:(NSString *)place description:(NSString *)dscptn {
+- (instancetype)initWithImage:(UIImage *)image name:(NSString *)name time:(NSString *)time place:(NSString *)place description:(NSString *)dscptn {
     
     self = [super init];
     
     if (self) {
+        self.eventImage = image;
         self.eventName = name;
         self.eventTime = time;
         self.eventPlace = place;

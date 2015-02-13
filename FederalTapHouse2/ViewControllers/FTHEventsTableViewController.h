@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FTHEventsTableViewController : UITableViewController
+@interface FTHEventsTableViewController : UITableViewController {
+    NSArray *eventList;
+}
 
 @end
