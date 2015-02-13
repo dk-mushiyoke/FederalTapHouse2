@@ -1,0 +1,7 @@
+# README for push notification
+
+The certificate is ready to go and I have tested it.
+Substitute your device token in simplepush.php
+then run simplepush.php by typing 
+'php simplepush.php' (w/out quotes) in terminal.
+The app on your device should receive notifications.

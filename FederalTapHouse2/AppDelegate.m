@@ -19,10 +19,33 @@
 
     UIImage *navBackgroundImage = [UIImage imageNamed:@"logo"];
     [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
-
+    
+    // Set up push notification
+    if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
+        // iOS 8 notifications
+        UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings
+                                                            settingsForTypes:
+                                                            UIUserNotificationTypeAlert |
+                                                            UIUserNotificationTypeBadge |
+                                                            UIUserNotificationTypeSound
+                                                            categories:nil];
+        [application registerForRemoteNotifications];
+        [application registerUserNotificationSettings:notificationSettings];
+    }
         
     // Override point for customization after application launch.
     return YES;
+}
+
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Display device token
+    NSLog(@"Device token = %@", deviceToken);
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    // Error message
+    NSLog(@"Failed to get token, error %@", error);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
