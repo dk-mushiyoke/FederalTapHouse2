@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
+#import <AddressBook/AddressBook.h>
 #import "FTHOnMapViewController.h"
 #import "Annotation.h"
 
@@ -100,13 +101,19 @@
     {
         
         
-        CLLocationCoordinate2D coordinate =
-        myAnnotation.coordinate = CLLocationCoordinate2DMake(40.759211, 73.984638);
-        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil];
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(FEDERAL_LATITUDE, FEDERAL_LONGITUDE);
+        NSDictionary *addressDict = @{
+                                      (__bridge NSString *) kABPersonAddressStreetKey : @"201 N Queen Street",
+                                      (__bridge NSString *) kABPersonAddressCityKey : @"Lancaster",
+                                      (__bridge NSString *) kABPersonAddressStateKey : @"PA",
+                                      (__bridge NSString *) kABPersonAddressZIPKey : @"17603",
+                                      (__bridge NSString *) kABPersonAddressCountryKey : @"United States"
+                                      };
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:addressDict];
         MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
         
-        // Set the directions mode to "Walking"
-        // Can use MKLaunchOptionsDirectionsModeDriving instead
+        // Set the directions mode to "Driving"
+        // Can use MKLaunchOptionsDirectionsModeWalking instead
         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
         // Get the "Current User Location" MKMapItem
         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
