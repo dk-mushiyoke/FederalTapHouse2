@@ -12,6 +12,10 @@
 @interface FTHOnMapViewController ()
 @end
 
+#define FEDERAL_LATITUDE 40.041404
+#define FEDERAL_LONGITUDE -76.305782
+
+
 @implementation FTHOnMapViewController{
     CLLocationManager * locationManager;
     Annotation *myAnnotation;
@@ -30,7 +34,7 @@
     [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     [locationManager startUpdatingLocation];
     
-    myAnnotation = [[Annotation alloc] initWithTitle:@"Federal Taphouse" coordinate:CLLocationCoordinate2DMake(44, -70)];
+    myAnnotation = [[Annotation alloc] initWithTitle:@"Federal Taphouse" coordinate:CLLocationCoordinate2DMake(FEDERAL_LATITUDE, FEDERAL_LONGITUDE)];
     [self.myMapView addAnnotation:myAnnotation];
     
 }
