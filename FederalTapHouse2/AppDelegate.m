@@ -16,9 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    UIImage *navBackgroundImage = [[UIImage imageNamed:@"logo"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
-    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
+    
+    UIImage *navBackgroundImage = [UIImage imageNamed:@"ft_logo_nav_bar"];
+    navBackgroundImage = [navBackgroundImage resizableImageWithCapInsets:(UIEdgeInsets) {
+        .left = 0 , .right = 0, .top = 0, .bottom = navBackgroundImage.size.height
+    }];
+    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
     // Set up push notification

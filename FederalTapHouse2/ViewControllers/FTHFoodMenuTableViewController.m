@@ -60,7 +60,7 @@
     
     menu = [[MenuDictionary alloc] initWithFoodList:@[f1, f2, f3, f4, f5, f6, f7]];
     foodCategories = [menu allCategories];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_with_watermark"]];
     
     
     // Uncomment the following line to preserve selection between presentations.

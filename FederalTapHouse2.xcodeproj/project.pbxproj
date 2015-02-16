@@ -18,7 +18,6 @@
 		427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4FB1A85113700C8F54F /* LaunchScreen.xib */; };
 		427FB5091A85113700C8F54F /* FederalTapHouse2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */; };
 		428BD5C11A894ACB0024D5F5 /* FTHLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428BD5C01A894ACB0024D5F5 /* FTHLogInViewController.m */; };
-		42BC2E7E1A88273F00A22376 /* FTHDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E691A88273F00A22376 /* FTHDirectionsViewController.m */; };
 		42BC2E7F1A88273F00A22376 /* FTHBeerCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */; };
 		42BC2E801A88273F00A22376 /* FTHBeerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */; };
 		42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */; };
@@ -84,8 +83,6 @@
 		427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FederalTapHouse2Tests.m; sourceTree = "<group>"; };
 		428BD5BF1A894ACB0024D5F5 /* FTHLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHLogInViewController.h; sourceTree = "<group>"; };
 		428BD5C01A894ACB0024D5F5 /* FTHLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHLogInViewController.m; sourceTree = "<group>"; };
-		42BC2E681A88273F00A22376 /* FTHDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHDirectionsViewController.h; sourceTree = "<group>"; };
-		42BC2E691A88273F00A22376 /* FTHDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHDirectionsViewController.m; sourceTree = "<group>"; };
 		42BC2E6A1A88273F00A22376 /* FTHBeerCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerCategoryTableViewController.h; sourceTree = "<group>"; };
 		42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHBeerCategoryTableViewController.m; sourceTree = "<group>"; };
 		42BC2E6C1A88273F00A22376 /* FTHBeerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerDetailViewController.h; sourceTree = "<group>"; };
@@ -266,8 +263,6 @@
 				42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */,
 				42BC2E6E1A88273F00A22376 /* FTHBeerTableViewController.h */,
 				42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */,
-				42BC2E681A88273F00A22376 /* FTHDirectionsViewController.h */,
-				42BC2E691A88273F00A22376 /* FTHDirectionsViewController.m */,
 				42BC2E701A88273F00A22376 /* FTHEventsTableViewController.h */,
 				42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */,
 				42BC2E721A88273F00A22376 /* FTHFindTransportationViewController.h */,
@@ -451,7 +446,6 @@
 				42BC2E831A88273F00A22376 /* FTHFindTransportationViewController.m in Sources */,
 				42BC2E841A88273F00A22376 /* FTHHomeTableViewController.m in Sources */,
 				42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */,
-				42BC2E7E1A88273F00A22376 /* FTHDirectionsViewController.m in Sources */,
 				42BC2EAB1A88277C00A22376 /* BeerObject.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
 				42BC2EA51A88277C00A22376 /* QRCodeScannerModule.m in Sources */,
@@ -580,7 +574,7 @@
 		427FB50D1A85113700C8F54F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_with_watermark;
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,7 +585,7 @@
 		427FB50E1A85113700C8F54F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_with_watermark;
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,7 +22,7 @@
     self.foodPrice.text = [NSString stringWithFormat:@"Price: %.2f", self.food.foodPriceValue];
     self.foodDescription.text = self.food.foodDescription;
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_with_watermark"]];
 }
 
 - (void)didReceiveMemoryWarning {

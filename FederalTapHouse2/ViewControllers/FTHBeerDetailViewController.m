@@ -16,7 +16,7 @@
 @implementation FTHBeerDetailViewController
 
 - (void)viewDidLoad {
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_with_watermark"]];
 
     [super viewDidLoad];
     // Do any additional setup after loading the view.

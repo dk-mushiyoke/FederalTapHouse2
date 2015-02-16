@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_with_watermark"]];
     EventObject *e1 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"happy_hour"]
                                                     name:@"Happy Hour"
                                                     time:@"Everyday 3pm to 5pm"
@@ -27,7 +28,7 @@
     EventObject *e2 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"neeraj"]
                                                     name:@"Neeraj Mathawan Talk Show"
                                                     time:@"02/13/2015 1pm"
-                                                   place:@"Software Merchant Office"
+                                                   place:@"Software Merchant"
                                              description:@"Enjoy the show!"];
     EventObject *e3 = [[EventObject alloc] initWithImage:[UIImage imageNamed:@"dj"]
                                                     name:@"DJ Somedude Live"
