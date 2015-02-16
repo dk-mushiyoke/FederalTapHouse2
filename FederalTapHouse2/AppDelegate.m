@@ -14,9 +14,9 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // Navigation bar & status bar customization
     UIImage *navBackgroundImage = [UIImage imageNamed:@"ft_logo_nav_bar"];
     navBackgroundImage = [navBackgroundImage resizableImageWithCapInsets:(UIEdgeInsets) {
         .left = 0 , .right = 0, .top = 0, .bottom = navBackgroundImage.size.height
@@ -37,11 +37,9 @@
         [application registerForRemoteNotifications];
         [application registerUserNotificationSettings:notificationSettings];
     }
-        
-    // Override point for customization after application launch.
+    
     return YES;
 }
-
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Display device token
@@ -51,6 +49,14 @@
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     // Error message
     NSLog(@"Failed to get token, error %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // Badge count
+    NSLog(@"Remote notification: %@", [userInfo description]);
+    if (userInfo) {
+        [UIApplication sharedApplication].applicationIconBadgeNumber = [[[userInfo objectForKey:@"aps"] objectForKey: @"badgecount"] intValue];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

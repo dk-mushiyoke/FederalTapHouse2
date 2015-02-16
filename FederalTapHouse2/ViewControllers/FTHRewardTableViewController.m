@@ -25,6 +25,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Info"
+                                                                   message:@"Here goes reward information"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *dismissAlert = [UIAlertAction actionWithTitle:@"OK"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction *action) {}];
+    [alert addAction:dismissAlert];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 /*
 #pragma mark - Navigation
 

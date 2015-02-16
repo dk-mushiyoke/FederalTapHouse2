@@ -51,8 +51,7 @@
     [locationManager stopUpdatingLocation];
     
     NSLog(@"Actually found more than one (aka) %d locations", (int)[locations count]);
-    /*[self showUserLocation:locations[0]];*/
-    
+    /*[self showUserLocation:locations[0]];*/    
 }
 
 

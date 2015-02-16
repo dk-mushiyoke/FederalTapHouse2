@@ -114,7 +114,7 @@
                                             <color key="backgroundColor" red="0.93725496530532837" green="0.42352944612503052" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="7S3-uT-fBo" kind="show" identifier="showView" id="QJZ-Jb-vtQ"/>
+                                            <segue destination="7la-88-l4G" kind="show" id="g6Z-eT-34j"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="C7U-SL-a8Y">
@@ -418,61 +418,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWa-Pd-UN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-715" y="683"/>
-        </scene>
-        <!--View On Map-->
-        <scene sceneID="wUS-fx-BZr">
-            <objects>
-                <viewController id="7S3-uT-fBo" customClass="FTHOnMapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KqX-4K-TDV"/>
-                        <viewControllerLayoutGuide type="bottom" id="ID4-4a-BTQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d5a-Hk-kTL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-c6-73s">
-                                <rect key="frame" x="0.0" y="11" width="600" height="546"/>
-                                <connections>
-                                    <outlet property="delegate" destination="7S3-uT-fBo" id="6c7-nO-y8p"/>
-                                </connections>
-                            </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-Ha-bJI">
-                                <rect key="frame" x="473" y="495" width="104" height="53"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="oiH-EG-iXx"/>
-                                    <constraint firstAttribute="width" constant="104" id="si1-sX-62r"/>
-                                </constraints>
-                                <state key="normal" title="Directions">
-                                    <color key="titleColor" red="0.94901967050000002" green="0.54509806630000002" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="directionsButtonPressed:" destination="7S3-uT-fBo" eventType="touchUpInside" id="SJ8-CJ-D0J"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="KtS-Ha-bJI" secondAttribute="trailing" constant="7" id="AsZ-Xc-hmg"/>
-                            <constraint firstAttribute="trailing" secondItem="3Fk-c6-73s" secondAttribute="trailing" id="CLt-9A-bbf"/>
-                            <constraint firstItem="3Fk-c6-73s" firstAttribute="leading" secondItem="d5a-Hk-kTL" secondAttribute="leading" id="HD2-jH-dmV"/>
-                            <constraint firstItem="ID4-4a-BTQ" firstAttribute="top" secondItem="KtS-Ha-bJI" secondAttribute="bottom" constant="8" id="VpY-jn-ERE"/>
-                            <constraint firstItem="3Fk-c6-73s" firstAttribute="top" secondItem="d5a-Hk-kTL" secondAttribute="top" constant="11" id="qES-nk-g1a"/>
-                            <constraint firstAttribute="bottom" secondItem="3Fk-c6-73s" secondAttribute="bottom" constant="43" id="qWu-XO-0cN"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="View On Map" id="yXD-R0-EWM"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="myMapView" destination="3Fk-c6-73s" id="EDR-9H-2JA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AaA-q8-6eH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2351" y="-120"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pks-Ft-NLi">
@@ -792,6 +737,55 @@ Cg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVp-g1-6DF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1815" y="-921"/>
+        </scene>
+        <!--On Map View Controller-->
+        <scene sceneID="lpO-0k-jFF">
+            <objects>
+                <viewController id="7la-88-l4G" customClass="FTHOnMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XI3-DY-wSX"/>
+                        <viewControllerLayoutGuide type="bottom" id="l8m-Lh-teX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ST-hv-O8W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-GJ-3ku">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHG-hF-Hoq">
+                                <rect key="frame" x="512" y="552" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.70588235290000001" green="0.3803921569" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C6O-4h-BBh"/>
+                                    <constraint firstAttribute="width" constant="80" id="qwr-Ki-tjp"/>
+                                </constraints>
+                                <state key="normal" title="Directions">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionsButtonPressed:" destination="7la-88-l4G" eventType="touchUpInside" id="7Kr-NH-kFx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iHG-hF-Hoq" secondAttribute="trailing" constant="8" id="36O-lw-vjT"/>
+                            <constraint firstItem="l8m-Lh-teX" firstAttribute="top" secondItem="iHG-hF-Hoq" secondAttribute="bottom" constant="8" id="8YP-d4-4Eb"/>
+                            <constraint firstAttribute="trailing" secondItem="GBu-GJ-3ku" secondAttribute="trailing" id="8Zp-EZ-jcp"/>
+                            <constraint firstItem="l8m-Lh-teX" firstAttribute="top" secondItem="GBu-GJ-3ku" secondAttribute="bottom" id="LeE-28-A4g"/>
+                            <constraint firstItem="GBu-GJ-3ku" firstAttribute="top" secondItem="XI3-DY-wSX" secondAttribute="bottom" id="i5h-64-gtP"/>
+                            <constraint firstItem="GBu-GJ-3ku" firstAttribute="leading" secondItem="9ST-hv-O8W" secondAttribute="leading" id="lnb-h2-QUK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMapView" destination="GBu-GJ-3ku" id="KXm-xV-CqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ1-AE-Nz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="-115"/>
         </scene>
         <!--Reward Table View Controller-->
         <scene sceneID="34v-U8-xNm">
