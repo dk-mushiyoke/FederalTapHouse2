@@ -23,7 +23,6 @@
 		42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */; };
 		42BC2E821A88273F00A22376 /* FTHEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */; };
 		42BC2E831A88273F00A22376 /* FTHFindTransportationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E731A88273F00A22376 /* FTHFindTransportationViewController.m */; };
-		42BC2E841A88273F00A22376 /* FTHHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E751A88273F00A22376 /* FTHHomeTableViewController.m */; };
 		42BC2E851A88273F00A22376 /* FTHLiveMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */; };
 		42BC2E861A88273F00A22376 /* FTHOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */; };
 		42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */; };
@@ -93,8 +92,6 @@
 		42BC2E711A88273F00A22376 /* FTHEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHEventsTableViewController.m; sourceTree = "<group>"; };
 		42BC2E721A88273F00A22376 /* FTHFindTransportationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHFindTransportationViewController.h; sourceTree = "<group>"; };
 		42BC2E731A88273F00A22376 /* FTHFindTransportationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHFindTransportationViewController.m; sourceTree = "<group>"; };
-		42BC2E741A88273F00A22376 /* FTHHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHHomeTableViewController.h; sourceTree = "<group>"; };
-		42BC2E751A88273F00A22376 /* FTHHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHHomeTableViewController.m; sourceTree = "<group>"; };
 		42BC2E761A88273F00A22376 /* FTHLiveMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHLiveMusicViewController.h; sourceTree = "<group>"; };
 		42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHLiveMusicViewController.m; sourceTree = "<group>"; };
 		42BC2E781A88273F00A22376 /* FTHOnMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHOnMapViewController.h; sourceTree = "<group>"; };
@@ -271,8 +268,6 @@
 				42021DD91A8BD509004CBE5C /* FTHFoodMenuTableViewController.m */,
 				42021DDB1A8BD524004CBE5C /* FTHFoodDetailViewController.h */,
 				42021DDC1A8BD524004CBE5C /* FTHFoodDetailViewController.m */,
-				42BC2E741A88273F00A22376 /* FTHHomeTableViewController.h */,
-				42BC2E751A88273F00A22376 /* FTHHomeTableViewController.m */,
 				42BC2E761A88273F00A22376 /* FTHLiveMusicViewController.h */,
 				42BC2E771A88273F00A22376 /* FTHLiveMusicViewController.m */,
 				428BD5BF1A894ACB0024D5F5 /* FTHLogInViewController.h */,
@@ -445,7 +440,6 @@
 				42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */,
 				42BC2EAD1A88277C00A22376 /* FoodObject.m in Sources */,
 				42BC2E831A88273F00A22376 /* FTHFindTransportationViewController.m in Sources */,
-				42BC2E841A88273F00A22376 /* FTHHomeTableViewController.m in Sources */,
 				42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */,
 				42BC2EAB1A88277C00A22376 /* BeerObject.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
@@ -528,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -564,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_with_watermark;
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -588,6 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_with_watermark;
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
