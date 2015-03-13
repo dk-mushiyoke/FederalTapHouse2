@@ -107,6 +107,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    UITableViewHeaderFooterView *headerView = (UITableViewHeaderFooterView *)view;
+    headerView.contentView.backgroundColor = [UIColor colorWithRed:0.98 green:0.52 blue:0.02 alpha:1];
 }
 
 
