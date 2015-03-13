@@ -44,7 +44,7 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:[NSString stringWithFormat:@"Hey guys I just tried an awesome beer called %@ at Federal TapHouse. You should try it!", self.beer.beer_name]];
+        [tweetSheet setInitialText:[NSString stringWithFormat:@"Hey guys I just tried an awesome beer called %@ at Federal TapHouse. You should try it! Cheers...", self.beer.beer_name]];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
     else
