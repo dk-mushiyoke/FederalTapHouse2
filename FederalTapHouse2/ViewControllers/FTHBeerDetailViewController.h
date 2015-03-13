@@ -19,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *beerDescription;
 @property (nonatomic, strong) BeerObject *beer;
 
+-(IBAction)shareTapped:(id)sender;
+
 @end

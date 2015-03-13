@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Software Merchant. All rights reserved.
 //
 
+#import <Social/Social.h>
 #import "FTHBeerDetailViewController.h"
 #import "BeerObject.h"
 
@@ -38,6 +39,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)shareTapped:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:[NSString stringWithFormat:@"Hey guys I just tried an awesome beer called %@ at Federal TapHouse. You should try it!", self.beer.beer_name]];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Sorry"
+                                  message:@"You can't send a tweet right now, make sure"
+                                  "your device has an internet connection and you have"
+                                  "at least one Twitter account setup"
+                                  delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
 
 /*
 #pragma mark - Navigation
