@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LocationModule.h"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 
-@interface FTHFindTransportationViewController : UIViewController <LocationDidUpdateSignal, MKMapViewDelegate> {
-    LocationModule *locationModule;
-    BOOL initRun;
-}
+@interface FTHFindTransportationViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
 

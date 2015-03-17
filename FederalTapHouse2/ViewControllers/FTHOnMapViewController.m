@@ -40,61 +40,21 @@
     
 }
 
--(void)showUserLocation:(CLLocation*)location
-{
-    MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(1.0, 1.0));
-    [self.myMapView setRegion:region animated:YES];
-}
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    
-    [locationManager stopUpdatingLocation];
-    
-    NSLog(@"Actually found more than one (aka) %d locations", (int)[locations count]);
-    /*[self showUserLocation:locations[0]];*/    
-}
-
-
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
-{
-    Annotation *a = annotation;
-    NSLog(@"lat=%f, log=%f", a.coordinate.latitude, a.coordinate.longitude);
-    CLLocationCoordinate2D currentLocation = mapView.userLocation.location.coordinate;
-        // If it's the user location, just return nil.
-    if (currentLocation.latitude == a.coordinate.latitude
-        && currentLocation.longitude == a.coordinate.longitude)
-        return nil;
-    // Handle any custom annotations.
-    /*if ([annotation isKindOfClass:[MKPointAnnotation class]])
-     {*/
-    // Try to dequeue an existing pin view first.
-    MKPinAnnotationView *pinView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
-    if (!pinView)
-    {
-        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:a reuseIdentifier:@"CustomPinAnnotationView"];
-    } else {
-        pinView.annotation = a;
-    }
-    return pinView;
-    /*}*/
-    /*return nil;*/
-}
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-
+- (void)showUserLocation:(CLLocation*)location
+{
+    MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(1.0, 1.0));
+    [self.myMapView setRegion:region animated:YES];
+}
 
 - (IBAction)directionsButtonPressed:(id)sender {
-
+    
     NSLog(@"directions button was Pressed");
-
+    
     Class mapItemClass = [MKMapItem class];
     if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
     {
@@ -124,6 +84,40 @@
     
 }
 
+
+#pragma mark - Location Manager Delegate
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    
+    [locationManager stopUpdatingLocation];
+    
+    NSLog(@"Actually found more than one (aka) %d locations", (int)[locations count]);
+    /*[self showUserLocation:locations[0]];*/    
+}
+
+
+#pragma mark - Map View Delegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    Annotation *a = annotation;
+    NSLog(@"lat=%f, log=%f", a.coordinate.latitude, a.coordinate.longitude);
+    CLLocationCoordinate2D currentLocation = mapView.userLocation.location.coordinate;
+        // If it's the user location, just return nil.
+    if (currentLocation.latitude == a.coordinate.latitude
+        && currentLocation.longitude == a.coordinate.longitude)
+        return nil;
+    // Try to dequeue an existing pin view first.
+    MKPinAnnotationView *pinView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+    if (!pinView)
+    {
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:a reuseIdentifier:@"CustomPinAnnotationView"];
+    } else {
+        pinView.annotation = a;
+    }
+    return pinView;
+}
 
 
 @end

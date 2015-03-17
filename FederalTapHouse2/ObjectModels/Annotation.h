@@ -20,6 +20,7 @@
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy)   NSString *title;
+@property (nonatomic, copy)   NSString *subtitle;
 
 - (instancetype)init;
 - (instancetype)initWithTitle:(NSString *)t coordinate:(CLLocationCoordinate2D)c;

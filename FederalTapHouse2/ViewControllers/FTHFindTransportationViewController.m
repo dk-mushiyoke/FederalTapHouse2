@@ -11,6 +11,8 @@
 
 @interface FTHFindTransportationViewController ()
 
+@property (nonatomic) CLLocationManager *locationManager;
+
 @end
 
 @implementation FTHFindTransportationViewController
@@ -23,11 +25,13 @@
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self
                                                                              action:@selector(reloadMapView:)];
-    initRun = YES;
-    locationModule = [[LocationModule alloc] init];
-    [locationModule setLocationDelegate:self];
+    self.locationManager = [[CLLocationManager alloc] init];
+    [self.locationManager setDelegate:self];
+    [self.locationManager requestWhenInUseAuthorization];
+    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [self.mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
 
-    [self reloadMapView:nil];
+    /*[self reloadMapView:nil];*/
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,42 +39,74 @@
     // Dispose of any resources that can be recreated.
 }
 
+/* Reload action when user location changes */
 - (void)reloadMapView:(id)sender {
-    [locationModule.locationManager startUpdatingLocation];
+    [self.locationManager startUpdatingLocation];
+}
+
+/* Create local search object to find transportations and drop pins on map */
+- (void)searchAndUpdateTransportation:(MKCoordinateRegion)region {
+    
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    request.naturalLanguageQuery = @"public transportation";
+    request.region = region;
+    
+    MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:request];
+    // Search with complete handler updating mapView
+    [search startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+        NSMutableArray *placemarks = [NSMutableArray array];
+        for (MKMapItem *mi in response.mapItems) {
+            Annotation *a = [[Annotation alloc] init];
+            [a setTitle:mi.placemark.name];
+            [a setSubtitle:mi.placemark.title];
+            [a setCoordinate:mi.placemark.coordinate];
+            [placemarks addObject:a];
+        }
+        [self.mapView removeAnnotations:self.mapView.annotations];
+        [self.mapView showAnnotations:placemarks animated:YES];
+    }];
 }
 
 
 #pragma mark - Map View Delegate
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    Annotation *a = annotation;
+    
     CLLocationCoordinate2D currentLocation = mapView.userLocation.location.coordinate;
-    if (currentLocation.latitude != a.coordinate.latitude || currentLocation.longitude != a.coordinate.longitude) {
-        MKPinAnnotationView *pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:a
-                                                                                 reuseIdentifier:@"Pin"];
+    if (currentLocation.latitude != annotation.coordinate.latitude || currentLocation.longitude != annotation.coordinate.longitude) {
+        MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"Pin"];
+        if (pinAnnotationView == nil) {
+            pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
+                                                                reuseIdentifier:@"Pin"];
+        }
         pinAnnotationView.canShowCallout = YES;
         return pinAnnotationView;
     }
     return nil;
 }
 
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
 
-#pragma mark - Location Module Delegate
+    [self reloadMapView:nil];
+}
 
-- (void)locationDidUpdateSignalFrom:(id)sender currentLocation:(CLLocation *)location {
-    /*NSLog(@"Device location: lat %f long %f", location.coordinate.latitude, location.coordinate.longitude);*/
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.02, 0.02);
-    MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, span);
-    if (initRun) {
-        [self.mapView setRegion:region animated:NO];
-        initRun = NO;
-    }
-    else {
-        [self.mapView setRegion:region animated:YES];
+
+#pragma mark - Location Manager Delegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    
+    if (locations.count < 1) {
+        NSLog(@"Cannot locate device");
+        return;
     }
     
-    [self.mapView removeAnnotations:self.mapView.annotations];
-    [self.mapView addAnnotations:[locationModule generateRandomAnnotationsWithCount:8 center:location span:span]];
+    [manager stopUpdatingLocation];
+    
+    CLLocation *location = locations[0];
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.02, 0.02);
+    MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, span);
+    
+    [self searchAndUpdateTransportation:region];
 }
 
 /*

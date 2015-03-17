@@ -55,6 +55,7 @@
     [self.imageView setImage:image];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 /*
 #pragma mark - Navigation
 

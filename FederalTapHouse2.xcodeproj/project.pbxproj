@@ -27,9 +27,6 @@
 		42BC2E861A88273F00A22376 /* FTHOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E791A88273F00A22376 /* FTHOnMapViewController.m */; };
 		42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */; };
 		42BC2E881A88273F00A22376 /* FTHRewardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */; };
-		42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8B1A88277C00A22376 /* LocationModule.m */; };
-		42BC2EA41A88277C00A22376 /* PushNotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */; };
-		42BC2EA51A88277C00A22376 /* QRCodeScannerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */; };
 		42BC2EA81A88277C00A22376 /* WebServiceConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */; };
 		42BC2EA91A88277C00A22376 /* WebServiceXMLBeerParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E971A88277C00A22376 /* WebServiceXMLBeerParserModule.m */; };
 		42BC2EAA1A88277C00A22376 /* BeerDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E9A1A88277C00A22376 /* BeerDictionary.m */; };
@@ -100,12 +97,6 @@
 		42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRedeemViewController.m; sourceTree = "<group>"; };
 		42BC2E7C1A88273F00A22376 /* FTHRewardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHRewardTableViewController.h; sourceTree = "<group>"; };
 		42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHRewardTableViewController.m; sourceTree = "<group>"; };
-		42BC2E8A1A88277C00A22376 /* LocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModule.h; sourceTree = "<group>"; };
-		42BC2E8B1A88277C00A22376 /* LocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModule.m; sourceTree = "<group>"; };
-		42BC2E8C1A88277C00A22376 /* PushNotificationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationModule.h; sourceTree = "<group>"; };
-		42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationModule.m; sourceTree = "<group>"; };
-		42BC2E8E1A88277C00A22376 /* QRCodeScannerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScannerModule.h; sourceTree = "<group>"; };
-		42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerModule.m; sourceTree = "<group>"; };
 		42BC2E941A88277C00A22376 /* WebServiceConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceConnectionModule.h; sourceTree = "<group>"; };
 		42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceConnectionModule.m; sourceTree = "<group>"; };
 		42BC2E961A88277C00A22376 /* WebServiceXMLBeerParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLBeerParserModule.h; sourceTree = "<group>"; };
@@ -285,12 +276,6 @@
 		42BC2E891A88277C00A22376 /* ControlModules */ = {
 			isa = PBXGroup;
 			children = (
-				42BC2E8A1A88277C00A22376 /* LocationModule.h */,
-				42BC2E8B1A88277C00A22376 /* LocationModule.m */,
-				42BC2E8C1A88277C00A22376 /* PushNotificationModule.h */,
-				42BC2E8D1A88277C00A22376 /* PushNotificationModule.m */,
-				42BC2E8E1A88277C00A22376 /* QRCodeScannerModule.h */,
-				42BC2E8F1A88277C00A22376 /* QRCodeScannerModule.m */,
 				42BC2E941A88277C00A22376 /* WebServiceConnectionModule.h */,
 				42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */,
 				42BC2E961A88277C00A22376 /* WebServiceXMLBeerParserModule.h */,
@@ -434,16 +419,13 @@
 				42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */,
 				42BC2EA81A88277C00A22376 /* WebServiceConnectionModule.m in Sources */,
 				42BC2E801A88273F00A22376 /* FTHBeerDetailViewController.m in Sources */,
-				42BC2EA41A88277C00A22376 /* PushNotificationModule.m in Sources */,
 				42BC2E821A88273F00A22376 /* FTHEventsTableViewController.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
 				42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */,
 				42BC2EAD1A88277C00A22376 /* FoodObject.m in Sources */,
 				42BC2E831A88273F00A22376 /* FTHFindTransportationViewController.m in Sources */,
-				42BC2EA31A88277C00A22376 /* LocationModule.m in Sources */,
 				42BC2EAB1A88277C00A22376 /* BeerObject.m in Sources */,
 				427FB4EF1A85113700C8F54F /* main.m in Sources */,
-				42BC2EA51A88277C00A22376 /* QRCodeScannerModule.m in Sources */,
 				42BC2E851A88273F00A22376 /* FTHLiveMusicViewController.m in Sources */,
 				305CAFE81A8A6AB200378306 /* WebServiceXMLLoginParserModule.m in Sources */,
 				428BD5C11A894ACB0024D5F5 /* FTHLogInViewController.m in Sources */,
