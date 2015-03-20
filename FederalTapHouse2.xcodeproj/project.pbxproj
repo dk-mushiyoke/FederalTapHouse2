@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		305CAFE81A8A6AB200378306 /* WebServiceXMLLoginParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */; };
+		30619EFE1ABCA8C8002AA4E6 /* adminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */; };
 		42021DD71A8BBFBF004CBE5C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD61A8BBFBF004CBE5C /* Annotation.m */; };
 		42021DDA1A8BD509004CBE5C /* FTHFoodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD91A8BD509004CBE5C /* FTHFoodMenuTableViewController.m */; };
 		42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DDC1A8BD524004CBE5C /* FTHFoodDetailViewController.m */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		305CAFE61A8A6AB200378306 /* WebServiceXMLLoginParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLLoginParserModule.h; sourceTree = "<group>"; };
 		305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLLoginParserModule.m; sourceTree = "<group>"; };
+		30619EFC1ABCA8C8002AA4E6 /* adminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adminViewController.h; sourceTree = "<group>"; };
+		30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adminViewController.m; sourceTree = "<group>"; };
 		42021DD51A8BBFBF004CBE5C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		42021DD61A8BBFBF004CBE5C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		42021DD81A8BD509004CBE5C /* FTHFoodMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHFoodMenuTableViewController.h; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 				42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */,
 				42BC2E7C1A88273F00A22376 /* FTHRewardTableViewController.h */,
 				42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */,
+				30619EFC1ABCA8C8002AA4E6 /* adminViewController.h */,
+				30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -354,11 +359,11 @@
 				TargetAttributes = {
 					427FB4E81A85113700C8F54F = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 27VHD5Y3B8;
+						DevelopmentTeam = KKX8KEUZ6R;
 					};
 					427FB5011A85113700C8F54F = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 27VHD5Y3B8;
+						DevelopmentTeam = KKX8KEUZ6R;
 						TestTargetID = 427FB4E81A85113700C8F54F;
 					};
 				};
@@ -407,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30619EFE1ABCA8C8002AA4E6 /* adminViewController.m in Sources */,
 				42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */,
 				42BC2EAE1A88277C00A22376 /* MenuDictionary.m in Sources */,
 				42BC2E881A88273F00A22376 /* FTHRewardTableViewController.m in Sources */,
@@ -555,10 +561,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_with_watermark;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -567,10 +576,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_with_watermark;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FederalTapHouse2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
