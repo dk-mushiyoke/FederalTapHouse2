@@ -85,7 +85,8 @@
     // - IsUserValid
     // - registerDeviceToken
     // - ...
-    if ([_method isEqualToString:@"getBeerList"]) {
+    
+    /*if ([_method isEqualToString:@"getBeerList"]) {
         
         return @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
         "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
@@ -96,7 +97,8 @@
         "  </soap12:Body>\n"
         "</soap12:Envelope>\n";
         
-    } else if ([_method isEqualToString:@"IsUserValid"]) {
+    } else*/
+    if ([_method isEqualToString:@"IsUserValid"]) {
         
         return [NSString stringWithFormat:
                 @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
@@ -122,6 +124,18 @@
         "</registerDeviceToken>\n"
         "</soap12:Body>\n"
         "</soap12:Envelope>\n", _username, app.deviceToken];
+    }
+    else /*if ([_method isEqualToString:@"getAllDeviceTokens"])*/ {
+        
+        return [NSString stringWithFormat:
+                @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+                "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
+                "                 xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\""
+                "                 xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n"
+                "  <soap12:Body>\n"
+                "    <%@ xmlns=\"http://tempuri.org/\" />\n"
+                "  </soap12:Body>\n"
+                "</soap12:Envelope>\n", _method];
     }
     return nil;
 }

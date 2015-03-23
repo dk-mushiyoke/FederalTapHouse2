@@ -8,18 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		305CAFE81A8A6AB200378306 /* WebServiceXMLLoginParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */; };
-		30619EFE1ABCA8C8002AA4E6 /* adminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */; };
 		30619F011AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 30619F001AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m */; };
+		30619EFE1ABCA8C8002AA4E6 /* FTHAdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30619EFD1ABCA8C8002AA4E6 /* FTHAdminViewController.m */; };
 		42021DD71A8BBFBF004CBE5C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD61A8BBFBF004CBE5C /* Annotation.m */; };
 		42021DDA1A8BD509004CBE5C /* FTHFoodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD91A8BD509004CBE5C /* FTHFoodMenuTableViewController.m */; };
 		42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DDC1A8BD524004CBE5C /* FTHFoodDetailViewController.m */; };
+		427CD18A1ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CD1891ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.m */; };
+		427CD18D1ABCB507002914CA /* NotificationConnectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CD18C1ABCB507002914CA /* NotificationConnectionModule.m */; };
 		427FB4EF1A85113700C8F54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4EE1A85113700C8F54F /* main.m */; };
 		427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB4F11A85113700C8F54F /* AppDelegate.m */; };
 		427FB4F81A85113700C8F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F61A85113700C8F54F /* Main.storyboard */; };
 		427FB4FA1A85113700C8F54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4F91A85113700C8F54F /* Images.xcassets */; };
 		427FB4FD1A85113700C8F54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427FB4FB1A85113700C8F54F /* LaunchScreen.xib */; };
-		427FB5091A85113700C8F54F /* FederalTapHouse2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */; };
+		427FB5091A85113700C8F54F /* WebServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FB5081A85113700C8F54F /* WebServiceTests.m */; };
 		428BD5C11A894ACB0024D5F5 /* FTHLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428BD5C01A894ACB0024D5F5 /* FTHLogInViewController.m */; };
+		42B9530F1AC06CAA00481870 /* NotificationPushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9530E1AC06CAA00481870 /* NotificationPushTests.m */; };
 		42BC2E7F1A88273F00A22376 /* FTHBeerCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */; };
 		42BC2E801A88273F00A22376 /* FTHBeerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6D1A88273F00A22376 /* FTHBeerDetailViewController.m */; };
 		42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC2E6F1A88273F00A22376 /* FTHBeerTableViewController.m */; };
@@ -51,10 +54,10 @@
 /* Begin PBXFileReference section */
 		305CAFE61A8A6AB200378306 /* WebServiceXMLLoginParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLLoginParserModule.h; sourceTree = "<group>"; };
 		305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLLoginParserModule.m; sourceTree = "<group>"; };
-		30619EFC1ABCA8C8002AA4E6 /* adminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adminViewController.h; sourceTree = "<group>"; };
-		30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adminViewController.m; sourceTree = "<group>"; };
 		30619EFF1AC072EA002AA4E6 /* WebServiceXMLRegisterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLRegisterModule.h; sourceTree = "<group>"; };
 		30619F001AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLRegisterModule.m; sourceTree = "<group>"; };
+		30619EFC1ABCA8C8002AA4E6 /* FTHAdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHAdminViewController.h; sourceTree = "<group>"; };
+		30619EFD1ABCA8C8002AA4E6 /* FTHAdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHAdminViewController.m; sourceTree = "<group>"; };
 		42021DD51A8BBFBF004CBE5C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		42021DD61A8BBFBF004CBE5C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		42021DD81A8BD509004CBE5C /* FTHFoodMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHFoodMenuTableViewController.h; sourceTree = "<group>"; };
@@ -72,6 +75,10 @@
 		420DDAD61A8AC175008A33D5 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		420DDAD81A8AC175008A33D5 /* b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b9191d_51bc889ecc68b9447f90a1938b7a5685.png_srz_p_589_105_75_22_0.50_1.20_0.png; sourceTree = "<group>"; };
 		420DDAD91A8AC175008A33D5 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		427CD1881ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLDeviceTokenParserModule.h; sourceTree = "<group>"; };
+		427CD1891ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLDeviceTokenParserModule.m; sourceTree = "<group>"; };
+		427CD18B1ABCB507002914CA /* NotificationConnectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationConnectionModule.h; sourceTree = "<group>"; };
+		427CD18C1ABCB507002914CA /* NotificationConnectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationConnectionModule.m; sourceTree = "<group>"; };
 		427FB4E91A85113700C8F54F /* FederalTapHouse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTapHouse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB4ED1A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427FB4EE1A85113700C8F54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,9 +89,10 @@
 		427FB4FC1A85113700C8F54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		427FB5021A85113700C8F54F /* FederalTapHouse2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FederalTapHouse2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FB5071A85113700C8F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FederalTapHouse2Tests.m; sourceTree = "<group>"; };
+		427FB5081A85113700C8F54F /* WebServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServiceTests.m; sourceTree = "<group>"; };
 		428BD5BF1A894ACB0024D5F5 /* FTHLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHLogInViewController.h; sourceTree = "<group>"; };
 		428BD5C01A894ACB0024D5F5 /* FTHLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHLogInViewController.m; sourceTree = "<group>"; };
+		42B9530E1AC06CAA00481870 /* NotificationPushTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPushTests.m; sourceTree = "<group>"; };
 		42BC2E6A1A88273F00A22376 /* FTHBeerCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerCategoryTableViewController.h; sourceTree = "<group>"; };
 		42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHBeerCategoryTableViewController.m; sourceTree = "<group>"; };
 		42BC2E6C1A88273F00A22376 /* FTHBeerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHBeerDetailViewController.h; sourceTree = "<group>"; };
@@ -229,7 +237,8 @@
 		427FB5051A85113700C8F54F /* FederalTapHouse2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				427FB5081A85113700C8F54F /* FederalTapHouse2Tests.m */,
+				42B9530E1AC06CAA00481870 /* NotificationPushTests.m */,
+				427FB5081A85113700C8F54F /* WebServiceTests.m */,
 				427FB5061A85113700C8F54F /* Supporting Files */,
 			);
 			path = FederalTapHouse2Tests;
@@ -251,6 +260,8 @@
 		42BC2E671A88273F00A22376 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				30619EFC1ABCA8C8002AA4E6 /* FTHAdminViewController.h */,
+				30619EFD1ABCA8C8002AA4E6 /* FTHAdminViewController.m */,
 				42BC2E6A1A88273F00A22376 /* FTHBeerCategoryTableViewController.h */,
 				42BC2E6B1A88273F00A22376 /* FTHBeerCategoryTableViewController.m */,
 				42BC2E6C1A88273F00A22376 /* FTHBeerDetailViewController.h */,
@@ -275,8 +286,6 @@
 				42BC2E7B1A88273F00A22376 /* FTHRedeemViewController.m */,
 				42BC2E7C1A88273F00A22376 /* FTHRewardTableViewController.h */,
 				42BC2E7D1A88273F00A22376 /* FTHRewardTableViewController.m */,
-				30619EFC1ABCA8C8002AA4E6 /* adminViewController.h */,
-				30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +293,8 @@
 		42BC2E891A88277C00A22376 /* ControlModules */ = {
 			isa = PBXGroup;
 			children = (
+				427CD18B1ABCB507002914CA /* NotificationConnectionModule.h */,
+				427CD18C1ABCB507002914CA /* NotificationConnectionModule.m */,
 				42BC2E941A88277C00A22376 /* WebServiceConnectionModule.h */,
 				42BC2E951A88277C00A22376 /* WebServiceConnectionModule.m */,
 				42BC2E961A88277C00A22376 /* WebServiceXMLBeerParserModule.h */,
@@ -292,6 +303,8 @@
 				305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */,
 				30619EFF1AC072EA002AA4E6 /* WebServiceXMLRegisterModule.h */,
 				30619F001AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m */,
+				427CD1881ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.h */,
+				427CD1891ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.m */,
 			);
 			path = ControlModules;
 			sourceTree = "<group>";
@@ -417,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30619EFE1ABCA8C8002AA4E6 /* adminViewController.m in Sources */,
+				30619EFE1ABCA8C8002AA4E6 /* FTHAdminViewController.m in Sources */,
 				42BC2E811A88273F00A22376 /* FTHBeerTableViewController.m in Sources */,
 				42BC2EAE1A88277C00A22376 /* MenuDictionary.m in Sources */,
 				42BC2E881A88273F00A22376 /* FTHRewardTableViewController.m in Sources */,
@@ -432,6 +445,8 @@
 				42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */,
 				42BC2EA81A88277C00A22376 /* WebServiceConnectionModule.m in Sources */,
 				42BC2E801A88273F00A22376 /* FTHBeerDetailViewController.m in Sources */,
+				427CD18D1ABCB507002914CA /* NotificationConnectionModule.m in Sources */,
+				427CD18A1ABCA959002914CA /* WebServiceXMLDeviceTokenParserModule.m in Sources */,
 				42BC2E821A88273F00A22376 /* FTHEventsTableViewController.m in Sources */,
 				427FB4F21A85113700C8F54F /* AppDelegate.m in Sources */,
 				42BC2E871A88273F00A22376 /* FTHRedeemViewController.m in Sources */,
@@ -449,7 +464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427FB5091A85113700C8F54F /* FederalTapHouse2Tests.m in Sources */,
+				42B9530F1AC06CAA00481870 /* NotificationPushTests.m in Sources */,
+				427FB5091A85113700C8F54F /* WebServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -555,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

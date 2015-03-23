@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface adminViewController : UIViewController
+@interface FTHAdminViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet UITextView *notificationTextView;
 
 @end

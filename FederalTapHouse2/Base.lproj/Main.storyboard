@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vah-rL-65X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vah-rL-65X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -371,10 +371,10 @@
             </objects>
             <point key="canvasLocation" x="-296" y="-950"/>
         </scene>
-        <!--View Controller-->
+        <!--Push Notification-->
         <scene sceneID="YQg-il-PC2">
             <objects>
-                <viewController id="dph-wM-AhY" sceneMemberID="viewController">
+                <viewController id="dph-wM-AhY" customClass="FTHAdminViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FcP-J9-fGh"/>
                         <viewControllerLayoutGuide type="bottom" id="eYq-G2-K6u"/>
@@ -383,27 +383,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vC-zi-ZvM">
-                                <rect key="frame" x="208" y="79" width="184" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yeP-t9-FIO">
-                                <rect key="frame" x="67" y="195" width="478" height="95"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAf-tb-HY3">
-                                <rect key="frame" x="246" y="331" width="108" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAf-tb-HY3">
+                                <rect key="frame" x="264" y="331" width="72" height="30"/>
                                 <state key="normal" title="Send Now">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendNotifications" destination="dph-wM-AhY" eventType="touchUpInside" id="D6t-VB-jhC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrQ-b4-sTJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrQ-b4-sTJ">
                                 <rect key="frame" x="264" y="395" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="KqJ-d9-ujr"/>
+                                </constraints>
                                 <state key="normal" title="Schedule">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -413,9 +406,31 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yeP-t9-FIO">
+                                <rect key="frame" x="61" y="166" width="478" height="95"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="bKm-HJ-pYo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yeP-t9-FIO" firstAttribute="leading" secondItem="Dg5-zp-EBf" secondAttribute="leadingMargin" constant="45" id="8Dq-Jk-dt4"/>
+                            <constraint firstItem="yeP-t9-FIO" firstAttribute="centerX" secondItem="dAf-tb-HY3" secondAttribute="centerX" id="XJy-RZ-7vD"/>
+                            <constraint firstItem="yeP-t9-FIO" firstAttribute="centerX" secondItem="WrQ-b4-sTJ" secondAttribute="centerX" id="Yaz-yx-NJU"/>
+                            <constraint firstItem="yeP-t9-FIO" firstAttribute="centerX" secondItem="Dg5-zp-EBf" secondAttribute="centerX" id="dHG-RG-2BH"/>
+                            <constraint firstItem="WrQ-b4-sTJ" firstAttribute="top" secondItem="dAf-tb-HY3" secondAttribute="bottom" constant="34" id="kZ3-xy-F3R"/>
+                            <constraint firstItem="yeP-t9-FIO" firstAttribute="top" secondItem="FcP-J9-fGh" secondAttribute="bottom" constant="102" id="mSX-9w-YQJ"/>
+                            <constraint firstItem="dAf-tb-HY3" firstAttribute="top" secondItem="yeP-t9-FIO" secondAttribute="bottom" constant="70" id="uSp-38-74j"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Push Notification" id="cj7-qT-tyz"/>
+                    <connections>
+                        <outlet property="notificationTextView" destination="yeP-t9-FIO" id="ITO-eG-ofu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1W-KI-g3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
