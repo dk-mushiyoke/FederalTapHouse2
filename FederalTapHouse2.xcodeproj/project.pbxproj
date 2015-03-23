@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		305CAFE81A8A6AB200378306 /* WebServiceXMLLoginParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */; };
 		30619EFE1ABCA8C8002AA4E6 /* adminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */; };
+		30619F011AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 30619F001AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m */; };
 		42021DD71A8BBFBF004CBE5C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD61A8BBFBF004CBE5C /* Annotation.m */; };
 		42021DDA1A8BD509004CBE5C /* FTHFoodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DD91A8BD509004CBE5C /* FTHFoodMenuTableViewController.m */; };
 		42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021DDC1A8BD524004CBE5C /* FTHFoodDetailViewController.m */; };
@@ -52,6 +53,8 @@
 		305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLLoginParserModule.m; sourceTree = "<group>"; };
 		30619EFC1ABCA8C8002AA4E6 /* adminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adminViewController.h; sourceTree = "<group>"; };
 		30619EFD1ABCA8C8002AA4E6 /* adminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adminViewController.m; sourceTree = "<group>"; };
+		30619EFF1AC072EA002AA4E6 /* WebServiceXMLRegisterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceXMLRegisterModule.h; sourceTree = "<group>"; };
+		30619F001AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceXMLRegisterModule.m; sourceTree = "<group>"; };
 		42021DD51A8BBFBF004CBE5C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		42021DD61A8BBFBF004CBE5C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		42021DD81A8BD509004CBE5C /* FTHFoodMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHFoodMenuTableViewController.h; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				42BC2E971A88277C00A22376 /* WebServiceXMLBeerParserModule.m */,
 				305CAFE61A8A6AB200378306 /* WebServiceXMLLoginParserModule.h */,
 				305CAFE71A8A6AB200378306 /* WebServiceXMLLoginParserModule.m */,
+				30619EFF1AC072EA002AA4E6 /* WebServiceXMLRegisterModule.h */,
+				30619F001AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m */,
 			);
 			path = ControlModules;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				42BC2EAC1A88277C00A22376 /* EventObject.m in Sources */,
 				42021DDA1A8BD509004CBE5C /* FTHFoodMenuTableViewController.m in Sources */,
 				42BC2E861A88273F00A22376 /* FTHOnMapViewController.m in Sources */,
+				30619F011AC072EA002AA4E6 /* WebServiceXMLRegisterModule.m in Sources */,
 				42BC2EA91A88277C00A22376 /* WebServiceXMLBeerParserModule.m in Sources */,
 				42BC2EAA1A88277C00A22376 /* BeerDictionary.m in Sources */,
 				42021DDD1A8BD524004CBE5C /* FTHFoodDetailViewController.m in Sources */,

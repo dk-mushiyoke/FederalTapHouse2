@@ -14,6 +14,8 @@
 
 @end
 
+static NSString *URL = @"http://www.softwaremerchant.com/onlinecourse.asmx";
+
 @implementation FTHLoginViewController {
     NSString *user;
     NSString *pass;
@@ -44,13 +46,11 @@
     user = [[NSString alloc]initWithString:self.usernameField.text];
     pass = [[NSString alloc]initWithString:self.passwordField.text];
     
-    NSString *URL = @"http://www.softwaremerchant.com/onlinecourse.asmx";
-    
     WebServiceConnectionModule *con = [[WebServiceConnectionModule alloc]initWithUrl:URL Username:user Password:pass method:@"IsUserValid"];
     
     [con establishConnection];
     [con setSignalDelegate:self];
-    
+    [self registerDevice];
     
     
 }
@@ -65,7 +65,7 @@
     if ([par.loginResult isEqualToString:@"1"]) {
         // set the user as a property of app delegate
         AppDelegate *app = [UIApplication sharedApplication].delegate;
-        app.username = self.usernameField.text;
+        app.username = user;
         
         if ([app.username isEqualToString:@"Admin"]) {
             [self performSegueWithIdentifier:@"showAdmin" sender:self];
@@ -98,5 +98,13 @@
                       cancelButtonTitle:@"OK"
                       otherButtonTitles:nil] show];
 }
+
+-(void)registerDevice {
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    NSLog(@"Registering Device Token to web service: %@ for user %@", app.deviceToken, user);
+    WebServiceConnectionModule *con = [[WebServiceConnectionModule alloc] initWithUrl:URL Username:user Password:nil method:@"registerDeviceToken"];
+    [con establishConnection];
+}
+
 
 @end
