@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QRCodeReaderDelegate.h"
 
-@interface FTHRedeemViewController : UIViewController
-    <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface FTHRedeemViewController : UIViewController <QRCodeReaderDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
