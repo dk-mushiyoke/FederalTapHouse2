@@ -12,6 +12,8 @@
 
 @interface FTHBeerDetailViewController ()
 
+@property (nonatomic, strong) NSString *textToShare;
+
 @end
 
 @implementation FTHBeerDetailViewController
@@ -20,8 +22,31 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_with_watermark"]];
 
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // place right bar button
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc]
+                                    initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                    target:self
+                                    action:@selector(shareTapped:)];
+    self.navigationItem.rightBarButtonItem = shareButton;
+    
+    // set textToShare relative to selected beer
+    self.textToShare = [NSString stringWithFormat:@"Hey guys I just tried an awesome beer called %@ at Federal TapHouse. You should try it! Cheers...", self.beer.beer_name];
+    
 }
+
+-(void)shareTapped:(id)sender {
+    NSLog(@"UIActivityViewController launched");
+    NSURL *websiteURL = [NSURL URLWithString:@"http://www.softwaremerchant.com"];
+    NSArray *objectsToshare = @[self.textToShare, websiteURL];
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:objectsToshare applicationActivities:nil];
+    
+    NSArray *excludeActivities = @[UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    
+    controller.excludedActivityTypes = excludeActivities;
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     
@@ -40,6 +65,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 -(IBAction)shareTapped:(id)sender {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
@@ -61,7 +87,7 @@
     }
 }
 
-
+*/
 /*
 #pragma mark - Navigation
 

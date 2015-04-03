@@ -799,18 +799,6 @@ Cg
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06S-pq-k1r">
-                                <rect key="frame" x="261" y="535" width="79" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Share" image="icon-twitter">
-                                    <color key="titleColor" red="0.12941176470588237" green="0.60392156862745094" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareTapped:" destination="Hh6-yE-nm0" eventType="touchUpInside" id="vmB-s2-yWN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -825,10 +813,8 @@ Cg
                             <constraint firstItem="N23-oU-0DM" firstAttribute="top" secondItem="z5i-0g-yWE" secondAttribute="bottom" constant="20" id="LjB-W9-JUL"/>
                             <constraint firstAttribute="trailing" secondItem="z5i-0g-yWE" secondAttribute="trailing" constant="40" id="SSu-Ux-MJa"/>
                             <constraint firstAttribute="trailing" secondItem="q0v-zj-vSY" secondAttribute="trailing" constant="40" id="YI5-LQ-CvE"/>
-                            <constraint firstAttribute="centerX" secondItem="06S-pq-k1r" secondAttribute="centerX" id="dZ9-ME-KId"/>
                             <constraint firstItem="8sC-rN-3MX" firstAttribute="leading" secondItem="YfQ-lC-Q1q" secondAttribute="leading" constant="40" id="gNL-02-KJ6"/>
                             <constraint firstItem="z5i-0g-yWE" firstAttribute="leading" secondItem="YfQ-lC-Q1q" secondAttribute="leading" constant="40" id="opw-Hn-kE8"/>
-                            <constraint firstItem="JJO-iL-Rg5" firstAttribute="top" secondItem="06S-pq-k1r" secondAttribute="bottom" constant="33" id="rso-A2-lSD"/>
                             <constraint firstItem="z5i-0g-yWE" firstAttribute="top" secondItem="8sC-rN-3MX" secondAttribute="bottom" constant="25" id="shg-Cj-0Wy"/>
                             <constraint firstAttribute="trailing" secondItem="8sC-rN-3MX" secondAttribute="trailing" constant="40" id="zaX-e8-gRZ"/>
                         </constraints>
@@ -1137,7 +1123,6 @@ Cg
         <image name="beer3" width="204" height="204"/>
         <image name="beer4" width="243" height="243"/>
         <image name="flame" width="42" height="91"/>
-        <image name="icon-twitter" width="32" height="32"/>
         <image name="sm_logo" width="210" height="80"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
